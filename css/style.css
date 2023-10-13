@@ -255,6 +255,12 @@ header:hover .side-icon-box ul li a span.line {
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.start-up::before {
   background: url(../img/work-link-img05.png) no-repeat center top/cover;
 }
+#wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img01::before {
+  background: url(../img/work-link-imgimg01.jpg) no-repeat center top/cover;
+}
+#wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img02::before {
+  background: url(../img/work-link-imgimg02.jpg) no-repeat center top/cover;
+}
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box::after {
   content: "";
   display: block;
