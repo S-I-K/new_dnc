@@ -192,7 +192,7 @@ header:hover {
                             p.title {
                                 font-family: var(--font-en);
                                 font-weight: 700;
-                                font-size: 66px;
+                                font-size: 63px;
                                 line-height: 1;
                                 letter-spacing: -.8px;
                                 color: var(--color-white);
@@ -275,6 +275,12 @@ header:hover {
                     }
                     a.work-link-box.start-up::before {
                         background: url(../img/work-link-img05.png) no-repeat center top / cover;
+                    }
+                    a.work-link-box.img01::before {
+                        background: url(../img/work-link-imgimg01.jpg) no-repeat center top / cover;
+                    }
+                    a.work-link-box.img02::before {
+                        background: url(../img/work-link-imgimg02.jpg) no-repeat center top / cover;
                     }
                     a.work-link-box::after {
                         content: '';
