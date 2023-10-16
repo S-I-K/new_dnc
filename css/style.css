@@ -45,7 +45,7 @@ li {
 
 .swiper-slide-active.key-slide .ani-desc01 > * {
   transform-origin: 0 100%;
-  animation: desc-ani01 cubic-bezier(0.165, 0.84, 0.44, 1) 3s both;
+  animation: desc-ani01 cubic-bezier(0.165, 0.84, 0.44, 1) 6s both;
 }
 
 .swiper-slide-active.key-slide .ani-desc01 > *:nth-child(1) {
@@ -87,7 +87,7 @@ li {
 }
 @keyframes desc-ani01 {
   0% {
-    transform: translateY(120px);
+    transform: translateY(80px);
     opacity: 0;
   }
   100% {
@@ -96,7 +96,7 @@ li {
   }
 }
 .swiper-slide-active.key-slide {
-  animation: bg-ani cubic-bezier(0.165, 0.84, 0.44, 1) 8s both;
+  animation: bg-ani cubic-bezier(0.165, 0.84, 0.44, 1) 6s both;
 }
 
 @keyframes bg-ani {
@@ -373,4 +373,10 @@ header:hover .side-icon-box ul li a span.line {
 }
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section #key-visual-slider .swiper-slide.key-slide-03 {
   background: url("../img/main-key-img03.png") no-repeat center center/100%;
+}
+#wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section #key-visual-slider .swiper-pagination.key-visual {
+  top: 90px;
+}
+#wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section #key-visual-slider .swiper-pagination.key-visual span {
+  background: #3391C8;
 }

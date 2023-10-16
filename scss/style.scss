@@ -38,7 +38,7 @@ li {
 
 .swiper-slide-active.key-slide .ani-desc01 > * {
     transform-origin: 0 100%;
-    animation: desc-ani01 cubic-bezier(0.165, 0.84, 0.44, 1) 3s both;
+    animation: desc-ani01 cubic-bezier(0.165, 0.84, 0.44, 1) 6s both;
 }
 .swiper-slide-active.key-slide .ani-desc01 > *:nth-child(1){
     animation-delay: .1s;
@@ -75,7 +75,7 @@ li {
 }
 @keyframes desc-ani01 {
     0% {
-        transform: translateY(120px);
+        transform: translateY(80px);
         opacity: 0;
     }
     100% {
@@ -88,7 +88,7 @@ li {
 
 
 .swiper-slide-active.key-slide {
-    animation: bg-ani cubic-bezier(0.165, 0.84, 0.44, 1) 8s both;
+    animation: bg-ani cubic-bezier(0.165, 0.84, 0.44, 1) 6s both;
 }
 @keyframes bg-ani {
     0% {
@@ -394,6 +394,13 @@ header:hover {
                     }
                     .swiper-slide.key-slide-03{
                         background: url('../img/main-key-img03.png') no-repeat center center / 100%;
+                    }
+
+                    .swiper-pagination.key-visual {
+                        top: 90px;
+                        span {
+                            background: #3391C8;
+                        }
                     }
                 }
             }
