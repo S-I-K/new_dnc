@@ -8,8 +8,20 @@ $(()=>{
         direction: "vertical",
         mousewheel: true,
         pagination: {
-            el: ".swiper-pagination",
+            el: "#main-wrap-pagination",
             clickable: true,
         },
     });
+    
+    var swiper = new Swiper("#key-visual-slider", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: true,
+        // effect: "fade",
+        /* autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+        }, */
+    });
+    
 });
