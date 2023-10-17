@@ -101,10 +101,10 @@ li {
 
 @keyframes bg-ani {
   0% {
-    background-size: 120% auto;
+    background-size: auto 140%;
   }
   100% {
-    background-size: 100% auto;
+    background-size: auto 110%;
   }
 }
 header {
@@ -365,14 +365,19 @@ header:hover .side-icon-box ul li a span.line {
   color: #fff;
   display: block;
 }
+#wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section #key-visual-slider .swiper-slide.key-slide {
+  background-size: auto 110%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section #key-visual-slider .swiper-slide.key-slide-01 {
-  background: url("../img/main-key-img01.png") no-repeat center center/100%;
+  background-image: url("../img/main-key-img01.png");
 }
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section #key-visual-slider .swiper-slide.key-slide-02 {
-  background: url("../img/main-key-img02.png") no-repeat center center/100%;
+  background-image: url("../img/main-key-img02.png");
 }
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section #key-visual-slider .swiper-slide.key-slide-03 {
-  background: url("../img/main-key-img03.png") no-repeat center center/100%;
+  background-image: url("../img/main-key-img03.png");
 }
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section #key-visual-slider .swiper-pagination.key-visual {
   top: 90px;
