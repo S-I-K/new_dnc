@@ -483,22 +483,133 @@ header.design-header.active {
     }
     .design-wrap {
         width: 100%;
-        height: 0vh;
+        height: 0px;
+        overflow: hidden;
         background: #fff;
         position: absolute;
         top: 0;
         opacity: 0;
-        transition: 2s;
+        transition: 1.4s cubic-bezier(0.76, 0, 0.24, 1);
         transition-property: height, opacity;
         z-index: 998;
+        display: flex;
         align-items: center;
         justify-content: center;
+        .img-list-area {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .container {
+                // border: 1px solid red;
+                width: 1440px;
+                padding: 170px 0 80px;
+                flex-direction: column;
+                justify-content: flex-start;
+                // outline: 1px solid red;
+                ul.img-list-box {
+                    // outline: 1px solid blue;
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    li.img-list-item {
+                        // border: 1px solid red;
+                        width: auto;
+                        height: 100%;
+                        // outline: 1px solid red;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .img-box {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            overflow: hidden;
+                            width: 100%;
+                            height: 100%;
+                            img {
+                                width: 100%;
+                            }
+                            img.pc-height-full {
+                                width: auto;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    li.img-list-item:not(:last-child) {
+                        margin-right: 24px;
+                    }
+                }
+                ul.img-list-box:not(:last-child) {
+                    margin-bottom: 24px;
+                }
+                ul.img-list-box:nth-child(1) {
+                    li.img-list-item{
+                        height: 420px;
+                    }
+                    li.img-list-item:nth-child(1) {
+                        width: 464px;
+                        // flex: 4;
+                    }
+                    li.img-list-item:nth-child(2) {
+                        width: 342px;
+                        // flex: 3;
+                    }
+                    li.img-list-item:nth-child(3) {
+                        width: 220px;
+                        // flex: 2;
+                    }
+                    li.img-list-item:nth-child(4) {
+                        width: 342px;
+                        // flex: 3;
+                    }
+                }
+                ul.img-list-box:nth-child(2) {
+                    li.img-list-item {
+                        height: 480px;
+                    }
+                    li.img-list-item:nth-child(1) {
+                        width: 952px;
+                    }
+                    li.img-list-item:nth-child(2) {
+                        width: 464px;
+                    }
+                }
+                ul.img-list-box:nth-child(3) {
+                    li.img-list-item {
+                        height: 580px;
+                    }
+                    li.img-list-item:nth-child(1) {
+                        width: 586px;
+                    }
+                    li.img-list-item:nth-child(2) {
+                        width: 830px;
+                    }
+                }
+                ul.img-list-box:nth-child(4) {
+                    li.img-list-item {
+                        height: 460px;
+                    }
+                    li.img-list-item:nth-child(1) {
+                        width: 464px;
+                    }
+                    li.img-list-item:nth-child(2) {
+                        width: 342px;
+                    }
+                    li.img-list-item:nth-child(3) {
+                        width: 586px;
+                    }
+                }
+            }
+        }
     }
     .design-wrap.active {
         opacity: 1;
-        height: 200vh;
-        transition: 2s;
+        height: 2262px;
+        transition: 1.4s cubic-bezier(0.76, 0, 0.24, 1);
         transition-property: height, opacity;
-        display: flex;
     }
 }

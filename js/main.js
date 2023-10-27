@@ -37,7 +37,7 @@ $(()=>{
         $('header.main-header .search-icon img').attr('src', './img/search-icon.svg');
     });
 
-
+    /* design page */
     $('.design-btn').click(()=>{
         if($('.design-wrap').hasClass('active')){
             $('.design-wrap').removeClass('active');
@@ -49,4 +49,11 @@ $(()=>{
             $('.main-header').addClass('hidden');
         }
     });
+
+
+    /* a tag func remove */
+    $('a').click(function(e){
+        e.preventDefault();
+    });
+    $('a').attr('href', 'javascript:void(0)');
 });
