@@ -50,6 +50,15 @@ $(()=>{
         }
     });
 
+    $("#img-list-box").justifiedGallery({
+        rowHeight: 410,
+        maxRowHeight: 820,
+        lastRow: 'justify',
+        margins: 24,
+        randomize: false,
+        captions: false,
+    });
+
 
     /* a tag func remove */
     $('a').click(function(e){
