@@ -49,6 +49,13 @@ $(()=>{
             $('.main-header').addClass('hidden');
         }
     });
+    $('.logo-box > a').click(()=>{
+        if($('.design-wrap').hasClass('active')){
+            $('.design-wrap').removeClass('active');
+            $('.design-header').removeClass('active');
+            $('.main-header').removeClass('hidden');
+        }
+    });
 
     $("#img-list-box").justifiedGallery({
         rowHeight: 410,
