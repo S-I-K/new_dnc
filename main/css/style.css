@@ -349,27 +349,27 @@ height: calc(100vh + 140px) !important;
 }
 
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img01::before {
-  background: url(/main/img/work-link-img01.png) no-repeat center top/cover;
+  background: url(../img/work-link-img01.png) no-repeat center top/cover;
 }
 
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img02::before {
-  background: url(/main/img/work-link-img02.png) no-repeat center top/cover;
+  background: url(../img/work-link-img02.png) no-repeat center top/cover;
 }
 
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img03::before {
-  background: url(/main/img/work-link-img03.png) no-repeat center top/cover;
+  background: url(../img/work-link-img03.png) no-repeat center top/cover;
 }
 
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img04::before {
-  background: url(/main/img/work-link-img04.png) no-repeat center top/cover;
+  background: url(../img/work-link-img04.png) no-repeat center top/cover;
 }
 
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img05::before {
-  background: url(/main/img/work-link-img05.png) no-repeat center top/cover;
+  background: url(../img/work-link-img05.png) no-repeat center top/cover;
 }
 
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img06::before {
-  background: url(/main/img/work-link-img06.png) no-repeat center top/cover;
+  background: url(../img/work-link-img06.png) no-repeat center top/cover;
 }
 
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box::after {
