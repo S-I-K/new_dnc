@@ -1,382 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="디앤씨컴퍼니" /> 
-    <meta property="og:url" content="https://s-i-k.github.io/new_dnc/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="./img/logo.ico" /> 
-    <meta property="og:description" content="DNC Company WebSite Renewal Design !" />
-    <link rel="shortcut icon" href="./img/logo.ico">
-    <title>디앤씨컴퍼니</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="디앤씨컴퍼니" /> 
+        <title>디앤씨컴퍼니</title>
+        <!-- css -->
+        <link rel="stylesheet" href="/main/css/style.css">
+        <link rel="stylesheet" href="/common/css/header.css">
+        <link rel="stylesheet" href="/common/css/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/common/css/justifiedGallery.min.css">
+        <link rel="stylesheet" href="/common/css/swiper-bundle.min.css">
+        <!-- script -->
+        <script src='/common/js/jquery-3.7.0.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+        <script src='/common/js/swiper-bundle.min.js'></script>
+        <script src='/common/js/jquery.justifiedGallery.min.js'></script>
+        <script src='/main/js/main.js' defer></script>
+    </head>
 
-    <!-- css -->
-    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/justifiedGallery.min.css">
-    <!-- js -->
-    <script src="./js/jquery-3.7.0.min.js"></script>
-    <script src="./js/swiper-bundle.min.js"></script>
-    <script src="./js/jquery.justifiedGallery.min.js"></script>
-    <script src="./js/main.js" defer></script>
-</head>
-<body>
-    <div id="wrap">
-        <!-- 메인컨텐츠 전용 헤더 -->
-        <header class="main-header">
-            <div class="container">
-                <!-- logo -->
-                <div class="logo-box">
-                    <a href="#">
-                        <img src="./img/logo.svg" alt="">
-                    </a>
-                </div>
-                <!-- menu -->
-                <div class='menu-box'>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                디앤씨컴퍼니
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                종합홍보
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="design-btn">
-                                디자인
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                영상
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                행사
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                마케팅
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                인테리어
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                디앤씨컴퍼니소식
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- side icon box -->
-                <div class="side-icon-box">
-                    <ul>
-                        <li>
-                            <a href="#" class="search-icon">
-                                <img src="./img/search-icon.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="line"></span>
-                                <span class="line"></span>
-                                <span class="line"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <!-- 디자인컨텐츠 전용 헤더 -->
-        <header class="design-header">
-            <div class="container">
-                <!-- logo -->
-                <div class="logo-box">
-                    <a href="#">
-                        <img src="./img/logo_black.svg" alt="">
-                    </a>
-                </div>
-                <!-- menu -->
-                <div class='menu-box'>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                디앤씨컴퍼니 디자인소개
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                디자인 포트폴리오
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                디자인 견적문의
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="design-btn">
-                                대표 홈페이지 바로가기
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!-- side icon box -->
-                <div class="side-icon-box">
-                    <ul>
-                        <li>
-                            <a href="#" class="search-icon">
-                                <img src="./img/search-icon_black.svg" alt="">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="line"></span>
-                                <span class="line"></span>
-                                <span class="line"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </header>
 
-        <!-- 메인컨텐츠 -->
-        <div id='main-wrap-slider' class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <!-- slide1 -->
-                <div class="swiper-slide">
-                    <div class="section">
-                        <div id='key-visual-slider' class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide key-slide key-slide-01">
-                                    <div class="container">
-                                        <!-- title-box -->
-                                        <!-- <div class="title-box ani-desc01">
-                                            <h2 class="title">
-                                                <span>Draw your future</span>
-                                                <span>Continue to think</span>
-                                            </h2>
-                                            <p>
-                                                디앤씨는 끊임없이 생각합니다
-                                            </p>
-                                        </div> -->
-                                    </div>
-                                    <!-- bg-video-box -->
-                                    <div class="bg-video-box">
-                                        <iframe frameborder="0" src="https://www.youtube.com/embed/TcKGkzeuQWQ?si=yEL3irxtV1nxE7Pb&amp;controls=0&autoplay=1&mute=1&loop=1&playlist=TcKGkzeuQWQ&playsinline=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                    </div>
+    <body>
+        <!-- main content -->
+        <div id="wrap">
+            <!-- header -->
+            <header class="main-header">
+                <div class="container">
+                    <!-- logo -->
+                    <div class="logo-box">
+                        <a href="/">
+                            <img src="/common/img/logo(2).svg" alt="">
+                        </a>
+                    </div>
+                    <!-- menu -->
+                    <div class='menu-box'>
+                        <ul>
+                            <li>
+                                <a href="/about/" >
+                                    디앤씨컴퍼니
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    종합홍보
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/design/" >
+                                    디자인
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/video/">
+                                    영상
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    행사
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/marketing/" >
+                                    마케팅
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://dncit.cafe24.com/" target='_blank'>
+                                    인테리어
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/bbs/board.php?bo_table=0_notice" >
+                                    디앤씨컴퍼니 소식
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- side icon box -->
+                    <div class="side-icon-box">
+                        <ul>
+                            <li>
+                                <a href="#" class='menu-icon'>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- nav.menu-wrap -->
+                    <nav class='nav-menu-wrap'>
+                        <div class="container">
+                            <ul>
+                                <!-- menu01 -->
+                                <li>
+                                    <a href="#">
+                                        <span class='hover-text'>
+                                            Home
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- menu02 -->
+                                <li>
+                                    <a href="#">
+                                        <span class='hover-text'>
+                                            About
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- menu03 -->
+                                <li>
+                                    <a href="#">
+                                        <span class='hover-text'>
+                                            Works
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- menu04 -->
+                                <li>
+                                    <a href="#">
+                                        <span class='hover-text'>
+                                            Career
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- menu05 -->
+                                <li>
+                                    <a href="#">
+                                        <span class='hover-text'>
+                                            News
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- menu06 -->
+                                <li>
+                                    <a href="#">
+                                        <span class='hover-text'>
+                                            Contact
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            <!-- end: header -->
+            <div id='main-wrap-slider' class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- slide2 -->
+                    <div class="swiper-slide">
+                        <div class="section column">
+                            <!-- left -->
+                            <a href="#" class="work-link-box img01">
+                                <div class="work-link-txt-box ani-desc">
+                                    <p class="title">
+                                        PUBLICITY
+                                        <span class="icon-box">
+                                            <img src="/main/img/arrow-img01.svg" alt="">
+                                            <span>
+                                                go to<br/>
+                                                experience!
+                                            </span>
+                                        </span>
+                                    </p>
+                                    <p class="desc">
+                                        종합홍보
+                                    </p>
                                 </div>
-                                <!-- <div class="swiper-slide key-slide key-slide-02">
-                                    <div class="container">
-                                        <div class="title-box ani-desc01">
-                                            <h2 class="title">
-                                                <span>Draw your future</span>
-                                                <span>Continue to think</span>
-                                            </h2>
-                                            <p>
-                                                디앤씨는 끊임없이 생각합니다
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- <div class="swiper-slide key-slide key-slide-03">
-                                    <div class="container">
-                                        <div class="title-box ani-desc01">
-                                            <h2 class="title">
-                                                <span>Draw your future</span>
-                                                <span>Continue to think</span>
-                                            </h2>
-                                            <p>
-                                                디앤씨는 끊임없이 생각합니다
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                            </div>
-                            <div class="swiper-pagination key-visual"></div>
+                            </a>
+                            <!-- center -->
+                            <a href="/design/" class="work-link-box img02 design-btn" >
+                                <div class="work-link-txt-box ani-desc">
+                                    <p class="title">
+                                        DESIGN
+                                        <span class="icon-box">
+                                            <img src="/main/img/arrow-img01.svg" alt="">
+                                            <span>
+                                                go to<br/>
+                                                experience!
+                                            </span>
+                                        </span>
+                                    </p>
+                                    <p class="desc">
+                                        디자인
+                                    </p>
+                                </div>
+                            </a>
+                            <!-- right -->
+                            <a href="/video/" class="work-link-box img03">
+                                <div class="work-link-txt-box ani-desc">
+                                    <p class="title">
+                                        VIDEO
+                                        <span class="icon-box">
+                                            <img src="/main/img/arrow-img01.svg" alt="">
+                                            <span>
+                                                go to<br/>
+                                                experience!
+                                            </span>
+                                        </span>
+                                    </p>
+                                    <p class="desc">
+                                        영상
+                                    </p>
+                                </div>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <!-- slide2 -->
-                <div class="swiper-slide">
-                    <div class="section">
-                        <!-- left -->
-                        <a href="#" class="work-link-box img01">
-                            <div class="work-link-txt-box ani-desc">
-                                <p class="title">
-                                    PUBLICITY
-                                    <span class="icon-box">
-                                        <img src="./img/arrow-img01.svg" alt="">
-                                        <span>
-                                            go to<br/>
-                                            experience!
+
+                    <!-- slide3 -->
+                    <div class="swiper-slide">
+                        <div class="section column">
+                            <!-- left -->
+                            <a href="#" class="work-link-box img04">
+                                <div class="work-link-txt-box ani-desc">
+                                    <p class="title">
+                                        CONVENTION
+                                        <span class="icon-box">
+                                            <img src="/main/img/arrow-img01.svg" alt="">
+                                            <span>
+                                                go to<br/>
+                                                experience!
+                                            </span>
                                         </span>
-                                    </span>
-                                </p>
-                                <p class="desc">
-                                    종합홍보
-                                </p>
-                            </div>
-                        </a>
-                        <!-- center -->
-                        <a href="#" class="work-link-box img02 design-btn">
-                            <div class="work-link-txt-box ani-desc">
-                                <p class="title">
-                                    DESIGN
-                                    <span class="icon-box">
-                                        <img src="./img/arrow-img01.svg" alt="">
-                                        <span>
-                                            go to<br/>
-                                            experience!
+                                    </p>
+                                    <p class="desc">
+                                        행사
+                                    </p>
+                                </div>
+                            </a>
+                            <!-- center -->
+                            <a href="/marketing/" class="work-link-box img05" >
+                                <div class="work-link-txt-box ani-desc">
+                                    <p class="title">
+                                        MARKETING
+                                        <span class="icon-box">
+                                            <img src="/main/img/arrow-img01.svg" alt="">
+                                            <span>
+                                                go to<br/>
+                                                experience!
+                                            </span>
                                         </span>
-                                    </span>
-                                </p>
-                                <p class="desc">
-                                    디자인
-                                </p>
-                            </div>
-                        </a>
-                        <!-- right -->
-                        <a href="#" class="work-link-box img01">
-                            <div class="work-link-txt-box ani-desc">
-                                <p class="title">
-                                    VIDEO
-                                    <span class="icon-box">
-                                        <img src="./img/arrow-img01.svg" alt="">
-                                        <span>
-                                            go to<br/>
-                                            experience!
+                                    </p>
+                                    <p class="desc">
+                                        마케팅
+                                    </p>
+                                </div>
+                            </a>
+                            <!-- right -->
+                            <a href="https://dncit.cafe24.com/" class="work-link-box img06" target='_blank'>
+                                <div class="work-link-txt-box ani-desc">
+                                    <p class="title">
+                                        INTERIOR
+                                        <span class="icon-box">
+                                            <img src="/main/img/arrow-img01.svg" alt="">
+                                            <span>
+                                                go to<br/>
+                                                experience!
+                                            </span>
                                         </span>
-                                    </span>
-                                </p>
-                                <p class="desc">
-                                    영상
-                                </p>
-                            </div>
-                        </a>
+                                    </p>
+                                    <p class="desc">
+                                        인테리어
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <!-- slide3 -->
-                <div class="swiper-slide">
-                    <div class="section">
-                        <!-- left -->
-                        <a href="#" class="work-link-box img02">
-                            <div class="work-link-txt-box ani-desc">
-                                <p class="title">
-                                    CONVENTION
-                                    <span class="icon-box">
-                                        <img src="./img/arrow-img01.svg" alt="">
-                                        <span>
-                                            go to<br/>
-                                            experience!
-                                        </span>
-                                    </span>
-                                </p>
-                                <p class="desc">
-                                    행사
-                                </p>
+
+                    <!-- slide4 -->
+                    <div class="swiper-slide">
+                        <!-- partners-section -->
+                        <div class="section partners-section">
+                            <div class="container">
+                                <!-- title -->
+                                <div class="partners-title-box">
+                                    <h2>
+                                        Partners.
+                                    </h2>
+                                    <p>
+                                        고객만족을 최우선으로<br/>
+                                        고객의 입장에서 생각하고 행동합니다.
+                                    </p>
+                                </div>
+
+                                <!-- client list -->
+                                <div id="partners-list-box">
+                                    <a href="#">
+                                        <img alt="caption for image 1" src="/main/img/partners-logo01.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo02.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 1" src="/main/img/partners-logo03.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo04.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 1" src="/main/img/partners-logo05.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo06.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo07.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo08.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo09.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo10.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo11.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo12.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo13.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo14.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo15.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo16.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo17.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo18.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo19.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo20.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo21.png"/>
+                                    </a>
+                                    <!-- // -->
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo22.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo23.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo24.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo25.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo26.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo27.png"/>
+                                    </a>
+                                    <a href="#">
+                                        <img alt="caption for image 2" src="/main/img/partners-logo28.png"/>
+                                    </a>
+                                </div>
                             </div>
-                        </a>
-                        <!-- center -->
-                        <a href="#" class="work-link-box img01">
-                            <div class="work-link-txt-box ani-desc">
-                                <p class="title">
-                                    MARKETING
-                                    <span class="icon-box">
-                                        <img src="./img/arrow-img01.svg" alt="">
-                                        <span>
-                                            go to<br/>
-                                            experience!
-                                        </span>
-                                    </span>
-                                </p>
-                                <p class="desc">
-                                    마케팅
-                                </p>
-                            </div>
-                        </a>
-                        <!-- right -->
-                        <a href="#" class="work-link-box img02">
-                            <div class="work-link-txt-box ani-desc">
-                                <p class="title">
-                                    INTERIOR
-                                    <span class="icon-box">
-                                        <img src="./img/arrow-img01.svg" alt="">
-                                        <span>
-                                            go to<br/>
-                                            experience!
-                                        </span>
-                                    </span>
-                                </p>
-                                <p class="desc">
-                                    인테리어
-                                </p>
-                            </div>
-                        </a>
+                        </div>
                     </div>
+
+                    <!-- slide5 -->
+                    <div class="swiper-slide">
+                        <!-- notice-section -->
+                        <div class="section notice-section">
+                            <!-- background video -->
+                            <div class="video-box">
+                                <video src="https://newsletter1.cafe24.com/new_dnc/img/notice-bg.mp4" autoplay muted loop playsinline data-object-fit="cover"></video>
+                            </div>
+                            <div class="container">
+                                <div class="notice-title-box">
+                                    <h2 class="title">
+                                        DNC People.
+                                    </h2>
+                                    <span class="comment">
+                                        함께 즐겁게 일하는 디앤씨의 일상을 공유 합니다.
+                                    </span>
+                                    <div class="btn-box">
+                                        <a href="/bbs/board.php?bo_table=notice_2">
+                                            <span>
+                                                디앤씨 소식
+                                            </span>
+                                        </a>
+                                        <a href="#">
+                                            <span>
+                                                문의하기
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- footer -->
+                        <div class="section footer-section">
+                            <div class="container">
+                                <!-- back top -->
+                                <a href="#" class="back-top-btn main-scroll">
+                                    <div class="arrow-icon-box">
+                                        <img src="/main/img/arrow-img02.svg" alt="">
+                                    </div>
+                                    <span>
+                                        Back Top
+                                    </span>
+                                </a>
+                                <!-- copyright -->
+                                <span class="copyrights">
+                                    <span>
+                                        2023 &copy; The DNC Company.All rights reserved.
+                                    </span>
+                                </span>
+                                <!-- privacy -->
+                                <a href="#" class="privacy">
+                                    <span>
+                                        개인정보취급방침
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- //footer -->
+                    </div>
+
                 </div>
+                <div id='main-wrap-pagination' class="swiper-pagination"></div>
             </div>
-            <div id='main-wrap-pagination' class="swiper-pagination"></div>
         </div>
-        <!-- 디자인컨텐츠 -->
-        <div class="design-wrap">
-            <div class="img-list-area">
-                <div class="container">
-                    <div id="img-list-box">
-                        <a href="#">
-                            <img alt="caption for image 1" src="./img/design-item01.png"/>
-                        </a>
-                        <a href="#">
-                            <img alt="caption for image 2" src="./img/design-item02.png"/>
-                        </a>
-                        <a href="#">
-                            <img alt="caption for image 1" src="./img/design-item03.png"/>
-                        </a>
-                        <a href="#">
-                            <img alt="caption for image 2" src="./img/design-item04.png"/>
-                        </a>
-                        <a href="#">
-                            <img alt="caption for image 1" src="./img/design-item05.png"/>
-                        </a>
-                        <a href="#">
-                            <img alt="caption for image 2" src="./img/design-item06.png"/>
-                        </a>
-                        <a href="#">
-                            <img alt="caption for image 2" src="./img/design-item07.png"/>
-                        </a>
-                        <a href="#">
-                            <img alt="caption for image 2" src="./img/design-item08.png"/>
-                        </a>
-                        <a href="#">
-                            <img alt="caption for image 2" src="./img/design-item09.png"/>
-                        </a>
-                        <a href="#">
-                            <img alt="caption for image 2" src="./img/design-item10.png"/>
-                        </a>
-                        <a href="#">
-                            <img alt="caption for image 2" src="./img/design-item11.png"/>
-                        </a>
-                        <a href="#">
-                            <img alt="caption for image 2" src="./img/design-item02.png"/>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+        <!-- end: main content -->
+    </body>
 </html>

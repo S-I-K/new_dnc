@@ -3,15 +3,118 @@ console.log('ready to js');
 $(()=>{
     console.log($);
     console.log('ready to jq');
+
+    /* nav event */
+    $nav_menu_wrap = $('nav.nav-menu-wrap');
+    $hover_text = $('.hover-text');
+    $hover_text.each(function(){
+        $(this).attr('data-hover', $(this).text());
+    });
+    
+    /* menu event */
+    $menu_icon = $('.menu-icon');
+    $menu_icon.click(function(e){
+        e.preventDefault();
+        if(!$nav_menu_wrap.hasClass('open')){
+            $nav_menu_wrap.addClass('open');
+            $('.menu-box').addClass('nav-white');
+            $('.side-icon-box').addClass('nav-white');
+            $menu_texts = gsap.utils.toArray($hover_text);
+            $menu_texts.forEach( (text, index) => {
+                gsap.fromTo(text, 1, {
+                    opacity: 0,
+                    y: "100%",
+                },{
+                    opacity: 1,
+                    y: "0%",
+                    duration: .8,
+                    delay: (index + 1) * .2,
+                });
+            })
+        }else{
+            setTimeout(()=>{
+                $nav_menu_wrap.removeClass('open');
+                $('.menu-box').removeClass('nav-white');
+                $('.side-icon-box').removeClass('nav-white');
+            }, 2000);
+            $menu_texts = gsap.utils.toArray($hover_text);
+            $menu_texts.forEach( (text, index) => {
+                gsap.fromTo(text, 1, {
+                    opacity: 1,
+                    y: "0%",
+                },{
+                    opacity: 0,
+                    y: "-100%",
+                    duration: .8,
+                    delay: (index + 1) * .2,
+                });
+            })
+        }
+    });
+
+    $hover_text.mouseenter(function(e){
+        $hover_text.css({
+            opacity: .4,
+        });
+        $(this).css({
+            'transform': 'translateY(-100%)',
+            'transform-origin': '0% 0%',
+            'opacity': 1,
+        });
+    })
+    .mouseleave(function(){
+        $(this).css({
+            'transform': 'translateY(0%)',
+            'transform-origin': '0% 0%'
+        });
+        $hover_text.css({
+            opacity: 1,
+        });
+    });
+
+    /*=====================
+    Swiper
+    =====================*/
     /* wrap-slider */
-    var swiper = new Swiper("#main-wrap-slider", {
+    var main_swiper = new Swiper("#main-wrap-slider", {
         direction: "vertical",
+        slidesPerView: 'auto',
+        spaceBetween: 0,
         mousewheel: true,
+        autoHeight: true,
+        resistance : false,
+        speed: 800,
+        observer : true,
+        observeParents : true,
+        centeredSlides: false,
+        mousewheelControl: true,
+        effect: 'slide',
+        mousewheel: {
+            releaseOnEdges: true,
+        },
         pagination: {
             el: "#main-wrap-pagination",
             clickable: true,
         },
+        on: {
+            reachEnd: function () {
+            },
+        },
     });
+
+    $('.back-top-btn.main-scroll').click(function(e){
+        e.preventDefault();
+        main_swiper.slideTo(0, 1200);
+    });
+    $('.back-top-btn.sub-scroll').click(function(e){
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1800,)
+        return false;
+    });
+
+
     /* key-visual-slider */
     var swiper = new Swiper("#key-visual-slider", {
         /* spaceBetween: 0,
@@ -27,35 +130,21 @@ $(()=>{
             type: "progressbar",
         }, */
     });
-    /* header */
-    $('header.main-header').mouseenter(()=>{
-        $('header.main-header .logo-box img').attr('src', './img/logo_black.svg');
-        $('header.main-header .search-icon img').attr('src', './img/search-icon_black.svg');
-    })
-    .mouseleave(()=>{
-        $('header.main-header .logo-box img').attr('src', './img/logo.svg');
-        $('header.main-header .search-icon img').attr('src', './img/search-icon.svg');
+
+
+    /* history swiper */
+    var swiper = new Swiper("#history-slider", {
+        spaceBetween: 0,
+        slidesPerView: '2',
+        speed: 1000,
+        loop: true,
+        breakpoints: {
+            450: {
+                slidesPerView: '4',
+            }
+        }
     });
 
-    /* design page */
-    $('.design-btn').click(()=>{
-        if($('.design-wrap').hasClass('active')){
-            $('.design-wrap').removeClass('active');
-            $('.design-header').removeClass('active');
-            $('.main-header').removeClass('hidden');
-        }else{
-            $('.design-wrap').addClass('active');
-            $('.design-header').addClass('active');
-            $('.main-header').addClass('hidden');
-        }
-    });
-    $('.logo-box > a').click(()=>{
-        if($('.design-wrap').hasClass('active')){
-            $('.design-wrap').removeClass('active');
-            $('.design-header').removeClass('active');
-            $('.main-header').removeClass('hidden');
-        }
-    });
 
     $("#img-list-box").justifiedGallery({
         rowHeight: 410,
@@ -65,11 +154,200 @@ $(()=>{
         randomize: false,
         captions: false,
     });
+    $("#partners-list-box").justifiedGallery({
+        rowHeight: 55,
+        maxRowHeight: 0,
+        lastRow: 'justify',
+        margins: 24,
+        randomize: false,
+        captions: false,
+    });
+
+
+    /*=====================
+    GSAP
+    =====================*/
+    gsap.registerPlugin(ScrollTrigger);
+    $titles = gsap.utils.toArray('.board-content-title > a');
+    $titles.forEach(title => {
+        gsap.to(title, {
+            'transform': 'translateY(0px)',
+            'opacity': 1,
+            'background-size': '100% 100%',
+            'duration': 2,
+            'ease': 'ease',
+            scrollTrigger: {
+                markers: false,
+                trigger: title,
+                start: '-20% 100%',
+                end: 'top 70%',
+                scrub: 2,
+                // toggleClass: 'active',
+            }
+        })
+    });
+
+    gsap.fromTo('.gsap-fadeup-01', {
+        y: 20,
+        opacity: 0,
+    },{
+        y: 0,
+        opacity: 1,
+        duration: .4,
+        delay: .8,
+    });
+
+    gsap.fromTo('.gsap-fadeup-02', {
+        y: 20,
+        opacity: 0,
+    },{
+        y: 0,
+        opacity: 1,
+        duration: .4,
+        delay: 1,
+    });
+
+    gsap.fromTo('.gsap-fadeup-03', {
+        y: 20,
+        opacity: 0,
+    },{
+        y: 0,
+        opacity: 1,
+        duration: .4,
+        delay: 1.2,
+    });
+
+    gsap.fromTo('.gsap-opacity-01', {
+        opacity: 0,
+    },{
+        opacity: 1,
+        duration: 1,
+        delay: 1.2,
+    });
+
+
+    $parallax_img = gsap.utils.toArray('.about-content-wrap .bg-img-box > img');
+    $parallax_img.forEach(img => {
+        gsap.fromTo(img, {
+            y: '-20%',
+        }, {
+            'ease': 'ease',
+            'duration': .4,
+            y: '20%',
+            scrollTrigger: {
+                markers: false,
+                trigger: img,
+                start: '20% 100%',
+                end: '240% 0%',
+                scrub: 1,
+                // toggleClass: 'active',
+            }
+        })
+    });
+    
+    /* GSAP 반응형 코드 */
+    /* ScrollTrigger.matchMedia({
+        '(max-width: 450px)':()=>{
+            $parallax_img = gsap.utils.toArray('.about-content-wrap .bg-img-box > img');
+            $parallax_img.forEach(img => {
+                gsap.fromTo(img, {
+                    y: '-20%',
+                }, {
+                    'ease': 'ease',
+                    'duration': .4,
+                    y: '20%',
+                    scrollTrigger: {
+                        markers: true,
+                        trigger: img,
+                        start: '20% 100%',
+                        end: '240% 0%',
+                        scrub: 1,
+                        // toggleClass: 'active',
+                    }
+                })
+            });
+        },
+    }); */
+
+
+
+
 
 
     /* a tag func remove */
-    $('a').click(function(e){
-        e.preventDefault();
+    // $('a').click(function(e){
+    //     e.preventDefault();
+    // });
+    // $('a').attr('href', 'javascript:void(0)');
+
+    /*
+    hash-text-box 안의 span에 마우스를 올렸을 때
+    해당 span의 인덱스값을 참조해서
+    hash-img-box 안의 img에 클래스를 추가.
+    */
+    $hash_text = $('.hash-text-box span');
+    $hash_img = $('.hash-img-box .hash-img');
+
+    console.log($hash_text);
+    console.log($hash_img);
+
+    $hash_text.mouseenter(function(e){
+        $this_hash_img = $hash_img.eq($(this).index());
+
+        if(!$(this).hasClass('active')) {
+            $(this).addClass('active');
+            $(this).siblings().css({
+                'opacity': .4,
+            });
+            $this_hash_img.addClass('active');
+        }else {
+
+        }
+    })
+    .mouseleave(function(){
+        $hash_text.css({
+            'opacity': 1,
+            'color': '#fff',
+        })
+        $hash_text.removeClass('active');
+        $hash_img.removeClass('active');
     });
-    $('a').attr('href', 'javascript:void(0)');
+
+
+
+
+    let lastScrollTop = 0;
+    const delta = 15;
+
+    $(window).scroll(function(event){
+        const st = $(this).scrollTop();
+        if(Math.abs(lastScrollTop - st) <= delta) return;
+
+        if((st > lastScrollTop) && (lastScrollTop > 0)) {
+            $('header').addClass('header-hide');
+        }else{
+            $('header').removeClass('header-hide');
+        };
+        lastScrollTop = st;
+    });
+
+
+
+
+
+
+
 });
+
+
+
+const lenis = new Lenis();
+lenis.on('scroll', (e) => {
+    console.log(e);
+})
+function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
+// AOS.init();

@@ -1,0 +1,724 @@
+/* variable css */
+#wrap.marketing-page {
+  width: 100%;
+  height: auto;
+  padding-top: 240px;
+}
+#wrap.marketing-page .title-section .container .title-box p b {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 800;
+}
+#wrap.marketing-page .hash-content {
+  background: #000;
+  height: 100vh;
+  position: relative;
+}
+#wrap.marketing-page .hash-content .container {
+  flex-direction: column;
+}
+#wrap.marketing-page .hash-content .container .btn-box {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 50px;
+}
+#wrap.marketing-page .hash-content .container .btn-box a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 24px;
+  border: 2px solid #fff;
+  border-radius: 300px;
+}
+#wrap.marketing-page .hash-content .container .hash-img-box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap.marketing-page .hash-content .container .hash-img-box .hash-img {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.8s ease;
+  position: absolute;
+}
+#wrap.marketing-page .hash-content .container .hash-img-box .hash-img.active {
+  opacity: 1;
+  transform: scale(1.04);
+  transition: all 0.8s ease;
+}
+#wrap.marketing-page .hash-content .container .hash-img-box .hash-img:nth-child(1) {
+  background: url(../img/hash-img01.jpg) no-repeat center center/cover;
+}
+#wrap.marketing-page .hash-content .container .hash-img-box .hash-img:nth-child(2) {
+  background: url(../img/hash-img02.jpg) no-repeat center center/cover;
+}
+#wrap.marketing-page .hash-content .container .hash-img-box .hash-img:nth-child(3) {
+  background: url(../img/hash-img03.jpg) no-repeat center center/cover;
+}
+#wrap.marketing-page .hash-content .container .hash-img-box .hash-img:nth-child(4) {
+  background: url(../img/hash-img04.jpg) no-repeat center center/cover;
+}
+#wrap.marketing-page .hash-content .container .hash-text-box {
+  position: relative;
+  z-index: 2;
+}
+#wrap.marketing-page .hash-content .container .hash-text-box span {
+  display: inline-block;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.6;
+  letter-spacing: -2px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+#wrap.marketing-page .hash-content .container .hash-text-box span:nth-child(1).active {
+  color: #2a2a2a !important;
+}
+#wrap.marketing-page .hash-content .container .hash-text-box span:nth-child(2).active {
+  color: #2a2a2a !important;
+}
+#wrap.marketing-page .hash-content .container .hash-text-box span:nth-child(3).active {
+  color: #2a2a2a !important;
+}
+#wrap.marketing-page .hash-content .container .hash-text-box span:nth-child(4).active {
+  color: #2a2a2a !important;
+}
+#wrap.marketing-page .hash-content .container .hash-text-box span:not(:last-child) {
+  margin-right: 58px;
+}
+#wrap.marketing-page .marketing-service-content {
+  padding-top: 200px;
+}
+#wrap.marketing-page .marketing-service-content .content-box .container .title-box p b {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 800;
+}
+#wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+#wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box h3.list-title {
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  color: #2a2a2a;
+  position: relative;
+  padding-top: 50px;
+  margin-bottom: 24px;
+}
+#wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box h3.list-title::after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 6px;
+  background: #036EB8;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box p {
+  width: 60%;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.8px;
+  line-height: 1.6;
+  color: #2a2a2a;
+  word-break: keep-all;
+}
+#wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box p.category {
+  color: #999;
+  font-weight: 400;
+  font-size: 16px;
+}
+#wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box p:not(:last-child) {
+  margin-bottom: 14px;
+}
+#wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box p.sub-para {
+  color: #abb8c3;
+}
+#wrap.marketing-page .marketing-service-content.marketing-advantage-content {
+  padding-top: 200px;
+}
+#wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .title-box p b {
+  display: inline-block;
+  font-weight: 800;
+}
+#wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+#wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box h3.list-title {
+  font-family: "SUIT Variable", sans-serif;
+  font-size: 54px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  color: #2a2a2a;
+  position: relative;
+  padding-top: 50px;
+  margin-bottom: 24px;
+}
+#wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box h3.list-title::after {
+  content: "";
+  display: block;
+  width: 34px;
+  height: 6px;
+  background: #036EB8;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box p {
+  width: 60%;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: -0.8px;
+  line-height: 1.6;
+  color: #2a2a2a;
+  word-break: keep-all;
+}
+#wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box p.category {
+  color: #999;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box p.category span {
+  position: relative;
+  padding-left: 8px;
+  display: flex;
+  align-items: center;
+}
+#wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box p.category span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 1px;
+  height: 12px;
+  background: #999;
+}
+#wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box p:not(:last-child) {
+  margin-bottom: 14px;
+}
+#wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box p.sub-para {
+  color: #abb8c3;
+}
+#wrap.marketing-page .marketing-list-content {
+  background: #1e1e1e;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+#wrap.marketing-page .marketing-list-content .bg-box {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+#wrap.marketing-page .marketing-list-content .bg-box video {
+  width: auto;
+  max-width: none;
+  height: 100%;
+}
+#wrap.marketing-page .marketing-list-content .container {
+  position: relative;
+  z-index: 2;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#wrap.marketing-page .marketing-list-content .container .content-sticky-box {
+  width: 45%;
+  position: relative;
+  height: 1700px;
+}
+#wrap.marketing-page .marketing-list-content .container .content-sticky-box .text-box {
+  height: 220px;
+  margin-top: 240px;
+  position: sticky;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 42px;
+}
+#wrap.marketing-page .marketing-list-content .container .content-sticky-box .text-box h2.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1;
+  letter-spacing: -2px;
+  color: #fff;
+  margin-bottom: 34px;
+}
+#wrap.marketing-page .marketing-list-content .container .content-sticky-box .text-box p.desc {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  color: #fff;
+  word-break: keep-all;
+}
+#wrap.marketing-page .marketing-list-content .container .content-sticky-box .text-box::after {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 100%;
+  background: #036EB8;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap {
+  width: 50%;
+  height: 1700px;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap .list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap .list-box span.list-title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap .list-box span.list-desc {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.8px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 18px;
+  word-break: keep-all;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap .list-box ul.list-menu li {
+  opacity: 0.6;
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap .list-box ul.list-menu li span {
+  display: inline-block;
+  position: relative;
+  padding-left: 12px;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.8px;
+  color: #fff;
+  word-break: keep-all;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap .list-box ul.list-menu li span span.notice {
+  padding-left: 22px;
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+  word-break: keep-all;
+  padding: 0;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap .list-box ul.list-menu li span span.notice::after {
+  display: none;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap .list-box ul.list-menu li span:not(:last-child) {
+  margin-bottom: 4px;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap .list-box ul.list-menu li span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  height: 16px;
+  width: 2px;
+  background: #fff;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap .list-box ul.list-menu li:hover {
+  opacity: 1;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap .list-box ul.list-menu li:not(:last-child) {
+  margin-bottom: 16px;
+}
+#wrap.marketing-page .marketing-list-content .container .list-wrap .list-box ul.list-menu:not(:last-child) {
+  margin-bottom: 40px;
+}
+#wrap.marketing-page .marketing-list-content {
+  /*         .container.imc {
+              .content-sticky-box {
+                  padding-bottom: 230px;
+              }
+              .list-wrap {
+                  .list-box {
+                      height: 300px;
+                  }
+                  .list-box:not(:last-child) {
+                      margin-bottom: 400px;
+                  }
+              }
+          }
+          .container.search {
+              .content-sticky-box {
+                  padding-bottom: 190px;
+              }
+              .list-wrap {
+                  .list-box {
+
+                  }
+                  .list-box:not(:last-child) {
+
+                  }
+              }
+          }
+          .container.display {
+              .content-sticky-box {
+                  padding-bottom: 210px;
+                  height: 2620px;
+              }
+              .list-wrap {
+                  .list-box {
+                      height: 420px;
+                  }
+                  .list-box:not(:last-child) {
+
+                  }
+              }
+          }
+          .container.social {
+              .content-sticky-box {
+                  height: 1800px;
+                  padding-bottom: 300px;
+              }
+              .list-wrap {
+                  .list-box {
+                      height: 420px;
+                  }
+                  .list-box:not(:last-child) {
+
+                  }
+              }
+          }
+          .container.youtube {
+              .content-sticky-box {
+                  height: 2660px;
+              }
+              .list-wrap {
+                  padding: 500px 0 160px 0;
+                  .list-box {
+                      height: 800px;
+                  }
+                  .list-box:not(:last-child) {
+
+                  }
+              }
+          } */
+}
+#wrap.marketing-page .process-content {
+  padding-top: 200px;
+}
+#wrap.marketing-page .process-content .content-box .container {
+  flex-direction: row;
+  align-items: flex-start;
+}
+#wrap.marketing-page .process-content .content-box .container .title-box {
+  width: 50%;
+}
+#wrap.marketing-page .process-content .content-box .container .process-list-wrap {
+  border-left: 4px solid #036EB8;
+  width: 50%;
+  padding-left: 40px;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+#wrap.marketing-page .process-content .content-box .container .process-list-wrap ul h4.list-title {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: -1px;
+  color: #2a2a2a;
+  margin-bottom: 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#wrap.marketing-page .process-content .content-box .container .process-list-wrap ul h4.list-title::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../img/process-arrow-down-icon.svg) no-repeat center/contain;
+  position: absolute;
+  left: -54px;
+}
+#wrap.marketing-page .process-content .content-box .container .process-list-wrap ul li span {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+}
+#wrap.marketing-page .process-content .content-box .container .process-list-wrap ul li span.light-color {
+  color: #999;
+}
+#wrap.marketing-page .process-content .content-box .container .process-list-wrap ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+#wrap.marketing-page .process-content .content-box .container .process-list-wrap ul:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 450px) {
+  #wrap.marketing-page .hash-content {
+    height: auto;
+  }
+  #wrap.marketing-page .hash-content .container {
+    padding: 80px 16px;
+  }
+  #wrap.marketing-page .hash-content .container .hash-text-box span {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  #wrap.marketing-page .hash-content .container .hash-text-box span:not(:last-child) {
+    margin: 0;
+  }
+  #wrap.marketing-page .marketing-service-content {
+    padding-top: 100px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box {
+    width: 100%;
+    height: auto;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box h3.list-title {
+    font-size: 24px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box p {
+    width: 100%;
+    font-size: 14px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap:last-child {
+    margin-bottom: 90px;
+  }
+  #wrap.marketing-page .marketing-list-content {
+    padding: 80px 0;
+  }
+  #wrap.marketing-page .marketing-list-content .container {
+    flex-direction: column;
+  }
+  #wrap.marketing-page .marketing-list-content .container .content-sticky-box {
+    width: 100%;
+    height: auto;
+    margin-bottom: 42px;
+  }
+  #wrap.marketing-page .marketing-list-content .container .content-sticky-box .text-box {
+    position: unset;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    transform: none;
+  }
+  #wrap.marketing-page .marketing-list-content .container .content-sticky-box .text-box h2.title {
+    font-size: 52px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    padding-bottom: 18px;
+    position: relative;
+  }
+  #wrap.marketing-page .marketing-list-content .container .content-sticky-box .text-box h2.title::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 6px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #036EB8;
+  }
+  #wrap.marketing-page .marketing-list-content .container .content-sticky-box .text-box p.desc {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  #wrap.marketing-page .marketing-list-content .container .content-sticky-box .text-box::after {
+    display: none;
+  }
+  #wrap.marketing-page .marketing-list-content .container .list-wrap {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  #wrap.marketing-page .marketing-list-content .container .list-wrap .list-box span.list-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  #wrap.marketing-page .marketing-list-content .container .list-wrap .list-box span.list-desc {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  #wrap.marketing-page .marketing-list-content .container .list-wrap .list-box ul.list-menu li span {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  #wrap.marketing-page .marketing-list-content .container .list-wrap .list-box ul.list-menu li span::after {
+    height: 10px;
+  }
+  #wrap.marketing-page .marketing-list-content .container .list-wrap .list-box:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  #wrap.marketing-page .marketing-list-content .container:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content {
+    padding-top: 100px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box {
+    width: 100%;
+    height: auto;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box h3.list-title {
+    font-size: 24px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box p {
+    width: 100%;
+    font-size: 14px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap:last-child {
+    margin-bottom: 90px;
+  }
+  #wrap.marketing-page .process-content {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+  #wrap.marketing-page .process-content .content-box .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #wrap.marketing-page .process-content .content-box .container .title-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #wrap.marketing-page .process-content .content-box .container .process-list-wrap {
+    width: 100%;
+    padding-top: 32px;
+    padding-left: 14px;
+    padding-bottom: 0;
+    border-left: 2px solid #036EB8;
+  }
+  #wrap.marketing-page .process-content .content-box .container .process-list-wrap ul h4.list-title {
+    font-size: 18px;
+    margin-bottom: 18px;
+  }
+  #wrap.marketing-page .process-content .content-box .container .process-list-wrap ul h4.list-title::before {
+    width: 14px;
+    height: 14px;
+    left: -22px;
+  }
+  #wrap.marketing-page .process-content .content-box .container .process-list-wrap ul li span {
+    font-size: 14px;
+  }
+  #wrap.marketing-page .process-content .content-box .container .process-list-wrap ul li span span.light-color {
+    display: block;
+    margin-top: 4px;
+  }
+  #wrap.marketing-page .process-content .content-box .container .process-list-wrap ul li:not(:last-child) {
+    margin-bottom: 12px;
+  }
+  #wrap.marketing-page .process-content .content-box .container .process-list-wrap ul:not(:last-child) {
+    margin-bottom: 60px;
+  }
+}
