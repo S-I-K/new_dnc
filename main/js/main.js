@@ -10,15 +10,20 @@ $(()=>{
     $hover_text.each(function(){
         $(this).attr('data-hover', $(this).text());
     });
-    
+
+
+    const logo_src = $('.logo-box > a > img').attr('src');
     /* menu event */
     $menu_icon = $('.menu-icon');
     $menu_icon.click(function(e){
         e.preventDefault();
         if(!$nav_menu_wrap.hasClass('open')){
             $nav_menu_wrap.addClass('open');
+            $('.logo-box > a > img').attr('src', './common/img/logo-white.svg');
             $('.menu-box').addClass('nav-white');
             $('.side-icon-box').addClass('nav-white');
+            $('.burger-box').addClass('active');
+            $('.menu-box').addClass('hide');
             $menu_texts = gsap.utils.toArray($hover_text);
             $menu_texts.forEach( (text, index) => {
                 gsap.fromTo(text, 1, {
@@ -33,9 +38,12 @@ $(()=>{
             })
         }else{
             setTimeout(()=>{
+                $('.logo-box > a > img').attr('src', logo_src);
                 $nav_menu_wrap.removeClass('open');
                 $('.menu-box').removeClass('nav-white');
                 $('.side-icon-box').removeClass('nav-white');
+                $('.burger-box').removeClass('active');
+                $('.menu-box').removeClass('hide');
             }, 2000);
             $menu_texts = gsap.utils.toArray($hover_text);
             $menu_texts.forEach( (text, index) => {
@@ -99,7 +107,36 @@ $(()=>{
         on: {
             reachEnd: function () {
             },
+            activeIndexChange : function() {
+                // if (this.realIndex >= (this.slides.length / 2 - 1)) {
+                if (this.realIndex >= 1) {
+                    $('.floating-box').css({
+                        'opacity': '1',
+                        'pointer-events': 'unset',
+                    });
+                } else {
+                    $('.floating-box').css({
+                        'opacity': '0',
+                        'pointer-events': 'none',
+                    });
+                }
+            },
         },
+        
+    });
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() >= 400) {
+            $('.floating-box').css({
+                'opacity': '1',
+                'pointer-events': 'unset',
+            });
+        } else {
+            $('.floating-box').css({
+                'opacity': '0',
+                'pointer-events': 'none',
+            });
+        }
     });
 
     $('.back-top-btn.main-scroll').click(function(e){
@@ -113,24 +150,6 @@ $(()=>{
         }, 1800,)
         return false;
     });
-
-
-    /* key-visual-slider */
-    var swiper = new Swiper("#key-visual-slider", {
-        /* spaceBetween: 0,
-        centeredSlides: true,
-        loop: true,
-        effect: "fade",
-        autoplay: {
-            delay: 6000,
-            disableOnInteraction: false
-        },
-        pagination: {
-            el: ".swiper-pagination.key-visual",
-            type: "progressbar",
-        }, */
-    });
-
 
     /* history swiper */
     var swiper = new Swiper("#history-slider", {
@@ -152,6 +171,14 @@ $(()=>{
         lastRow: 'justify',
         margins: 24,
         randomize: false,
+        captions: false,
+    });
+    $("#img-list-box.publicity").justifiedGallery({
+        rowHeight: 420,
+        maxRowHeight: 900,
+        lastRow: 'justify',
+        margins: 24,
+        randomize: true,
         captions: false,
     });
     $("#partners-list-box").justifiedGallery({
@@ -288,8 +315,8 @@ $(()=>{
     $hash_text = $('.hash-text-box span');
     $hash_img = $('.hash-img-box .hash-img');
 
-    console.log($hash_text);
-    console.log($hash_img);
+    // console.log($hash_text);
+    // console.log($hash_img);
 
     $hash_text.mouseenter(function(e){
         $this_hash_img = $hash_img.eq($(this).index());
@@ -331,19 +358,13 @@ $(()=>{
         lastScrollTop = st;
     });
 
-
-
-
-
-
-
 });
 
 
 
 const lenis = new Lenis();
 lenis.on('scroll', (e) => {
-    console.log(e);
+    // console.log(e);
 })
 function raf(time) {
     lenis.raf(time)

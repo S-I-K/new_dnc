@@ -1,0 +1,1127 @@
+@charset "UTF-8";
+/* variable css */
+/* 쓸데없는거 치우기 */
+#header {
+  display: none;
+}
+
+.sub_top.sub2 {
+  display: none;
+}
+
+#footer {
+  display: none;
+}
+
+/* end: 쓸데없는거 치우기 */
+#wrap.porpol-page {
+  width: 100%;
+  height: auto;
+  padding-top: 240px;
+  background: #13207C;
+  /* 큰 제목 */
+  /* gallery-content-wrap */
+  /* footer-section */
+}
+#wrap.porpol-page header {
+  background: #13207C;
+}
+#wrap.porpol-page header .container .menu-box ul li a {
+  color: #fff;
+}
+#wrap.porpol-page header .container .side-icon-box ul li a {
+  color: #fff;
+}
+#wrap.porpol-page header .container .side-icon-box ul li a span.line {
+  background: #fff;
+}
+#wrap.porpol-page .title-section .container {
+  /* sub-title-box */
+  /* title-box */
+}
+#wrap.porpol-page .title-section .container .sub-title-box span {
+  color: #fff;
+}
+#wrap.porpol-page .title-section .container .title-box h2.title {
+  color: #fff;
+}
+#wrap.porpol-page .title-section .container .title-box p {
+  color: #fff;
+}
+#wrap.porpol-page .gallery-content-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* 관리자버튼 나중에 보여지게 */
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a {
+  width: 100%;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b {
+  width: 100%;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content {
+  width: 100%;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box {
+  width: 100%;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap {
+  margin-bottom: 40px;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul {
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  border-collapse: unset;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul li {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+  border: 2px solid #aaa;
+  border-radius: 300px;
+  color: #aaa;
+  padding: 16px 32px;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul li a#bo_cate_on {
+  background: #2a2a2a;
+  border: 2px solid #2a2a2a;
+  color: #fff;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul li a:hover {
+  background: #aaa;
+  color: #fff;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul li:not(:last-child) {
+  margin-right: 10px;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item {
+  position: relative;
+  width: 33.3333333333%;
+  padding: 24px;
+  /* 나중에 다시 보여져야함 */
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  /* .thumb-box::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, .4);
+      position: absolute;
+      top: 0;
+      left: 0;
+  } */
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box .thumb-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box .thumb-box img {
+  transform: scale(1.1);
+  transition: transform 0.4s ease;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box .hover-text-box {
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  position: absolute;
+  /* 나중에 보여지게 함 */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box .hover-text-box .icon-box {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 34px;
+  overflow: hidden;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box .hover-text-box .icon-box img {
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s ease;
+  transform: translateY(60px);
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box .hover-text-box span.category-text {
+  display: block;
+  height: 24px;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  text-align: left;
+  color: #fff;
+  overflow: hidden;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box .hover-text-box span.category-text span {
+  display: block;
+  transform: translateY(60px);
+  opacity: 0;
+  transition: all 0.4s ease;
+  transition-delay: 0.1s;
+  word-break: keep-all;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box .hover-text-box h4.heading-title {
+  height: 74px;
+  margin: 0;
+  margin-top: 20px;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+  color: #fff;
+  overflow: hidden;
+  text-align: left;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box .hover-text-box h4.heading-title span {
+  display: block;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.4s ease;
+  transition-delay: 0.2s;
+  word-break: keep-all;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box .board-title-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  padding: 40px;
+  opacity: 1;
+  transition: all 0.8s ease;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box .board-title-box span.board-title {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: -0.8px;
+  color: #fff;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box:hover .thumb-box img {
+  transform: scale(1);
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box:hover .hover-text-box {
+  display: flex;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box:hover .hover-text-box .icon-box img {
+  transform: translateY(0px);
+  opacity: 1;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box:hover .hover-text-box span.category-text span {
+  transform: translateY(0px);
+  opacity: 1;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box:hover .hover-text-box h4.heading-title span {
+  transform: translateY(0px);
+  opacity: 1;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box:hover .board-title-box {
+  transition: all 0.2s ease;
+  opacity: 0;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box {
+  margin-top: 80px;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 44px;
+  border-radius: 300px;
+  background: #1A32C6;
+  position: relative;
+  margin: 0;
+  margin-right: 14px;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form button span {
+  display: inline-block;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #fff;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form button .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  transition: all 0.4s ease;
+  position: absolute;
+  right: 18px;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form button .icon-box img {
+  width: 100%;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form .btn-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 44px;
+  border-radius: 300px;
+  background: #1A32C6;
+  position: relative;
+  margin: 0;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form .btn-box input {
+  display: inline-block;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #fff;
+  outline: none;
+  background: transparent;
+  border: none;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form .btn-box .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  transition: all 0.4s ease;
+  position: absolute;
+  right: 18px;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form .btn-box .icon-box img {
+  width: 100%;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form .btn-box:not(:last-child) {
+  margin-right: 14px;
+}
+#wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form .btn-box:hover .icon-box {
+  transform: translate(14px, -14px);
+  opacity: 0;
+}
+#wrap.porpol-page .footer-section.section {
+  background: #13207C;
+}
+#wrap.porpol-page .footer-section.section .container a.back-top-btn span {
+  color: #fff;
+}
+#wrap.porpol-page .footer-section.section .container a.back-top-btn .arrow-icon-box {
+  background: url("/theme/new_dnc/img/main/arrow-img03-white.svg") no-repeat center top/100% auto;
+}
+#wrap.porpol-page .footer-section.section .container span.copyrights span {
+  color: #fff;
+}
+#wrap.porpol-page .footer-section.section .container a.privacy span {
+  color: #fff;
+}
+
+#wrap.porpol-view-page {
+  padding-top: 240px;
+  background: #13207C;
+  /* footer-section */
+}
+#wrap.porpol-view-page header {
+  background: #13207C;
+}
+#wrap.porpol-view-page header .container .menu-box ul li a {
+  color: #fff;
+}
+#wrap.porpol-view-page header .container .side-icon-box ul li a {
+  color: #fff;
+}
+#wrap.porpol-view-page header .container .side-icon-box ul li a span.line {
+  background: #fff;
+}
+#wrap.porpol-view-page section.title-section {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+#wrap.porpol-view-page section.title-section .container h2#bo_v_title {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: large;
+}
+#wrap.porpol-view-page section.title-section .container h2#bo_v_title span.bo_v_tit {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 400;
+  font-size: 84px;
+  line-height: 1.4;
+  letter-spacing: -4px;
+  word-break: keep-all;
+  color: #fff;
+  margin: 0;
+  display: block;
+}
+#wrap.porpol-view-page section.title-section .container h2#bo_v_title strong.if_date {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 24px;
+  margin-right: 10px;
+}
+#wrap.porpol-view-page section.title-section .container h2#bo_v_title span.bo_v_cate {
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 24px;
+  padding-left: 10px;
+  position: relative;
+}
+#wrap.porpol-view-page section.title-section .container h2#bo_v_title span.bo_v_cate::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #2a2a2a;
+}
+#wrap.porpol-view-page section.content-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap.porpol-view-page section.content-section .container {
+  flex-direction: column;
+  /* 게시글 본문시작 */
+  /* 관련링크 */
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_atc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* 이미지 */
+  /* 텍스트 */
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_atc #bo_v_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_atc #bo_v_img a {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1000px;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_atc #bo_v_img a img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_atc #bo_v_con {
+  width: auto;
+  min-width: 1000px;
+  min-height: auto;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 60px;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_atc #bo_v_con p {
+  width: 100%;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #fff;
+  letter-spacing: -0.8px;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_link h2 {
+  display: none;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_link ul li {
+  opacity: 0.6;
+  transition: opacity 0.4s ease;
+  padding: 14px 0;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_link ul li a {
+  float: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_link ul li a i {
+  float: none;
+  font-size: 16px;
+  margin-right: 14px;
+  color: #fff;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_link ul li a strong {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  font-size: 13px;
+  color: #fff;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_link ul li span {
+  display: block;
+  text-align: right;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_link ul li span.bo_v_link_cnt {
+  display: none;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_link ul li:hover {
+  opacity: 1;
+}
+#wrap.porpol-view-page section.content-section .container #bo_v_link ul li:not(:last-child) {
+  border-bottom: 1px solid #fff;
+}
+#wrap.porpol-view-page section.next-prev-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-clip-path: inset(0 80px 0 80px);
+          clip-path: inset(0 80px 0 80px);
+  padding: 80px 0;
+  margin: 80px 0 40px 0;
+}
+#wrap.porpol-view-page section.next-prev-section .container {
+  width: 1000px;
+  max-width: 1000px;
+  padding: 0 60px;
+}
+#wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  clear: none;
+  margin: 0;
+  padding: 0;
+}
+#wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li {
+  width: 50%;
+  border: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li a {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li a span {
+  font-family: "SUIT Variable", sans-serif;
+  color: #fff;
+  padding: 0;
+}
+#wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li a span.nb_tit {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  margin-bottom: 34px;
+}
+#wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li a span.board-title-btn {
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  color: #fff;
+  position: relative;
+}
+#wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li a span.board-title-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: all 0.4s ease;
+}
+#wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li a:hover span.board-title-btn::after {
+  width: 100%;
+}
+#wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li:hover {
+  background: none;
+}
+#wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li.btn_prv a {
+  align-items: flex-start;
+}
+#wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li.btn_next a {
+  align-items: flex-end;
+}
+#wrap.porpol-view-page section.list-btn-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap.porpol-view-page section.list-btn-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap.porpol-view-page section.list-btn-section .container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 44px;
+  border-radius: 300px;
+  background: #1A32C6;
+  position: relative;
+  margin: 0;
+}
+#wrap.porpol-view-page section.list-btn-section .container a span {
+  display: inline-block;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #fff;
+}
+#wrap.porpol-view-page section.list-btn-section .container a .icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  transition: all 0.4s ease;
+  position: absolute;
+  right: 18px;
+}
+#wrap.porpol-view-page section.list-btn-section .container a .icon-box img {
+  width: 100%;
+}
+#wrap.porpol-view-page section.list-btn-section .container a input {
+  display: inline-block;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.8px;
+  color: #fff;
+  background: transparent;
+  border: none;
+}
+#wrap.porpol-view-page section.list-btn-section .container a:hover .icon-box {
+  transform: translate(14px, -14px);
+  opacity: 0;
+}
+#wrap.porpol-view-page section.list-btn-section .container a:not(:last-child) {
+  margin-right: 14px;
+}
+#wrap.porpol-view-page .footer-section.section {
+  background: #13207C;
+}
+#wrap.porpol-view-page .footer-section.section .container a.back-top-btn span {
+  color: #fff;
+}
+#wrap.porpol-view-page .footer-section.section .container a.back-top-btn .arrow-icon-box {
+  background: url("/theme/new_dnc/img/main/arrow-img03-white.svg") no-repeat center top/100% auto;
+}
+#wrap.porpol-view-page .footer-section.section .container span.copyrights span {
+  color: #fff;
+}
+#wrap.porpol-view-page .footer-section.section .container a.privacy span {
+  color: #fff;
+}
+
+/* responsive css */
+@media (max-width: 1024px) {
+  #wrap.porpol-page {
+    padding-top: 180px;
+    /* common css */
+  }
+  #wrap.porpol-page .section.title-section {
+    margin-bottom: 80px;
+  }
+  #wrap.porpol-page .section.title-section .container {
+    padding: 0 48px;
+  }
+  #wrap.porpol-page .section.title-section .container .sub-title-box {
+    margin-bottom: 34px;
+  }
+  #wrap.porpol-page .section.title-section .container .sub-title-box img {
+    width: 18px;
+    margin-bottom: 24px;
+  }
+  #wrap.porpol-page .section.title-section .container .sub-title-box span {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #wrap.porpol-page .section.title-section .container .title-box h2.title {
+    letter-spacing: -2px;
+    font-size: 80px;
+    margin-bottom: 14px;
+  }
+  #wrap.porpol-page .section.title-section .container .title-box p {
+    font-size: 16px;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap {
+    margin: 0;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap table tbody {
+    padding: 0 16px;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap table tbody tr {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap table tbody tr td {
+    width: 100%;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap table tbody tr td .board-content-title {
+    margin-bottom: 20px;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap table tbody tr td .board-content-title a {
+    font-size: 28px;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap table tbody tr:not(:last-child) {
+    padding: 20px 0;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a {
+    width: 100%;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div {
+    width: 100%;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs {
+    padding: 0;
+    margin: 0;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul {
+    position: unset;
+    overflow: scroll;
+    padding: 0;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul li a {
+    padding: 18px 32px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul li:not(:last-child) {
+    margin-right: 14px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul::-webkit-scrollbar {
+    background-color: transparent;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box {
+    /* .thumb-box::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .4);
+        position: absolute;
+        top: 0;
+        left: 0;
+    } */
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box {
+    margin-top: 80px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form {
+    overflow: scroll;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form button {
+    padding: 18px 32px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form button span {
+    font-size: 14px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form button .icon-box {
+    width: 8px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form .btn-box {
+    padding: 18px 32px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form .btn-box input {
+    font-size: 14px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form .btn-box .icon-box {
+    width: 8px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form::-webkit-scrollbar {
+    background: transparent;
+  }
+  #wrap.porpol-view-page {
+    padding-top: 180px;
+  }
+  #wrap.porpol-view-page section.title-section .container {
+    padding: 0 48px;
+  }
+  #wrap.porpol-view-page section.title-section .container h2#bo_v_title strong.if_date {
+    margin-bottom: 10px;
+  }
+  #wrap.porpol-view-page section.title-section .container h2#bo_v_title span.bo_v_tit {
+    font-size: 34px;
+  }
+  #wrap.porpol-view-page section.content-section .container {
+    padding: 0 48px;
+  }
+  #wrap.porpol-view-page section.content-section .container #bo_v_atc #bo_v_img a {
+    width: 100%;
+    max-width: none;
+    min-width: auto;
+    margin-bottom: 20px;
+  }
+  #wrap.porpol-view-page section.content-section .container #bo_v_atc #bo_v_con {
+    width: 100%;
+    min-width: auto;
+  }
+  #wrap.porpol-view-page section.content-section .container #bo_v_atc #bo_v_con p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 !important;
+  }
+  #wrap.porpol-view-page section.content-section .container #bo_v_link {
+    width: 100%;
+  }
+  #wrap.porpol-view-page section.content-section .container #bo_v_link ul li a strong {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "SUIT Variable", sans-serif;
+    letter-spacing: -0.8px;
+    line-height: 1;
+  }
+  #wrap.porpol-view-page section.next-prev-section {
+    -webkit-clip-path: none;
+            clip-path: none;
+    border: none;
+    padding: 0;
+    margin: 140px 0 40px 0;
+  }
+  #wrap.porpol-view-page section.next-prev-section .container {
+    width: 100%;
+    max-width: none;
+    padding: 0 48px;
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li a span.nb_tit {
+    margin-bottom: 24px;
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li.btn_prv {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li.btn_prv a {
+    align-items: flex-start;
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li.btn_next {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li.btn_next a {
+    align-items: flex-start;
+  }
+  #wrap.porpol-view-page section.list-btn-section {
+    margin-top: 42px;
+    padding: 0 48px;
+  }
+  #wrap.porpol-view-page section.list-btn-section .container {
+    overflow: scroll;
+    padding-bottom: 12px;
+    justify-content: flex-start;
+    padding: 0;
+    padding-bottom: 12px;
+  }
+  #wrap.porpol-view-page section.list-btn-section .container a {
+    padding: 18px 32px;
+  }
+  #wrap.porpol-view-page section.list-btn-section .container a span {
+    font-size: 14px;
+  }
+  #wrap.porpol-view-page section.list-btn-section .container a .icon-box {
+    width: 8px;
+  }
+  #wrap.porpol-view-page section.list-btn-section .container a input {
+    font-size: 14px;
+  }
+}
+/* responsive css */
+@media (max-width: 450px) {
+  #wrap.porpol-page {
+    padding-top: 120px;
+  }
+  #wrap.porpol-page .section.title-section {
+    margin-bottom: 80px;
+  }
+  #wrap.porpol-page .section.title-section .container {
+    padding: 0 16px;
+  }
+  #wrap.porpol-page .section.title-section .container .sub-title-box span {
+    font-size: 18px;
+    font-weight: 500;
+  }
+  #wrap.porpol-page .section.title-section .container .title-box {
+    flex-direction: column;
+  }
+  #wrap.porpol-page .section.title-section .container .title-box h2.title {
+    letter-spacing: -2px;
+    font-size: 52px;
+    margin-bottom: 14px;
+  }
+  #wrap.porpol-page .section.title-section .container .title-box p {
+    text-align: left;
+    width: 100%;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap {
+    margin: 0;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap table tbody {
+    padding: 0 16px;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap table tbody tr {
+    -webkit-clip-path: none;
+            clip-path: none;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap table tbody tr td {
+    width: 100%;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap table tbody tr td .board-content-title {
+    margin-bottom: 20px;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap table tbody tr td .board-content-title a {
+    font-size: 28px;
+  }
+  #wrap.porpol-page #bo_list form#fboardlist .tbl_head01.tbl_wrap table tbody tr:not(:last-child) {
+    padding: 20px 0;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a {
+    width: 100%;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div {
+    width: 100%;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs {
+    padding: 0;
+    margin: 0;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul {
+    position: unset;
+    overflow: scroll;
+    padding: 0;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul li a {
+    padding: 18px 32px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul li:not(:last-child) {
+    margin-right: 14px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .filter-wrap div .pr_tabs ul::-webkit-scrollbar {
+    background-color: transparent;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap {
+    flex-direction: column;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item {
+    width: 100%;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .gallery-content-box .item-list-wrap .item a.img-box {
+    /* .thumb-box::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .4);
+        position: absolute;
+        top: 0;
+        left: 0;
+    } */
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box {
+    margin-top: 80px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form {
+    overflow: scroll;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form button {
+    padding: 18px 32px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form button span {
+    font-size: 14px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form button .icon-box {
+    width: 8px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form .btn-box {
+    padding: 18px 32px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form .btn-box input {
+    font-size: 14px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form .btn-box .icon-box {
+    width: 8px;
+  }
+  #wrap.porpol-page .gallery-content-wrap .container #ajax-a .ajax-b .main-content .admin-board-btn-box .container .template-form::-webkit-scrollbar {
+    background: transparent;
+  }
+  #wrap.porpol-view-page {
+    padding-top: 120px;
+  }
+  #wrap.porpol-view-page section.title-section .container {
+    padding: 0 16px;
+  }
+  #wrap.porpol-view-page section.title-section .container h2#bo_v_title strong.if_date {
+    margin-bottom: 10px;
+  }
+  #wrap.porpol-view-page section.title-section .container h2#bo_v_title span.bo_v_tit {
+    font-size: 34px;
+  }
+  #wrap.porpol-view-page section.content-section .container {
+    padding: 0 16px;
+  }
+  #wrap.porpol-view-page section.content-section .container #bo_v_atc #bo_v_img a {
+    width: 100%;
+    max-width: none;
+    min-width: auto;
+    margin-bottom: 20px;
+  }
+  #wrap.porpol-view-page section.content-section .container #bo_v_atc #bo_v_con {
+    width: 100%;
+    min-width: auto;
+  }
+  #wrap.porpol-view-page section.content-section .container #bo_v_atc #bo_v_con p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 !important;
+  }
+  #wrap.porpol-view-page section.content-section .container #bo_v_link {
+    width: 100%;
+  }
+  #wrap.porpol-view-page section.content-section .container #bo_v_link ul li a strong {
+    font-size: 12px;
+    font-weight: 700;
+    font-family: "SUIT Variable", sans-serif;
+    letter-spacing: -0.8px;
+    line-height: 1;
+  }
+  #wrap.porpol-view-page section.next-prev-section {
+    -webkit-clip-path: none;
+            clip-path: none;
+    border: none;
+    padding: 0;
+    margin: 140px 0 40px 0;
+  }
+  #wrap.porpol-view-page section.next-prev-section .container {
+    width: 100%;
+    max-width: none;
+    padding: 0 16px;
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li a span.nb_tit {
+    margin-bottom: 24px;
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li.btn_prv {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li.btn_prv a {
+    align-items: flex-start;
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li.btn_next {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  #wrap.porpol-view-page section.next-prev-section .container ul.bo_v_nb li.btn_next a {
+    align-items: flex-start;
+  }
+  #wrap.porpol-view-page section.list-btn-section {
+    padding: 0 16px;
+  }
+  #wrap.porpol-view-page section.list-btn-section .container {
+    overflow: scroll;
+    padding-bottom: 8px;
+    justify-content: flex-start;
+  }
+  #wrap.porpol-view-page section.list-btn-section .container a {
+    padding: 18px 32px;
+  }
+  #wrap.porpol-view-page section.list-btn-section .container a span {
+    font-size: 14px;
+  }
+  #wrap.porpol-view-page section.list-btn-section .container a .icon-box {
+    width: 8px;
+  }
+  #wrap.porpol-view-page section.list-btn-section .container a input {
+    font-size: 14px;
+  }
+}
