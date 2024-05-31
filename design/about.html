@@ -19,11 +19,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../common/css/justifiedGallery.min.css">
-        <link rel="stylesheet" href="../common/css/swiper-bundle.min.css">
         <!-- script -->
         <script src='../common/js/jquery-3.7.0.min.js'></script>
-        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+        <script src='../common/js/lenis.min.js'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
@@ -33,7 +31,6 @@
     </head>
     <body>
         <div id="wrap" class='about-page'>
-            <!-- design header -->
             <header class="design-header">
                 <div class="container">
                     <!-- logo -->
@@ -67,11 +64,11 @@
                             </li>
                         </ul>
                     </div>
-                    <!-- side icon box -->
+                    <!-- side icon box -->  
                     <div class="side-icon-box">
                         <ul>
-                            <li>
-                                <a href="#" class='menu-icon'>
+                            <li class='burger-wrap'>
+                                <a href="#" class='menu-icon burger-box'>
                                     <span class="line"></span>
                                     <span class="line"></span>
                                 </a>
@@ -79,7 +76,7 @@
                         </ul>
                     </div>
                     <!-- nav.menu-wrap -->
-                    <nav class='nav-menu-wrap'>
+                    <nav class='nav-menu-wrap design'>
                         <div class="container">
                             <ul>
                                 <!-- menu01 -->
@@ -133,15 +130,52 @@
                             </ul>
                         </div>
                     </nav>
+                    <!-- floating-box -->
+                    <div class="floating-box black">
+                        <a href='#' class="back-top-btn sub-scroll">
+                            <div class="img-box">
+                                <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                            </div>
+                            <span>
+                                go top
+                            </span>
+                        </a>
+                    </div>
+                    <!-- sns-floating-box -->
+                    <div class="sns-floating-box black">
+                        <a href='https://blog.naver.com/dnc2034' target='_blank' class="blog">
+                            <div class="img-box">
+                                <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                            </div>
+                            <span>
+                                blog
+                            </span>
+                        </a>
+                        <a href='https://www.instagram.com/dnccompany/' target="_blank" class="insta">
+                            <div class="img-box">
+                                <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                            </div>
+                            <span>
+                                instagram
+                            </span>
+                        </a>
+                        <a href='https://www.youtube.com/@user-qk6yc5ei4g' target="_blank" class="youtube">
+                            <div class="img-box">
+                                <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                            </div>
+                            <span>
+                                youtube
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </header>
-            <!-- end: design header -->
 
-            <div class='section title-section'>
+            <section class='section title-section'>
                 <div class="container">
                     <!-- sub-title-box -->
                     <div class="sub-title-box">
-                        <img src="../common/img/sub-title-arrow.svg" alt="" class='gsap-fadeup-01'>
+                        <img src="/theme/new_dnc/img/main/sub-title-arrow.svg" alt="" class='gsap-fadeup-01'>
                         <span class='gsap-fadeup-02'>Design About</span>
                     </div>
 
@@ -149,18 +183,147 @@
                     <!-- title-box -->
                     <div class="title-box gsap-opacity-01">
                         <h2 class='title'>
-                            Wait<br/>
-                            a minute
+                            <span>D&C</span><br/>
+                            Design Art
                             <span class='circle'>.</span>
                         </h2>
                         <p>
-                            디자인 소개 페이지 제작중입니다.<br/>
-                            잠시만 기다려주세요 !
+                            고객에게 전하고자 하는 브랜드의 가치를 컨셉화 하고, 명확한 산출물로 표현하는 것을 목표로 합니다
                         </p>
                     </div>
                 </div>
-            </div>
+            </section>
 
+            <!-- about-content-wrap -->
+            <section class='section about-content-wrap gsap-opacity-01' id='about-content01'>
+                <div class="bg-img-box">
+                    <img src="./img/design-about-img01.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="txt-box">
+                        <h2 class='head-txt'>
+                            Design & Creative
+                        </h2>
+                        <p class='para'>
+                            크레이티브를 디자인하다
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class='section about-content-wrap gsap-opacity-01' id='about-content02'>
+                <div class="bg-img-box">
+                    <img src="./img/design-about-img02.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="txt-box">
+                        <h2 class='head-txt'>
+                            Just Creative!
+                        </h2>
+                        <!-- <p class='para'></p> -->
+                    </div>
+                </div>
+            </section>
+            <section class='section about-content-wrap gsap-opacity-01' id='about-content03'>
+                <div class="bg-img-box">
+                    <img src="./img/design-about-img03.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="txt-box">
+                        <h2 class='head-txt'>
+                            Design with Creative and<br/>
+                            Professional
+                        </h2>
+                        <!-- <p class='para'></p> -->
+                    </div>
+                </div>
+            </section>
+            <section class='section about-content-wrap gsap-opacity-01' id='about-content04'>
+                <div class="bg-img-box">
+                    <img src="./img/design-about-img04.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="txt-box">
+                        <h2 class='head-txt'>
+                            Creative Thinking,<br/>
+                            Creative Design
+                        </h2>
+                        <!-- <p class='para'></p> -->
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- service-content-wrap -->
+            <section class='section service-content-wrap content-wrap gsap-opacity-01'>
+                <div class="content-box service-box">
+                    <div class="container">
+                        <!-- title-box -->
+                        <div class="title-box">
+                            <h2 class='title'>
+                                Our<br/>
+                                Design Is<span class='circle'>.</span>
+                            </h2>
+                            <p>
+                                새로운 아이디어와 철저한 트렌드 분석으로 눈에 보이는 것 이상의 가치를 만들어냅니다.
+                            </p>
+                        </div>
+                        <div class="service-list-wrap">
+                            <div class="list-box">
+                                <h3 class="list-title">
+                                    Brochure
+                                </h3>
+                                <p>
+                                    창의적인 아이디어를 실현한 비주얼에 비전을 더해 매력적인 디자인을 완성합니다. 클라이언트가 고심해 만들어낸 가치를 심도 있는 커뮤니케이션을 통해 작은 생각도 놓치지 않고 감각적인 디자인으로 구현해냅니다. 디앤씨컴퍼니는 가치에 감각을 더해 완성하는 독보적인 디자인을 추구합니다.
+                                </p>
+                            </div>
+                            <div class="list-box">
+                                <h3 class="list-title">
+                                    Web Zine
+                                </h3>
+                                <p>
+                                    ‘할 수 있을까?’ 대신 ‘어떻게 할까?’를 생각합니다. 크리에이티브에 한계란 없습니다. 독보적이고 감각적인 기획과 모바일·PC 최적화 퍼블리시, 공감할 수밖에 없는 스토리텔링, 다채로운 웹진 맞춤형 디자인으로 만들어낸 결과물은 비교 불가한 디앤씨컴퍼니만의 노하우입니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-list-wrap">
+                            <div class="list-box">
+                                <h3 class="list-title">
+                                    Leaflet
+                                </h3>
+                                <p>
+                                    몇 페이지 안에 전하고자 하는 모든 정보를 담아야 하는 리플렛은 제품의 생명 같은 경쟁력을 불어넣는 디자인이 필요합니다. 보기 좋기만 한 디자인이 아닌 타깃에 딱 맞춘 콘셉트를 도출해 한 번 더 열어보고 싶은 리플렛을 만듭니다. 클라이언트와 소비자 모두가 만족하고 공감할 수 있는 리플렛을 만들기 위해 오늘도 열심히 고민합니다.
+                                </p>
+                            </div>
+                            <div class="list-box">
+                                <h3 class="list-title">
+                                    Poster
+                                </h3>
+                                <p>
+                                    기획부터 최종 결과물까지 전 프로세스를 프로페셔널하게 총괄할 수 있는 노하우. 그 노하우에 트렌드와 아이덴티티를 담아 메시지를 가장 효과적으로 표현하는 디자인을 구현합니다. 이 모든 것은 깊은 통찰과 넓은 소통을 기반으로 합니다. 한 컷의 이미지로 모두의 시선을 사로잡는 가장 강력한 디자인을 제공합니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="service-list-wrap">
+                            <div class="list-box">
+                                <h3 class="list-title">
+                                    Book Design
+                                </h3>
+                                <p>
+                                    젊은 감각과 지속적인 분석을 통해 콘텐츠를 선명하게 구현하여 새로운 시각적 경험을 선사합니다. 보기에도, 읽기에도 편안하고 가치 있는 디자인을 만듭니다. 표지부터 마지막장까지 사소한 부분까지 꼼꼼하게 진행해 완벽을 추구하며, 최종 퀄리티를 좌우하는 마지막 5%의 완성도에 집중해 믿음을 결과물로 보여드립니다.
+                                </p>
+                            </div>
+                            <div class="list-box">
+                                <h3 class="list-title">
+                                    Calendar
+                                </h3>
+                                <p>
+                                    단순한 일정표로써의 디자인을 지양하고 한 장, 한 장 넘길 때마다 자꾸 들여다보고 싶게 만드는 감각적인 캘린더 디자인을 지향합니다. 1년 내내 안정감 있게 사용 가능한 효율적인 레이아웃과 감성적인 무드의 디자인으로 소장하고 싶은 캘린더를 구현합니다. 새로운 한 해, 새로운 일을 계획하고 달성하는 과정에 설렘이 더해지는 캘린더를 만나볼 수 있습니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- footer -->
             <section class="section footer-section" id='white-footer'>
@@ -176,8 +339,11 @@
                     </a>
                     <!-- copyright -->
                     <span class="copyrights">
-                        <span>
-                            2023 &copy; The DNC Company.All rights reserved.
+                        <span class='info'>
+                            디앤씨컴퍼니 | 대표: 김준성 | 사업자번호: 807-87-00116 | 주소: 대전광역시 동구 선화로 187, 3층 (삼성동) | 대표번호. 042-826-4370 | FAX. 042-826-4371
+                        </span>
+                        <span class='copy'>
+                            2024 &copy; The DNC Company.All rights reserved.
                         </span>
                     </span>
                     <!-- privacy -->

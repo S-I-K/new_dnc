@@ -5,6 +5,10 @@ $font-black: #2a2a2a;
 $color-main: #2D99D7;
 $color-white: #fff;
 $video-black-color: #0e0e0e;
+$nav-color-publicity: #036EB8;
+$nav-color-design: #000;
+$nav-color-video: #fff;
+$nav-color-event: #00263E;
 
 
 
@@ -137,6 +141,11 @@ header {
                             transform: rotate(-45deg);
                         }
                     }
+                    a.burger-box.active.video {
+                        span {
+                            background: $font-black !important;
+                        }
+                    }
                 }
             }
         }
@@ -165,17 +174,21 @@ header {
                 align-items: center;
                 justify-content: center;
                 border-radius: 300px;
-                background: #fff;
+                // background: #fff;
                 padding: 14px 14px;
-                opacity: .4;
+                // opacity: .4;
+                opacity: 1;
                 transition: all .4s ease;
+                position: relative;
+                overflow: hidden;
+                z-index: 99;
                 .img-box {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     width: 18px;
                     height: 18px;
-                    background: url('../../common/img/back-to-top-arrow.svg') no-repeat center center / cover;
+                    background: url('../img/back-to-top-arrow.svg') no-repeat center center / cover;
                 }
                 span {
                     display: block;
@@ -193,6 +206,19 @@ header {
                     transition: all .4s ease;
                 }
             }
+            a.back-top-btn::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                opacity: .4;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all .4s ease;
+                z-index: -1;
+            }
             a.back-top-btn:hover {
                 opacity: 1;
                 span {
@@ -200,19 +226,145 @@ header {
                     margin-left: 8px;
                 }
             }
+            a.back-top-btn:hover::after {
+                opacity: 1;
+            }
         }
         .floating-box.black {
             a.back-top-btn {
-                background: $font-black;
+                // background: $font-black;
                 .img-box {
-                    background: url('../../common/img/back-to-top-arrow-white.svg') no-repeat center center / cover;
+                    background: url('../img/back-to-top-arrow-white.svg') no-repeat center center / cover;
                 }
                 span {
                     color: #fff;
                 }
             }
+            a.back-top-btn::after {
+                background: $font-black;
+            }
             a.back-top-btn:hover {
                 span {
+                }
+            }
+        }
+
+        .sns-floating-box {
+            // border: 1px solid red;
+            position: fixed;
+            right: 40px;
+            bottom: 94px;
+            opacity: 0;
+            pointer-events: none;
+            transition: all .4s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+            z-index: 99;
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 300px;
+                // background: #fff;
+                padding: 14px 14px;
+                // opacity: .4;
+                opacity: 1;
+                transition: all .4s ease;
+                position: relative;
+                overflow: hidden;
+                .img-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 18px;
+                    height: 18px;
+                    background: url('../img/icon-sns-blog.svg') no-repeat center center / cover;
+                }
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 0px;
+                    height: 18px;
+                    overflow: hidden;
+                    margin-left: 0px;
+                    font-family: $font-en;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 1;
+                    // letter-spacing: -.8px;
+                    color: $font-black;
+                    white-space: nowrap;
+                    transition: all .4s ease;
+                }
+            }
+            a::after {
+                content: '';
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: #fff;
+                opacity: .4;
+                position: absolute;
+                top: 0;
+                left: 0;
+                transition: all .4s ease;
+                z-index: -1;
+            }
+            a:not(:last-child) {
+                margin-bottom: 8px;
+            }
+            a:hover {
+                opacity: 1;
+                span {
+                    width: 80px;
+                    margin-left: 8px;
+                }
+            }
+            a:hover::after {
+                opacity: 1;
+            }
+            a.blog {
+                .img-box {
+                    background: url('../img/icon-sns-blog.svg') no-repeat center center / cover;
+                }
+            }
+            a.youtube {
+                .img-box {
+                    background: url('../img/icon-sns-youtube.svg') no-repeat center center / cover;
+                }
+            }
+            a.insta {
+                .img-box {
+                    background: url('../img/icon-sns-insta.svg') no-repeat center center / cover;
+                }
+            }
+        }
+        .sns-floating-box.black {
+            a {
+                // background: $font-black;
+                span {
+                    color: #fff;
+                }
+            }
+            a::after {
+                background: $font-black;
+            }
+            a.blog {
+                .img-box {
+                    background: url('../img/icon-sns-blog.svg') no-repeat center center / cover;
+                }
+            }
+            a.youtube {
+                .img-box {
+                    background: url('../img/icon-sns-youtube.svg') no-repeat center center / cover;
+                }
+            }
+            a.insta {
+                .img-box {
+                    background: url('../img/icon-sns-insta.svg') no-repeat center center / cover;
                 }
             }
         }
@@ -432,6 +584,35 @@ nav.nav-menu-wrap.open {
     transition: all .6s ease-out;
 }
 
+nav.nav-menu-wrap.open.publicity {
+    background: $nav-color-publicity;
+}
+nav.nav-menu-wrap.open.design {
+    background: $nav-color-design;
+}
+nav.nav-menu-wrap.open.video {
+    background: $nav-color-video;
+    .container {
+        ul {
+            li {
+                a {
+                    span.hover-text {
+                        color: $font-black;
+                    }
+                    span.hover-text::before {
+                    }
+                }
+            }
+            li:not(:last-child) {
+                // margin-bottom: 24px;
+            }
+        }
+    }
+}
+nav.nav-menu-wrap.open.event {
+    background: $nav-color-event;
+}
+
 
 
 @media ( max-width: 1024px ) {
@@ -522,6 +703,10 @@ nav.nav-menu-wrap.open {
                         }
                     }
                 }
+                .sns-floating-box {
+                    right: 16px;
+                    bottom: 70px;
+                }
             }
         }
         header.header-hide {
@@ -586,7 +771,7 @@ nav.nav-menu-wrap.open {
                             li {
                                 a {
                                     span.hover-text {
-                                        font-size: 3rem;
+                                        font-size: 2rem;
                                     }
                                     span.hover-text::before {
                                     }

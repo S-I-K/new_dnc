@@ -71,6 +71,7 @@ li {
   width: 100%;
   height: auto;
   padding-top: 240px;
+  /* adress-content-wrap */
   /* footer-section */
 }
 #wrap.about-page .title-section {
@@ -185,10 +186,9 @@ li {
   font-size: 22px;
   font-weight: 400;
   letter-spacing: -1px;
-  line-height: 1.4;
+  line-height: 1;
   color: #fff;
   word-break: keep-all;
-  text-align: center;
 }
 #wrap.about-page .service-content-wrap {
   flex-direction: column;
@@ -351,6 +351,7 @@ li {
   justify-content: space-between;
   width: 100%;
   margin-bottom: 80px;
+  padding-right: 240px;
 }
 #wrap.about-page .history-content-wrap .container .title-box h2.title {
   font-family: "Poppins", sans-serif;
@@ -439,6 +440,9 @@ li {
   color: #fff;
   opacity: 0.4;
 }
+#wrap.about-page .awards-content-wrap {
+  padding-bottom: 200px;
+}
 #wrap.about-page .awards-content-wrap .container .award-list-box {
   width: 100%;
   display: flex;
@@ -446,6 +450,8 @@ li {
   justify-content: space-between;
   padding: 34px 0;
   border-bottom: 1px solid #C4C4C4;
+  /* date-box */
+  /* desc-box */
 }
 #wrap.about-page .awards-content-wrap .container .award-list-box .date-box {
   width: 30%;
@@ -464,29 +470,143 @@ li {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  /* heading-txt */
+  /* sub-txt */
 }
 #wrap.about-page .awards-content-wrap .container .award-list-box .desc-box .heading-txt {
+  margin-bottom: 32px;
+}
+#wrap.about-page .awards-content-wrap .container .award-list-box .desc-box .heading-txt ul li span {
   font-family: "SUIT Variable", sans-serif;
   font-weight: 700;
-  color: #2a2a2a;
-  line-height: 1.6;
-}
-#wrap.about-page .awards-content-wrap .container .award-list-box .desc-box h4.heading-txt {
   font-size: 24px;
-  margin-bottom: 34px;
+  line-height: 1;
+  word-break: keep-all;
+  color: #2a2a2a;
 }
-#wrap.about-page .awards-content-wrap .container .award-list-box .desc-box h5.heading-txt {
-  font-size: 18px;
-}
-#wrap.about-page .awards-content-wrap .container .award-list-box .desc-box h5.heading-txt:not(:last-child) {
+#wrap.about-page .awards-content-wrap .container .award-list-box .desc-box .heading-txt ul li:not(:last-child) {
   margin-bottom: 16px;
 }
-#wrap.about-page .awards-content-wrap .container .award-list-box .desc-box .award-txt {
+#wrap.about-page .awards-content-wrap .container .award-list-box .desc-box h4.heading-txt ul li span {
+  font-size: 24px;
+}
+#wrap.about-page .awards-content-wrap .container .award-list-box .desc-box h5.heading-txt ul li span {
+  font-size: 18px;
+}
+#wrap.about-page .awards-content-wrap .container .award-list-box .desc-box .sub-txt ul li span {
   font-family: "SUIT Variable", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 1;
   color: #999;
+}
+#wrap.about-page .awards-content-wrap .container .award-list-box .desc-box .sub-txt ul li:not(:last-child) {
+  margin-bottom: 8px;
+}
+#wrap.about-page .adress-content-wrap .container {
+  /*  */
+  /*  */
+  /*  */
+}
+#wrap.about-page .adress-content-wrap .container .title-box {
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+#wrap.about-page .adress-content-wrap .container .title-box h2.title {
+  margin-bottom: 32px;
+}
+#wrap.about-page .adress-content-wrap .container .title-box p {
+  width: auto;
+  font-size: 35px;
+}
+#wrap.about-page .adress-content-wrap .container .contact-list-box {
+  margin-bottom: 42px;
+  background: #e5e7ea;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 80px 40px;
+}
+#wrap.about-page .adress-content-wrap .container .contact-list-box .contact-text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#wrap.about-page .adress-content-wrap .container .contact-list-box .contact-text-box span {
+  font-family: "Poppins", sans-serif;
+}
+#wrap.about-page .adress-content-wrap .container .contact-list-box .contact-text-box span.category {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1;
+  color: #666;
+  margin-bottom: 42px;
+}
+#wrap.about-page .adress-content-wrap .container .contact-list-box .contact-text-box span.content {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 1;
+  color: #2a2a2a;
+}
+#wrap.about-page .adress-content-wrap .container .branch-adress-list-box {
+  width: 100%;
+  margin-bottom: 120px;
+}
+#wrap.about-page .adress-content-wrap .container .branch-adress-list-box ul {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+#wrap.about-page .adress-content-wrap .container .branch-adress-list-box ul li {
+  width: 33.3333333333%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
+#wrap.about-page .adress-content-wrap .container .branch-adress-list-box ul li span {
+  font-family: "SUIT Variable", sans-serif;
+  letter-spacing: -0.8px;
+  color: #2a2a2a;
+  line-height: 1;
+}
+#wrap.about-page .adress-content-wrap .container .branch-adress-list-box ul li span.branch-name {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+#wrap.about-page .adress-content-wrap .container .branch-adress-list-box ul li span.location {
+  font-size: 18px;
+  font-weight: 400;
+  word-break: keep-all;
+}
+#wrap.about-page .adress-content-wrap .container .adress-map-box {
+  width: 100%;
+  height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+#wrap.about-page .adress-content-wrap .container .adress-map-box #daumRoughmapContainer1715930768661 {
+  width: 100%;
+  height: 100%;
+}
+#wrap.about-page .adress-content-wrap .container .adress-map-box #daumRoughmapContainer1715930768661 .wrap_map {
+  height: 100%;
+}
+#wrap.about-page .adress-content-wrap .container .adress-map-box::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #e5e7ea;
+  opacity: 0.4;
 }
 @media (max-width: 1024px) {
   /* common css */
@@ -511,6 +631,7 @@ li {
   /* about css */
   #wrap.about-page {
     padding-top: 180px;
+    /* adress-content-wrap */
   }
   #wrap.about-page .section.title-section {
     margin-bottom: 80px;
@@ -633,6 +754,17 @@ li {
     font-size: 18px;
     margin-bottom: 18px;
   }
+  #wrap.about-page .adress-content-wrap .container {
+    /*  */
+    /*  */
+    /*  */
+  }
+  #wrap.about-page .adress-content-wrap .container .contact-list-box {
+    justify-content: space-between;
+  }
+  #wrap.about-page .adress-content-wrap .container .contact-list-box .contact-text-box span.content {
+    font-size: 32px;
+  }
 }
 @media (max-width: 450px) {
   /* common css */
@@ -673,6 +805,8 @@ li {
   /* about css */
   #wrap.about-page {
     padding-top: 120px;
+    /* adress-content-wrap */
+    /* adress-content-wrap */
   }
   #wrap.about-page .section.title-section {
     margin-bottom: 80px;
@@ -790,6 +924,15 @@ li {
     font-size: 14px;
     margin-bottom: 4px;
   }
+  #wrap.about-page .adress-content-wrap .container .title-box p {
+    font-size: 20px;
+    letter-spacing: -0.8px;
+  }
+  #wrap.about-page .adress-content-wrap .container .title-box p span.en {
+    font-size: 14px;
+    font-weight: 300;
+    width: 280px;
+  }
   #wrap.about-page .awards-content-wrap .container .award-list-box {
     flex-direction: column;
   }
@@ -802,18 +945,56 @@ li {
   }
   #wrap.about-page .awards-content-wrap .container .award-list-box .desc-box {
     width: 100%;
+    /* sub-txt */
   }
-  #wrap.about-page .awards-content-wrap .container .award-list-box .desc-box h4.heading-txt {
+  #wrap.about-page .awards-content-wrap .container .award-list-box .desc-box .heading-txt ul li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  #wrap.about-page .awards-content-wrap .container .award-list-box .desc-box h4.heading-txt ul li span {
     font-size: 16px;
-    margin-bottom: 12px;
   }
-  #wrap.about-page .awards-content-wrap .container .award-list-box .desc-box h5.award-txt {
+  #wrap.about-page .awards-content-wrap .container .award-list-box .desc-box h5.heading-txt ul li span {
     font-size: 14px;
   }
-  #wrap.about-page .awards-content-wrap .container .award-list-box .desc-box h5.heading-txt {
+  #wrap.about-page .awards-content-wrap .container .award-list-box .desc-box .sub-txt ul li span {
     font-size: 14px;
   }
-  #wrap.about-page .awards-content-wrap .container .award-list-box .desc-box h5.heading-txt:not(:last-child) {
-    margin-bottom: 12px;
+  #wrap.about-page .awards-content-wrap .container .award-list-box .desc-box .sub-txt ul li:not(:last-child) {
+    margin-bottom: 4px;
+  }
+  #wrap.about-page .adress-content-wrap .container {
+    /*  */
+    /*  */
+    /*  */
+  }
+  #wrap.about-page .adress-content-wrap .container .contact-list-box {
+    flex-direction: column;
+    padding: 40px 24px;
+  }
+  #wrap.about-page .adress-content-wrap .container .contact-list-box .contact-text-box span.category {
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+  #wrap.about-page .adress-content-wrap .container .contact-list-box .contact-text-box span.content {
+    font-size: 24px;
+  }
+  #wrap.about-page .adress-content-wrap .container .contact-list-box .contact-text-box:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  #wrap.about-page .adress-content-wrap .container .branch-adress-list-box {
+    margin-bottom: 42px;
+  }
+  #wrap.about-page .adress-content-wrap .container .branch-adress-list-box ul li {
+    width: 50%;
+  }
+  #wrap.about-page .adress-content-wrap .container .branch-adress-list-box ul li span.branch-name {
+    font-size: 24px;
+  }
+  #wrap.about-page .adress-content-wrap .container .branch-adress-list-box ul li span.location {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  #wrap.about-page .adress-content-wrap .container .adress-map-box {
+    height: 240px;
   }
 }

@@ -358,22 +358,22 @@ white-space: nowrap;
 }
 
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img01::before {
-background: url(../img/work-link-img01.png) no-repeat center top/cover;
+background: url('../img/work-link-img01.png') no-repeat center top/cover;
 }
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img02::before {
-background: url(../img/work-link-img02.png) no-repeat center top/cover;
+background: url('../img/work-link-img02.png') no-repeat center top/cover;
 }
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img03::before {
-background: url(../img/work-link-img03.png) no-repeat center top/cover;
+background: url('../img/work-link-img03.png') no-repeat center top/cover;
 }
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img04::before {
-background: url(../img/work-link-img04.png) no-repeat center top/cover;
+background: url('../img/work-link-img04.png') no-repeat center top/cover;
 }
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img05::before {
-background: url(../img/work-link-img05.png) no-repeat center top/cover;
+background: url('../img/work-link-img05.png') no-repeat center top/cover;
 }
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box.img06::before {
-background: url(../img/work-link-img06.png) no-repeat center top/cover;
+background: url('../img/work-link-img06.png') no-repeat center top/cover;
 }
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide .section a.work-link-box::after {
 content: "";
@@ -553,7 +553,7 @@ position: unset !important;
     letter-spacing: -.8px;
     line-height: 1;
     color: #fff;
-    font-weight: 600;
+    // font-weight: 600;
 }
 #wrap #main-wrap-slider .swiper-wrapper .swiper-slide.footer .section .container a.back-top-btn {
     font-family: $font-en;
@@ -585,6 +585,9 @@ position: unset !important;
     overflow: hidden;
     position: absolute;
     z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .swiper-slide .notice-section.section .video-box::after {
     content: '';
@@ -597,11 +600,12 @@ position: unset !important;
     left: 0;
 }
 .swiper-slide .notice-section.section .video-box video {
-    width: 100%;
+    width: 110%;
     height: auto;
     position: absolute;
     // top: -250px;
     top: 0px;
+    filter: blur(8px);
 }
 .swiper-slide .notice-section.section .container {
     /* border: 1px solid red; */
@@ -634,50 +638,6 @@ position: unset !important;
     align-items: center;
     justify-content: center;
 }
-.swiper-slide .notice-section.section .container .notice-title-box .btn-box a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 30px;
-    border-radius: 30px;
-    background: #fff;
-    overflow: hidden;
-}
-.swiper-slide .notice-section.section .container .notice-title-box .btn-box a:not(:last-child) {
-    margin-right: 8px;
-}
-.swiper-slide .notice-section.section .container .notice-title-box .btn-box a span {
-    color: #171717;
-    font-family: $font-kr;
-    font-weight: 600;
-    letter-spacing: -.8px;
-    line-height: 1;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    transition: transform 0.2s;
-    transform-origin: 100% 0%;
-}
-.swiper-slide .notice-section.section .container .notice-title-box .btn-box a span::before {
-    content: '디앤씨 소식';
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 100%;
-    height: 100%;
-    transition: transform 0.2s ease-out;
-}
-.swiper-slide .notice-section.section .container .notice-title-box .btn-box a:nth-child(2) span::before {
-    content: '문의하기'
-}
-.swiper-slide .notice-section.section .container .notice-title-box .btn-box a:hover span {
-    transform: translateY(-100%);
-    transform-origin: 0% 0%;
-}
 /* footer-section */
 .swiper-slide .footer-section.section {
     /* border: 1px solid red; */
@@ -697,7 +657,7 @@ position: unset !important;
     letter-spacing: -.8px;
     line-height: 1;
     color: #fff;
-    font-weight: 500;
+    // font-weight: 500;
 }
 .swiper-slide .footer-section.section .container a.back-top-btn {
     overflow: hidden;
@@ -740,6 +700,32 @@ position: unset !important;
 
 /* scss code */
 #wrap {
+    header {
+        .container {
+            .menu-box {
+                ul {
+                    li {
+                        a {
+                        }
+                    }
+                }
+            }
+            .nav-menu-wrap {
+                .container {
+                    ul {
+                        li {
+                            a {
+                                span {
+                                    font-family: $font-kr;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     #main-wrap-slider {
         .swiper-wrapper {
             section.company-video-content-wrap {
@@ -762,6 +748,10 @@ position: unset !important;
                         height: 100%;
                         border: none;
                         pointer-events: none;
+                        display: block;
+                    }
+                    video {
+                        display: none;
                     }
                 }
                 .content-box::after {
@@ -841,6 +831,111 @@ position: unset !important;
                     }
                 }
             }
+            .swiper-slide {
+                .notice-section {
+                    .video-box {
+                        video {
+                            
+                        }
+                    }
+
+                    .container {
+                        .notice-title-box {
+                            h2.title {
+
+                            }
+                            span.comment {
+
+                            }
+                            .btn-box {
+                                position: relative;
+                                .link-btn-text {
+                                    position: relative;
+                                    z-index: 2;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    justify-content: center;
+                                    padding: 0px 30px;
+                                    border-radius: 30px;
+                                    background: #fff;
+                                    overflow: hidden;
+                                    cursor: pointer;
+                                    > span {
+                                        color: $font-black;
+                                        font-family: $font-kr;
+                                        font-weight: 600;
+                                        letter-spacing: -0.8px;
+                                        line-height: 1;
+                                        height: 50px;
+                                    }
+                                    .qna-list-box {
+                                        border: 1px solid red;
+                                        position: absolute;
+                                    }
+
+                                }
+                                .accodion-list-wrap {
+                                    position: absolute;
+                                    top: 0;
+                                    // right: -156px;
+                                    right: -60px;
+                                    opacity: 0;
+                                    padding: 18px 24px;
+                                    border-radius: 14px;
+                                    background: #fff;
+                                    transition: all .4s ease;
+                                    min-height: 50px;
+                                    ul {
+                                        overflow: hidden;
+                                        height: 14px;
+                                        transition: all .4s ease;
+                                        transition-delay: .6s;
+                                        height: 0;
+                                        li {
+                                            a {
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                height: 16px;
+                                                overflow: hidden;
+                                                span {
+                                                    font-family: $font-kr;
+                                                    font-weight: 600;
+                                                    font-size: 16px;
+                                                    line-height: 1;
+                                                    letter-spacing: -.8px;
+                                                    color: $font-black;
+                                                }
+                                            }
+                                        }
+                                        li:not(:last-child) {
+                                            margin-bottom: 14px;
+                                        }
+                                    }
+                                }
+                                .accodion-list-wrap.visible {
+                                    right: -156px;
+                                    opacity: 1;
+                                    ul {
+                                        height: 136px;
+                                        li {
+                                            a {
+                                                span {
+
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .link-btn-text:not(:last-child) {
+                                    margin-right: 8px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -851,6 +946,11 @@ position: unset !important;
 
 /* tablet responsive scss code */
 @media ( max-width: 1024px ) {
+    .swiper-slide {
+        .footer-section.section {
+            height: 200px !important;
+        }
+    }
     /* common css */
     .section.title-section {
         margin-bottom: 80px;
@@ -999,7 +1099,7 @@ position: unset !important;
                     }
                 }
                 .notice-section.section {
-                    height: calc(100% - 100px) !important;
+                    height: calc(100% - 200px) !important;
                     .video-box {
                         display: flex;
                         align-items: center;
@@ -1159,7 +1259,15 @@ position: unset !important;
             .swiper-wrapper {
                 section.company-video-content-wrap {
                     .content-box {
+                        padding: 0;
                         iframe {
+                            display: none;
+                        }
+                        video {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
                         }
                     }
                     .content-box::after {
@@ -1239,6 +1347,67 @@ position: unset !important;
                             
                         }
                     }
+
+                    .notice-section {
+                        .video-box {
+                            video {
+                                
+                            }
+                        }
+    
+                        .container {
+                            .notice-title-box {
+                                h2.title {
+    
+                                }
+                                span.comment {
+    
+                                }
+                                .btn-box {
+                                    .link-btn-text {
+                                        span {
+                                            font-size: 14px;
+                                        }
+                                        .qna-list-box {
+                                        }
+                                    }
+                                    .link-btn-text:not(:last-child) {
+                                    }
+                                    .accodion-list-wrap {
+                                        padding: 18px 18px;
+                                        right: 0px;
+                                        top: 0;
+                                        ul {
+                                            li {
+                                                a {
+                                                    height: 14px;
+                                                    span {
+                                                        font-size: 14px;
+                                                    }
+                                                }
+                                            }
+                                            li:not(:last-child) {
+                                            }
+                                        }
+                                    }
+                                    .accodion-list-wrap.visible {
+                                        right: 0px;
+                                        top: 58px;
+                                        ul {
+                                            height: 126px;
+                                            li {
+                                                a {
+                                                    span {
+    
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
                 .swiper-slide-active {
                     .section.column {
@@ -1284,12 +1453,14 @@ position: unset !important;
                             height: auto !important;
                             display: flex;
                             align-items: center;
-                            justify-content: space-between;
+                            // justify-content: space-between;
+                            justify-content: center;
                             flex-wrap: wrap;
                             a {
                                 width: auto !important;
                                 height: 28px !important;
-                                margin-bottom: 14px;
+                                // margin-bottom: 14px;
+                                margin: 4px;
                                 position: unset !important;
                                 border: 1px solid #313131;
                                 img {
@@ -1301,7 +1472,7 @@ position: unset !important;
                 }
                 .notice-section.section {
                     padding: 0 14px;
-                    height: calc(100% - 138px) !important;
+                    height: calc(100% - 219px) !important;
                     .video-box {
                         display: flex;
                         align-items: center;
@@ -1327,7 +1498,6 @@ position: unset !important;
                             .btn-box {
                                 a {
                                     span {
-                                        height: 40px;
                                     }
                                 }
                             }

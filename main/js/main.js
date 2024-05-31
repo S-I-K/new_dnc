@@ -4,10 +4,26 @@ $(()=>{
     console.log($);
     console.log('ready to jq');
 
+
+    /* qna list btn click event */
+    $('.qna-list-btn').click(function(e){
+        if($('.accodion-list-wrap').hasClass('visible')) {
+            $('.accodion-list-wrap').removeClass('visible');
+        }else{
+            $('.accodion-list-wrap').addClass('visible');
+        }
+    });
+
     /* nav event */
     $nav_menu_wrap = $('nav.nav-menu-wrap');
     $hover_text = $('.hover-text');
     $hover_text.each(function(){
+        $(this).attr('data-hover', $(this).text());
+    });
+
+    /* button effect */
+    $button_effect = $('.button-effect');
+    $button_effect.each(function(){
         $(this).attr('data-hover', $(this).text());
     });
 
@@ -19,7 +35,7 @@ $(()=>{
         e.preventDefault();
         if(!$nav_menu_wrap.hasClass('open')){
             $nav_menu_wrap.addClass('open');
-            $('.logo-box > a > img').attr('src', './common/img/logo-white.svg');
+            $('.logo-box > a > img').attr('src', '/theme/new_dnc/img/main/logo-white.svg');
             $('.menu-box').addClass('nav-white');
             $('.side-icon-box').addClass('nav-white');
             $('.burger-box').addClass('active');
@@ -114,8 +130,16 @@ $(()=>{
                         'opacity': '1',
                         'pointer-events': 'unset',
                     });
+                    $('.sns-floating-box').css({
+                        'opacity': '1',
+                        'pointer-events': 'unset',
+                    });
                 } else {
                     $('.floating-box').css({
+                        'opacity': '0',
+                        'pointer-events': 'none',
+                    });
+                    $('.sns-floating-box').css({
                         'opacity': '0',
                         'pointer-events': 'none',
                     });
@@ -131,8 +155,16 @@ $(()=>{
                 'opacity': '1',
                 'pointer-events': 'unset',
             });
+            $('.sns-floating-box').css({
+                'opacity': '1',
+                'pointer-events': 'unset',
+            });
         } else {
             $('.floating-box').css({
+                'opacity': '0',
+                'pointer-events': 'none',
+            });
+            $('.sns-floating-box').css({
                 'opacity': '0',
                 'pointer-events': 'none',
             });

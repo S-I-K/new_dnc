@@ -4,7 +4,7 @@
   /* border: 1px solid red; */
   width: 100%;
   height: 100px !important;
-  background: #171717;
+  background: #0e0e0e;
   margin-top: 120px;
 }
 .footer-section.section .container {
@@ -18,13 +18,14 @@
   letter-spacing: -0.8px;
   line-height: 1;
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
 }
 .footer-section.section .container a.back-top-btn {
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100px;
 }
 .footer-section.section .container a.back-top-btn span {
   font-family: "Poppins", sans-serif;
@@ -53,7 +54,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  background: url(../img/main/arrow-img02.svg) no-repeat center top/100% auto;
+  background: url("../img/arrow-img03-white.svg") no-repeat center top/100% auto;
 }
 .footer-section.section .container a.back-top-btn .arrow-icon-box img {
   width: 100%;
@@ -65,9 +66,21 @@
 }
 .footer-section.section .container span.copyrights {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.footer-section.section .container span.copyrights span {
+.footer-section.section .container span.copyrights span.info {
+  font-family: "SUIT Variable", sans-serif;
+  margin-bottom: 8px;
+  word-break: keep-all;
+}
+.footer-section.section .container span.copyrights span.copy {
   font-family: "Poppins", sans-serif;
+}
+.footer-section.section .container a.privacy {
+  width: 100px;
 }
 .footer-section.section .container a.privacy span {
   font-family: "SUIT Variable", sans-serif;
@@ -81,7 +94,33 @@
   color: #2a2a2a;
 }
 .footer-section.section#white-footer .container a.back-top-btn .arrow-icon-box {
-  background: url(../img/main/arrow-img03.svg) no-repeat center top/100% auto;
+  background: url("../img/arrow-img03.svg") no-repeat center top/100% auto;
+}
+/* footer#black-footer */
+.footer-section.section#black-footer {
+  background: #0e0e0e;
+}
+.footer-section.section#black-footer .container span {
+  color: #fff;
+}
+.footer-section.section#black-footer .container a.back-top-btn .arrow-icon-box {
+  background: url("../img/arrow-img03-white.svg") no-repeat center top/100% auto;
+}
+@media (max-width: 1024px) {
+  .footer-section.section {
+    height: 200px !important;
+  }
+  .footer-section.section .container {
+    padding: 0 48px;
+  }
+  .footer-section.section .container span {
+    font-weight: 300;
+  }
+  .footer-section.section .container span.copyrights span.info {
+    line-height: 1.5;
+    margin-bottom: 18px;
+    width: 400px;
+  }
 }
 @media (max-width: 450px) {
   .footer-section.section {
@@ -101,7 +140,7 @@
     margin: 0;
   }
   .footer-section.section .container a.back-top-btn span {
-    display: none;
+    display: none !important;
   }
   .footer-section.section .container span.copyrights {
     margin-bottom: 20px;
