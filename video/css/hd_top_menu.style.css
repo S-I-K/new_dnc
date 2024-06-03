@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+#shGnb{opacity:1;position:fixed;top:0;left:0;width:100%;height:150px;margin:0 auto;padding: 0 calc((100% - 1600px) / 2);border-bottom:1px solid rgba(0,0,0,0);transition:border .2s 0s}
+#shGnb.sub{position:absolute;height:110px}
+#shGnb.on .sh_lnb > li > a{color:#111}
+#shGnb.on{border-color:#e1e1e1;transition:border .2s .1s}
+.sh_lnb_bg{display:none;position:absolute;top:0;left:0;width:100%;height:350px;background-color:#fff}
+.sh_lnb_black{display:none;position:fixed;top:0;left:0;z-index:-1;width:100%;height:100vh;background-color:rgba(0,0,0,.5)}
+
+/* 로고 */
+.sh_logo{position:absolute;top:50%;z-index:101;transform:translateY(-50%)}
+
+/* 메뉴 */
+.sh_lnb{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:100%; text-align:center}
+.sh_lnb > li{ display:inline-block;position:relative;height:110px;padding:0 50px;line-height:110px;border-bottom:2px solid rgba(255,255,255,0);transition:border .3s}
+.sh_lnb > li > a{display:block;font-size:17px;font-weight:600;color:#fff;transition:all .2s}
+.sh_lnb > li:hover{border-color:#111}
+.sh_lnb_s{display:none;position:absolute;width:100%;min-height:170px;left:50%;transform:translateX(-50%);padding-top:20px}
+.sh_lnb_s li a{display:block;margin:0px;font-size:15px;line-height:28px;text-align:center;color:#222;transition:color .2s;font-family:'Poppins'}
+.sh_lnb_s li a:hover{color:#999}
+
+/* 전체메뉴버튼 */
+.full_menu_btn{position:absolute;top:50%;left:50%;z-index:101;transform:translate(-50%,-50%);padding:15px;border:0;background:none;cursor:pointer}
+.full_menu_btn span{display:block;position:relative;width:50px;height:2px;background-color:#fff;transition:all .3s var(--ani)}
+.full_menu_btn span + span{width:34px;margin:8px auto 0}
+.full_menu_btn.on span{top:1px;transform:rotate(45deg);width:26px}
+.full_menu_btn.on span + span{top:-1px;transform:rotate(-405deg);margin:0 auto}
+
+/* 전체메뉴 - 배경 */
+.full_menu_wrap{overflow:hidden;display:flex;justify-content:center;align-items:center;position:fixed;top:0;left:0;width:100%;height:0;transition:height .7s var(--ani)}
+.full_menu_wrap:before, .full_menu_wrap:after{content:'';height:0;position:fixed;top:0;width:100%;height:0}
+.full_menu_wrap:before{z-index:-2;background-color:#fff;transition:height .7s var(--ani) .1s} 
+.full_menu_wrap:after{z-index:-1;background-color:#111;transition:height .7s var(--ani)}
+.full_menu_on{height:100%;transition:height .7s var(--ani) .1s}
+.full_menu_on:before, .full_menu_on:after{height:100%}
+.full_menu_on:before{transition:height .7s var(--ani)} 
+.full_menu_on:after{transition:height .7s var(--ani) .1s}
+
+/* 전체메뉴 - 리스트 */
+.full_list{opacity:0;text-align:center;transition:all .5s var(--ani)}
+.full_item{position:relative;z-index:1;padding:0 20px;transition:all .2s}
+.full_item:hover{padding-bottom:40px}
+.full_item > a{font-size:65px;font-weight:700;line-height:1.4;color:#fff;text-transform:uppercase;transition:all .2s}
+.full_item.off{z-index:0}
+.full_item.off > a{opacity:.06}
+.full_item ul{opacity:0;position:absolute;left:50%;top:100%;z-index:2;transform:translateX(-50%);min-width:300px;text-align:center;transition:all .2s}
+.full_item ul li a{display:inline-block;padding:0 10px;font-size:20px;line-height:1.8;color:#fff;transition:all .2s;font-family:'Poppins'}
+.full_item ul li a:hover{opacity:.5}
+.full_menu_on .full_list{opacity:1;transition:all .7s var(--ani) .4s}
+.full_item ul.on{opacity:1;transform:translate(-50%,-30px)}
+
+/* 반응형 메뉴 [s] */
+#topmenuM{display:none;position:relative;width:100%;padding:20px 15px;line-height:1.8;background-color:#0e0e0e;font-family:'Poppins'}	
+/* 로고 */
+#m_logo{position:relative}
+#m_logo a{display:inline-block}
+#m_logo img{max-width:240px}
+/* 상단 버튼 및 오픈메뉴 */
+#m_navBtn{position:absolute;top:18px;right:15px;z-index:5;width:30px;height:30px}
+#m_navBtn span{display:block;position:relative;top:50%;transform:translateY(-50%);width:100%;height:2px}
+#m_navBtn span:before, #m_navBtn span:after{display:block;content:"";position:absolute;top:-6px;width:30px;height:2px;background-color:#fff;-webkit-transition:all .1s;transition:all .1s}
+#m_navBtn span:after{top:6px;width:16px;right:0;background-color:#fff}
+#m_navBtn.on{position:fixed}
+#m_navBtn.on span:before{top:0;right:-4px;transform:rotate(45deg);background-color:#222}
+#m_navBtn.on span:after{top:0;right:-4px;width:30px;transform:rotate(-45deg);background-color:#222}
+#navWrap{display:none;position:fixed;left:0;top:0;z-index:4;width:100%;height:100%;background-color:rgba(0,0,0,.7)}
+#navWrap .inner{overflow-y:scroll;opacity:0;position:fixed;right:-40px;top:0;z-index:6;min-width:300px;width:75%;height:100%;padding:60px 0;background-color:#fff;-webkit-transition:all .1s;transition:all .1s}
+#navWrap.on .inner{opacity:1;right:0;-webkit-transition:all .4s;transition:all .4s}
+#navWrap .inner:before, #navWrap .inner:after{opacity:0;display:block;position:fixed;top:0;right:-40px;z-index:1;content:"";min-width:300px;width:70%;height:60px;background-color:#fff;-webkit-transition:all .1s;transition:all .1s}
+#navWrap .inner:after{top:auto;bottom:0}
+#navWrap.on .inner:before, #navWrap.on .inner:after{opacity:1;right:0;-webkit-transition:all .4s;transition:all .4s}
+#navWrap .inner .mo_hd_copy{position:fixed;right:0;bottom:15px;z-index:2;min-width:300px;width:70%;font-size:13px;text-align:center;color:#888;font-family:'AppleSDGothicNeo'}
+#navWrap .user_tip{padding:10px 20px;background-color:#f5f5f5}
+#navWrap .user_tip li{display:inline-block}
+#navWrap .user_tip li+li{margin-left:10px}
+/* 대분류 */
+#topmenuM .m_lnb .m_bmenu{display:block;position:relative;width:100%;height:52px;padding:0 20px;border:none;border-bottom:1px solid #ddd;background:none;font-size:16px;font-weight:600;line-height:52px;color:#222;text-align:left;font-family:'Poppins'}
+#topmenuM .m_lnb .m_bmenu:after{float:right;content:"\f107";font-family:'fontawesome'}
+#topmenuM .m_lnb .m_bmenu.on:after{content:"\f106"}
+/* 소분류 */
+#topmenuM .m_smenu{display:none;padding:15px 20px;border-bottom:1px solid #ddd;background-color:#f2f3f5}
+#topmenuM .m_smenu li a{font-size:14px;color:#777}
+@media (max-width:1600px){
+.sh_logo{left:20px}	
+}
+@media (max-width:1230px){
+.sh_lnb{text-align:right}
+}
+@media (max-width:1024px){
+#shGnb{display:none}
+#topmenuM{display:block}	
+}
+
+/* 반응형 메뉴 [e] */

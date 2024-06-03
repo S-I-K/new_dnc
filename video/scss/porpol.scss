@@ -1,0 +1,1675 @@
+/* variable css */
+$font-kr: "SUIT Variable", sans-serif;
+$font-en: "Poppins", sans-serif;
+$font-black: #2a2a2a;
+$color-main: #036EB8;
+$color-white: #fff;
+$page-main-color: #0e0e0e;
+$page-sub-color: #fff;
+
+
+
+
+/* 쓸데없는거 치우기 */
+#header {
+    display: none;
+}
+.sub_top.sub2 {
+    display: none;
+}
+#footer {
+    display: none;
+}
+/* end: 쓸데없는거 치우기 */
+
+#wrap.porpol-page {
+    width: 100%;
+    height: auto;
+    padding-top: 240px;
+    background: $page-main-color;
+
+    header {
+        background: $page-main-color;
+        .container {
+            .logo-box {
+                a {
+                }
+                img {
+                }
+            }
+    
+            .menu-box {
+                ul {
+                    li {
+                        a {
+                        }
+                    }
+                    li:not(:last-child) {
+                    }
+                }
+            }
+            .menu-box.nav-white {
+                ul {
+                    li {
+                        a {
+                        }
+                    }
+                }
+            }
+    
+            .side-icon-box {
+                ul {
+                    li {
+                        a {
+                            img {
+                            }
+                            span.line {
+                            }
+                            span.line:nth-child(1) {
+                            }
+                            span.line:nth-child(2) {
+                            }
+                        }
+                    }
+                    li:not(:last-child) {
+                    }
+                }
+            }
+            .side-icon-box.nav-white {
+                ul {
+                    li {
+                        a {
+                            span.line {
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .floating-box {
+                a.back-top-btn {
+                    .img-box {
+                    }
+                    span {
+                    }
+                }
+                a.back-top-btn:hover {
+                    span {
+                    }
+                }
+            }
+            .floating-box.black {
+                a.back-top-btn {
+                    .img-box {
+                    }
+                    span {
+                    }
+                }
+                a.back-top-btn:hover {
+                    span {
+                    }
+                }
+            }
+        }
+    }
+
+    /* 큰 제목 */
+    .title-section {
+        .container {
+            /* sub-title-box */
+            .sub-title-box {
+                img {
+                }
+                span {
+                    color: #fff;
+                }
+            }
+
+            /* title-box */
+            .title-box {
+                h2.title {
+                    color: #fff;
+                    span.circle {
+                    }
+                }
+                p {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+    /* gallery-content-wrap */
+    .gallery-content-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // padding-bottom: 200px;
+        /* 관리자버튼 나중에 보여지게 */
+        #bo_admin {
+            // display: none !important;
+        }
+        .container {
+            // border: 1px solid red;
+            #ajax-a {
+                width: 100%;
+                .ajax-b {
+                    width: 100%;
+                    .main-content {
+                        width: 100%;
+                        .gallery-content-box {
+                            width: 100%;
+                            .filter-wrap {
+                                margin-bottom: 40px;
+                                div {
+                                    .pr_tabs {
+                                        ul {
+                                            display: flex;
+                                            align-content: center;
+                                            justify-content: flex-start;
+                                            border-collapse: unset;
+                                            li {
+                                                border: none;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                line-height: 1;
+                                                a {
+                                                    font-family: $font-en;
+                                                    font-weight: 500;
+                                                    font-size: 16px;
+                                                    line-height: 1;
+                                                    letter-spacing: -.8px;
+                                                    color: $font-black;
+                                                    border: 2px solid #aaa;
+                                                    border-radius: 300px;
+                                                    color: #aaa;
+                                                    padding: 16px 32px;
+                                                }
+                                                a#bo_cate_on {
+                                                    background: $font-black;
+                                                    border: 2px solid $font-black;
+                                                    color: #fff;
+                                                }
+                                                a:hover {
+                                                    background: #aaa;
+                                                    color: #fff;
+                                                }
+                                            }
+                                            li:not(:last-child) {
+                                                margin-right: 10px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .item-list-wrap {
+                                width: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                justify-content: center;
+                                // border: 1px solid red;
+                                .item {
+                                    position: relative;
+                                    width: calc(100% / 3);
+                                    padding: 24px;
+                                    a.img-box {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        position: relative;
+                                        overflow: hidden;
+                                        .thumb-box {
+                                            width: 100%;
+                                            height: 100%;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            position: relative;
+                                            img {
+                                                transform: scale(1.1);
+                                                transition: transform .4s ease;
+                                            }
+                                        }
+                                        /* .thumb-box::after {
+                                            content: '';
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: rgba(0, 0, 0, .4);
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                        } */
+                                        .hover-text-box {
+                                            width: 100%;
+                                            height: 100%;
+                                            padding: 40px;
+                                            position: absolute;
+                                            /* 나중에 보여지게 함 */
+                                            // display: none;
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            justify-content: flex-end;
+                                            .icon-box {
+                                                width: 20px;
+                                                height: 20px;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                margin-bottom: 34px;
+                                                overflow: hidden;
+                                                img {
+                                                    width: 100%;
+                                                    opacity: 0;
+                                                    transition: all .4s ease;
+                                                    transform: translateY(60px);
+                                                }
+                                            }
+                                            span.category-text {
+                                                display: block;
+                                                height: 24px;
+                                                font-family: $font-kr;
+                                                font-weight: 600;
+                                                font-size: 18px;
+                                                line-height: 1;
+                                                letter-spacing: -.8px;
+                                                text-align: left;
+                                                color: #fff;
+                                                overflow: hidden;
+                                                span {
+                                                    display: block;
+                                                    transform: translateY(60px);
+                                                    opacity: 0;
+                                                    transition: all .4s ease;
+                                                    transition-delay: .1s;
+                                                    word-break: keep-all;
+                                                }
+                                            }
+                                            h4.heading-title {
+                                                height: 74px;
+                                                margin: 0;
+                                                margin-top: 20px;
+                                                font-family: $font-kr;
+                                                font-weight: 700;
+                                                font-size: 30px;
+                                                line-height: 1.2;
+                                                letter-spacing: -.8px;
+                                                color: #fff;
+                                                overflow: hidden;
+                                                text-align: left;
+                                                span {
+                                                    display: block;
+                                                    opacity: 0;
+                                                    transform: translateY(60px);
+                                                    transition: all .4s ease;
+                                                    transition-delay: .2s;
+                                                    word-break: keep-all;
+                                                }
+                                            }
+                                        }
+                                        .board-title-box {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: flex-start;
+                                            position: absolute;
+                                            left: 0px;
+                                            bottom: 0px;
+                                            padding: 40px;
+                                            opacity: 1;
+                                            transition: all .8s ease;
+                                            span.board-title {
+                                                font-family: $font-kr;
+                                                font-weight: 700;
+                                                font-size: 18px;
+                                                line-height: 1.4;
+                                                letter-spacing: -.8px;
+                                                color: #fff;
+                                            }
+                                        }
+                                    }
+                                    a.img-box:hover {
+                                        .thumb-box {
+                                            img {
+                                                transform: scale(1);
+                                            }
+                                        }
+                                        .hover-text-box {
+                                            display: flex;
+                                            .icon-box {
+                                                img {
+                                                    transform: translateY(0px);
+                                                    opacity: 1;
+                                                }
+                                            }
+                                            span.category-text {
+                                                span {
+                                                    transform: translateY(0px);
+                                                    opacity: 1;
+                                                }
+                                            }
+                                            h4.heading-title {
+                                                span {
+                                                    transform: translateY(0px);
+                                                    opacity: 1;
+                                                }
+                                            }
+                                        }
+                                        .board-title-box {
+                                            transition: all .2s ease;
+                                            opacity: 0;
+                                        }
+                                    }
+
+                                    /* 나중에 다시 보여져야함 */
+                                    .check-box {
+                                        // display: none !important;
+                                    }
+                                }
+                            }
+                        }
+                        .admin-board-btn-box {
+                            margin-top: 80px;
+                            .container {
+                                .template-form {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    button {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        padding: 22px 44px;
+                                        border-radius: 300px;
+                                        background: $page-sub-color;
+                                        position: relative;
+                                        margin: 0;
+                                        margin-right: 14px;
+                                        span {
+                                            display: inline-block;
+                                            font-family: "SUIT Variable", sans-serif;
+                                            font-weight: 500;
+                                            font-size: 18px;
+                                            line-height: 1;
+                                            letter-spacing: -0.8px;
+                                            color: #fff;
+                                        }
+                                        .icon-box {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 14px;
+                                            transition: all 0.4s ease;
+                                            position: absolute;
+                                            right: 18px;
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .btn-box {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
+                                        padding: 22px 44px;
+                                        border-radius: 300px;
+                                        background: $page-sub-color;
+                                        position: relative;
+                                        margin: 0;
+                                        input {
+                                            display: inline-block;
+                                            font-family: "SUIT Variable", sans-serif;
+                                            font-weight: 500;
+                                            font-size: 18px;
+                                            line-height: 1;
+                                            letter-spacing: -0.8px;
+                                            color: #fff;
+                                            outline: none;
+                                            background: transparent;
+                                            border: none;
+                                        }
+                                        .icon-box {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                            width: 14px;
+                                            transition: all 0.4s ease;
+                                            position: absolute;
+                                            right: 18px;
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                    .btn-box:not(:last-child) {
+                                        margin-right: 14px;
+                                    }
+                                    .btn-box:hover {
+                                        .icon-box {
+                                            transform: translate(14px, -14px);
+                                            opacity: 0;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* footer-section */
+    .footer-section.section {
+        .container {
+            span {
+            }
+            a.back-top-btn {
+                span {
+                }
+                span::before {
+                }
+                .arrow-icon-box {
+                    img {
+                    }
+                }
+            }
+            a.back-top-btn:hover {
+                span {
+                }
+            }
+            span.copyrights {
+                span {
+                }
+            }
+            a.privacy {
+                span {
+                }
+            }
+        }
+    }
+}
+
+
+#wrap.porpol-view-page {
+    padding-top: 240px;
+    background: $page-main-color;
+
+    header {
+        background: $page-main-color;
+        .container {
+            .logo-box {
+                a {
+                }
+                img {
+                }
+            }
+    
+            .menu-box {
+                ul {
+                    li {
+                        a {
+                        }
+                    }
+                    li:not(:last-child) {
+                    }
+                }
+            }
+            .menu-box.nav-white {
+                ul {
+                    li {
+                        a {
+                        }
+                    }
+                }
+            }
+    
+            .side-icon-box {
+                ul {
+                    li {
+                        a {
+                            color: #fff;
+                            img {
+                            }
+                            span.line {
+                                background: #fff;
+                            }
+                            span.line:nth-child(1) {
+                            }
+                            span.line:nth-child(2) {
+                            }
+                        }
+                    }
+                    li:not(:last-child) {
+                    }
+                }
+            }
+            .side-icon-box.nav-white {
+                ul {
+                    li {
+                        a {
+                            span.line {
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .floating-box {
+                a.back-top-btn {
+                    .img-box {
+                    }
+                    span {
+                    }
+                }
+                a.back-top-btn:hover {
+                    span {
+                    }
+                }
+            }
+            .floating-box.black {
+                a.back-top-btn {
+                    .img-box {
+                    }
+                    span {
+                    }
+                }
+                a.back-top-btn:hover {
+                    span {
+                    }
+                }
+            }
+        }
+    }
+
+    section.title-section {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 80px;
+        .container {
+            // border: 1px solid red;
+            h2#bo_v_title {
+                margin: 0;
+                padding: 0;
+                line-height: 1;
+                font-size: large;
+                span.bo_v_tit {
+                    font-family: $font-kr;
+                    font-weight: 400;
+                    font-size: 84px;
+                    line-height: 1.4;
+                    letter-spacing: -4px;
+                    word-break: keep-all;
+                    // color: $font-black;
+                    color: #fff;
+                    margin: 0;
+                    display: block;
+                    // max-width: 1000px;
+                }
+                strong.if_date {
+                    font-family: $font-kr;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1;
+                    letter-spacing: -.8px;
+                    // color: $font-black;
+                    color: #fff;
+                    display: inline-block;
+                    margin-bottom: 24px;
+                    margin-right: 10px;
+                }
+                span.bo_v_cate {
+                    font-family: $font-kr;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 1;
+                    letter-spacing: -.8px;
+                    // color: $font-black;
+                    color: #fff;
+                    display: inline-block;
+                    margin-bottom: 24px;
+                    padding-left: 10px;
+                    position: relative;
+                }
+                span.bo_v_cate::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 1px;
+                    height: 100%;
+                    background: $font-black;
+                }
+            }
+        }
+    }
+
+    section.content-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container {
+            // border: 1px solid red;
+            flex-direction: column;
+            /* 게시글 본문시작 */
+            #bo_v_atc {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                /* 이미지 */
+                #bo_v_img {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    a {
+                        margin-bottom: 60px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        min-width: 1000px;
+                        img {
+                            width: 100%;
+                            height: auto;
+                            margin: 0;
+                        }
+                    }
+                }
+                /* 텍스트 */
+                #bo_v_con {
+                    width: auto;
+                    min-width: 1000px;
+                    min-height: auto;
+                    line-height: 1.5;
+                    margin: 0;
+                    margin-bottom: 60px;
+                    p {
+                        width: 100%;
+                        font-family: $font-kr;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 1.4;
+                        // color: $font-black;
+                        color: #fff;
+                        letter-spacing: -.8px;
+                    }
+                }
+            }
+
+            /* 관련링크 */
+            #bo_v_link {
+                h2 {
+                    display: none;
+                }
+                ul {
+                    li {
+                        opacity: .6;
+                        transition: opacity .4s ease;
+                        padding: 14px 0;
+                        a {
+                            float: none;
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            i {
+                                float: none;
+                                font-size: 16px;
+                                margin-right: 14px;
+                                color: #fff;
+                            }
+                            strong {
+                                font-family: $font-en;
+                                font-weight: 500;
+                                line-height: 1;
+                                letter-spacing: -.8px;
+                                font-size: 13px;
+                                // color: $font-black;
+                                color: #fff;
+                            }
+                        }
+                        span {
+                            display: block;
+                            text-align: right;
+                        }
+                        span.bo_v_link_cnt {
+                            display: none;
+                        }
+                    }
+                    li:hover {
+                        opacity: 1;
+                    }
+                    li:not(:last-child) {
+                        border-bottom: 1px solid #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    section.next-prev-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        clip-path: inset(0 80px 0 80px);
+        padding: 80px 0;
+        margin: 80px 0 40px 0;
+        .container {
+            // border: 1px solid red;
+            width: 1000px;
+            max-width: 1000px;
+            padding: 0 60px;
+            ul.bo_v_nb {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                width: 100%;
+                clear: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    width: 50%;
+                    border: none;
+                    padding: 0;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    a {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        span {
+                            font-family: $font-kr;
+                            // color: $font-black;
+                            color: #fff;
+                            padding: 0;
+                        }
+                        span.nb_tit {
+                            font-size: 34px;
+                            font-weight: 800;
+                            letter-spacing: -.8px;
+                            line-height: 1;
+                            margin-bottom: 34px;
+                        }
+                        span.board-title-btn {
+                            font-size: 16px;
+                            font-weight: 500;
+                            letter-spacing: -.8px;
+                            line-height: 1;
+                            // color: $font-black;
+                            color: #fff;
+                            position: relative;
+                        }
+                        span.board-title-btn::after {
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            bottom: -6px;
+                            width: 0%;
+                            height: 2px;
+                            // background: $font-black;
+                            background: #fff;
+                            transition: all .4s ease;
+                        }
+                    }
+                    a:hover {
+                        span.board-title-btn::after {
+                            width: 100%;
+                        }
+                    }
+                }
+                li:hover {
+                    background: none;
+                }
+                li.btn_prv {
+                    a {
+                        align-items: flex-start;
+                    }
+                }
+                li.btn_next {
+                    a {
+                        align-items: flex-end;
+                    }
+                }
+            }
+        }
+    }
+
+    section.list-btn-section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a { 
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 22px 44px;
+                border-radius: 300px;
+                background: $page-sub-color;
+                position: relative;
+                margin: 0;
+                span {
+                    display: inline-block;
+                    font-family: $font-kr;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 1;
+                    letter-spacing: -.8px;
+                    color: #fff;
+                }
+                .icon-box {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 14px;
+                    transition: all .4s ease;
+                    position: absolute;
+                    right: 18px;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                input {
+                    display: inline-block;
+                    font-family: $font-kr;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 1;
+                    letter-spacing: -.8px;
+                    color: #fff;
+                    background: transparent;
+                    border: none;
+                }
+            }
+            a:hover {
+                .icon-box {
+                    transform: translate(14px, -14px);
+                    opacity: 0;
+                }
+            }
+            a:not(:last-child) {
+                margin-right: 14px;
+            }
+        }
+    }
+
+    /* footer-section */
+    .footer-section.section {
+        background: $page-main-color;
+        .container {
+            span {
+            }
+            a.back-top-btn {
+                span {
+                    color: #fff;
+                }
+                span::before {
+                }
+                .arrow-icon-box {
+                    background: url("/theme/new_dnc/img/main/arrow-img03-white.svg") no-repeat center top / 100% auto;
+                    img {
+                    }
+                }
+            }
+            a.back-top-btn:hover {
+                span {
+                }
+            }
+            span.copyrights {
+                span {
+                    color: #fff;
+                }
+            }
+            a.privacy {
+                span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+/* responsive css */
+@media ( max-width: 1024px ) {
+    #wrap.porpol-page {
+        padding-top: 180px;
+        /* common css */
+        .section.title-section {
+            margin-bottom: 80px;
+            .container {
+                padding: 0 48px;
+                .sub-title-box {
+                    margin-bottom: 34px;
+                    img {
+                        width: 18px;
+                        margin-bottom: 24px;
+                    }
+                    span {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+                .title-box {
+                    h2.title {
+                        letter-spacing: -2px;
+                        font-size: 80px;
+                        margin-bottom: 14px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        #bo_list {
+            form#fboardlist {
+                .tbl_head01.tbl_wrap {
+                    margin: 0;
+                    table {
+                        tbody {
+                            padding: 0 16px;
+                            tr {
+                                clip-path: none;
+                                td {
+                                    width: 100%;
+                                    .board-content-title {
+                                        margin-bottom: 20px;
+                                        a {
+                                            font-size: 28px;
+                                        }
+                                    }
+                                }
+                            }
+                            tr:not(:last-child) {
+                                padding: 20px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .gallery-content-wrap {
+            .container {
+                #ajax-a {
+                    width: 100%;
+                    .ajax-b {
+                        .main-content {
+                            input {
+
+                            }
+
+                            .gallery-content-box {
+                                .filter-wrap {
+                                    div {
+                                        width: 100%;
+                                        .pr_tabs {
+                                            padding: 0;
+                                            margin: 0;
+                                            ul {
+                                                position: unset;
+                                                overflow: scroll;
+                                                padding: 0;
+                                                padding-bottom: 8px;
+                                                justify-content: flex-start;
+                                                li {
+                                                    a {
+                                                        padding: 18px 32px;
+                                                        font-size: 14px;
+                                                        white-space: nowrap;
+                                                    }
+                                                    a#bo_cate_on {
+                                                    }
+                                                    a:hover {
+                                                    }
+                                                }
+                                                li:not(:last-child) {
+                                                    margin-right: 14px;
+                                                }
+                                            }
+                                            ul::-webkit-scrollbar {
+                                                background-color: transparent;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .item-list-wrap {
+                                    .item {
+                                        a.img-box {
+                                            .thumb-box {
+                                                img {
+                                                }
+                                            }
+                                            /* .thumb-box::after {
+                                                content: '';
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                background: rgba(0, 0, 0, .4);
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                            } */
+                                            .hover-text-box {
+                                                .icon-box {
+                                                    img {
+                                                    }
+                                                }
+                                                span.category-text {
+                                                    span {
+                                                    }
+                                                }
+                                                h4.heading-title {
+                                                    span {
+                                                    }
+                                                }
+                                            }
+                                            .board-title-box {
+                                                span.board-title {
+                                                }
+                                            }
+                                        }
+                                        a.img-box:hover {
+                                            .thumb-box {
+                                                img {
+                                                }
+                                            }
+                                            .hover-text-box {
+                                                .icon-box {
+                                                    img {
+                                                    }
+                                                }
+                                                span.category-text {
+                                                    span {
+                                                    }
+                                                }
+                                                h4.heading-title {
+                                                    span {
+                                                    }
+                                                }
+                                            }
+                                            .board-title-box {
+                                            }
+                                        }
+
+                                        .check-box {
+                                        }
+                                    }
+                                }
+                            }
+                            .admin-board-btn-box {
+                                margin-top: 80px;
+                                .container {
+                                    .template-form {
+                                        overflow: scroll;
+                                        padding-bottom: 8px;
+                                        justify-content: flex-start;
+                                        button {
+                                            padding: 18px 32px;
+                                            span {
+                                                font-size: 14px;
+                                            }
+                                            .icon-box {
+                                                width: 8px;
+                                                img {
+                                                }
+                                            }
+                                        }
+                                        .btn-box {
+                                            padding: 18px 32px;
+                                            input {
+                                                font-size: 14px;
+                                            }
+                                            .icon-box {
+                                                width: 8px;
+                                                img {
+                                                }
+                                            }
+                                        }
+                                        .btn-box:not(:last-child) {
+                                        }
+                                        .btn-box:hover {
+                                            .icon-box {
+                                            }
+                                        }
+                                    }
+                                    .template-form::-webkit-scrollbar {
+                                        background: transparent;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #wrap.porpol-view-page {
+        padding-top: 180px;
+        section.title-section {
+            .container {
+                padding: 0 48px;
+                h2#bo_v_title {
+                    strong.if_date {
+                        margin-bottom: 10px;
+                    }
+                    span.bo_v_tit {
+                        font-size: 34px;
+                    }
+                }
+            }
+        }
+
+        section.content-section {
+            .container {
+                padding: 0 48px;
+                #bo_v_atc {
+                    #bo_v_img a {
+                        width: 100%;
+                        max-width: none;
+                        min-width: auto;
+                        margin-bottom: 20px;
+                    }
+                    #bo_v_con {
+                        width: 100%;
+                        min-width: auto;
+                        p {
+                            font-size: 1rem;
+                            font-weight: 400;
+                            margin: 0 !important;
+                        }
+                    }
+                }
+
+                #bo_v_link {
+                    width: 100%;
+                    ul {
+                        li {
+                            i {
+
+                            }
+                            a {
+                                strong {
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    font-family: $font-kr;
+                                    letter-spacing: -.8px;
+                                    line-height: 1;
+                                }
+                            }
+                            span.bo_v_link_cnt {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.next-prev-section {
+            clip-path: none;
+            border: none;
+            padding: 0;
+            margin: 140px 0 40px 0;
+            .container {
+                width: 100%;
+                max-width: none;
+                padding: 0 48px;
+                ul.bo_v_nb {
+                    flex-direction: column;
+                    justify-content: center;
+                    li {
+                        width: 100%;
+                        padding: 20px 0px;
+                        a {
+                            span.nb_tit {
+                                margin-bottom: 24px;
+                            }
+                            span.board-title-btn {
+                                
+                            }
+                        }
+                    }
+                    li.btn_prv {
+                        border-top: 1px solid rgba(0, 0, 0, 0.1);
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                        a {
+                            align-items: flex-start;
+                            span.nb_tit {
+
+                            }
+                            span.board-title-btn {
+                                
+                            }
+                        }
+                    }
+                    li.btn_next {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                        a {
+                            align-items: flex-start;
+                            span.nb_tit {
+
+                            }
+                            span.board-title-btn {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.list-btn-section {
+            margin-top: 42px;
+            padding: 0 48px;
+            .container {
+                overflow: scroll;
+                padding-bottom: 12px;
+                justify-content: flex-start;
+                padding: 0;
+                padding-bottom: 12px;
+                a { 
+                    padding: 18px 32px;
+                    span {
+                        font-size: 14px;
+                    }
+                    .icon-box {
+                        width: 8px;
+                        img {
+                        }
+                    }
+    
+                    input {
+                        font-size: 14px;
+                    }
+                }
+                a:hover {
+                    .icon-box {
+                    }
+                }
+                a:not(:last-child) {
+                }
+            }
+        }
+    }
+}
+/* responsive css */
+@media ( max-width: 450px ) {
+    #wrap.porpol-page {
+        padding-top: 120px;
+        .section.title-section {
+            margin-bottom: 80px;
+            .container {
+                padding: 0 16px;
+                .sub-title-box {
+                    img {}
+                    span {
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+                .title-box {
+                    flex-direction: column;
+                    h2.title {
+                        letter-spacing: -2px;
+                        font-size: 52px;
+                        margin-bottom: 14px;
+                    }
+                    p {
+                        text-align: left;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        #bo_list {
+            form#fboardlist {
+                .tbl_head01.tbl_wrap {
+                    margin: 0;
+                    table {
+                        tbody {
+                            padding: 0 16px;
+                            tr {
+                                clip-path: none;
+                                td {
+                                    width: 100%;
+                                    .board-content-title {
+                                        margin-bottom: 20px;
+                                        a {
+                                            font-size: 28px;
+                                        }
+                                    }
+                                }
+                            }
+                            tr:not(:last-child) {
+                                padding: 20px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .gallery-content-wrap {
+            .container {
+                #ajax-a {
+                    width: 100%;
+                    .ajax-b {
+                        .main-content {
+                            input {
+
+                            }
+
+                            .gallery-content-box {
+                                .filter-wrap {
+                                    div {
+                                        width: 100%;
+                                        .pr_tabs {
+                                            padding: 0;
+                                            margin: 0;
+                                            ul {
+                                                position: unset;
+                                                overflow: scroll;
+                                                padding: 0;
+                                                padding-bottom: 8px;
+                                                justify-content: flex-start;
+                                                li {
+                                                    a {
+                                                        padding: 18px 32px;
+                                                        font-size: 14px;
+                                                        white-space: nowrap;
+                                                    }
+                                                    a#bo_cate_on {
+                                                    }
+                                                    a:hover {
+                                                    }
+                                                }
+                                                li:not(:last-child) {
+                                                    margin-right: 14px;
+                                                }
+                                            }
+                                            ul::-webkit-scrollbar {
+                                                background-color: transparent;
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .item-list-wrap {
+                                    flex-direction: column;
+                                    .item {
+                                        width: 100%;
+                                        a.img-box {
+                                            .thumb-box {
+                                                img {
+                                                }
+                                            }
+                                            /* .thumb-box::after {
+                                                content: '';
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                background: rgba(0, 0, 0, .4);
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                            } */
+                                            .hover-text-box {
+                                                .icon-box {
+                                                    img {
+                                                    }
+                                                }
+                                                span.category-text {
+                                                    span {
+                                                    }
+                                                }
+                                                h4.heading-title {
+                                                    span {
+                                                    }
+                                                }
+                                            }
+                                            .board-title-box {
+                                                span.board-title {
+                                                }
+                                            }
+                                        }
+                                        a.img-box:hover {
+                                            .thumb-box {
+                                                img {
+                                                }
+                                            }
+                                            .hover-text-box {
+                                                .icon-box {
+                                                    img {
+                                                    }
+                                                }
+                                                span.category-text {
+                                                    span {
+                                                    }
+                                                }
+                                                h4.heading-title {
+                                                    span {
+                                                    }
+                                                }
+                                            }
+                                            .board-title-box {
+                                            }
+                                        }
+
+                                        .check-box {
+                                        }
+                                    }
+                                }
+                            }
+                            .admin-board-btn-box {
+                                margin-top: 80px;
+                                .container {
+                                    .template-form {
+                                        overflow: scroll;
+                                        padding-bottom: 8px;
+                                        justify-content: flex-start;
+                                        button {
+                                            padding: 18px 32px;
+                                            span {
+                                                font-size: 14px;
+                                            }
+                                            .icon-box {
+                                                width: 8px;
+                                                img {
+                                                }
+                                            }
+                                        }
+                                        .btn-box {
+                                            padding: 18px 32px;
+                                            input {
+                                                font-size: 14px;
+                                            }
+                                            .icon-box {
+                                                width: 8px;
+                                                img {
+                                                }
+                                            }
+                                        }
+                                        .btn-box:not(:last-child) {
+                                        }
+                                        .btn-box:hover {
+                                            .icon-box {
+                                            }
+                                        }
+                                    }
+                                    .template-form::-webkit-scrollbar {
+                                        background: transparent;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #wrap.porpol-view-page {
+        padding-top: 120px;
+        section.title-section {
+            .container {
+                padding: 0 16px;
+                h2#bo_v_title {
+                    strong.if_date {
+                        margin-bottom: 10px;
+                    }
+                    span.bo_v_tit {
+                        font-size: 34px;
+                    }
+                }
+            }
+        }
+
+        section.content-section {
+            .container {
+                padding: 0 16px;
+                #bo_v_atc {
+                    #bo_v_img a {
+                        width: 100%;
+                        max-width: none;
+                        min-width: auto;
+                        margin-bottom: 20px;
+                    }
+                    #bo_v_con {
+                        width: 100%;
+                        min-width: auto;
+                        p {
+                            font-size: 1rem;
+                            font-weight: 400;
+                            margin: 0 !important;
+                        }
+                    }
+                }
+
+                #bo_v_link {
+                    width: 100%;
+                    ul {
+                        li {
+                            i {
+
+                            }
+                            a {
+                                strong {
+                                    font-size: 12px;
+                                    font-weight: 700;
+                                    font-family: $font-kr;
+                                    letter-spacing: -.8px;
+                                    line-height: 1;
+                                }
+                            }
+                            span.bo_v_link_cnt {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.next-prev-section {
+            clip-path: none;
+            border: none;
+            padding: 0;
+            margin: 140px 0 40px 0;
+            .container {
+                width: 100%;
+                max-width: none;
+                padding: 0 16px;
+                ul.bo_v_nb {
+                    flex-direction: column;
+                    justify-content: center;
+                    li {
+                        width: 100%;
+                        padding: 20px 0px;
+                        a {
+                            span.nb_tit {
+                                margin-bottom: 24px;
+                            }
+                            span.board-title-btn {
+                                
+                            }
+                        }
+                    }
+                    li.btn_prv {
+                        border-top: 1px solid rgba(0, 0, 0, 0.1);
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                        a {
+                            align-items: flex-start;
+                            span.nb_tit {
+
+                            }
+                            span.board-title-btn {
+                                
+                            }
+                        }
+                    }
+                    li.btn_next {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                        a {
+                            align-items: flex-start;
+                            span.nb_tit {
+
+                            }
+                            span.board-title-btn {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        section.list-btn-section {
+            padding: 0 16px;
+            .container {
+                overflow: scroll;
+                padding-bottom: 8px;
+                justify-content: flex-start;
+                a { 
+                    padding: 18px 32px;
+                    span {
+                        font-size: 14px;
+                    }
+                    .icon-box {
+                        width: 8px;
+                        img {
+                        }
+                    }
+    
+                    input {
+                        font-size: 14px;
+                    }
+                }
+                a:hover {
+                    .icon-box {
+                    }
+                }
+                a:not(:last-child) {
+                }
+            }
+        }
+    }
+}

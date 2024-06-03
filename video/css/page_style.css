@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+.pagecommon{position:relative;font-size:15px;letter-spacing:-.3px;line-height:1.8;color:rgba(255,255,255,.6);font-family:'notokr-regular'}
+
+/* aboue */
+#p33{text-align:center}
+#p33 .tit_area{margin-bottom:30px;color:#fff;font-family:'Poppins'}
+#p33 .tit_area span{display:inline-block;margin-bottom:30px;font-size:14px;font-weight:600;color:rgba(255,255,255,.4);letter-spacing:1px;text-transform:uppercase;font-family:'Poppins'}
+#p33 .tit_area p{font-size:36px;font-weight:700;line-height:1.2;font-family:'Poppins'}
+#p33 .img{width:100%; background-color:#000}
+#p33 .img img{max-width:1070px;width:100%}
+#p33 .cont{margin-top:50px;padding:0 20px}
+#p33 .cont p{margin-bottom:30px;font-size:22px;color:#fff;word-break:keep-all;font-family:'notokr-medium'}
+#p33 .cont .pl{white-space:pre-line}
+
+/* history */
+#p34{padding-top:30px}
+#p34 .tit{margin-bottom:30px;font-size:36px;font-weight:700;text-align:center;color:#fff;font-family:'Poppins'}
+#p34 .history_wrap{position:relative;padding:50px 0 30px}
+#p34 .history_wrap:before{content:"";display:block;position:absolute;top:0;left:50%;width:1px;height:100%;background-color:rgba(255,255,255,.2)}
+#p34 .history{position:relative}
+#p34 .history:after{display:block;content:"";visibility:hidden;clear:both}
+#p34 .history .mgt{margin-top:0!important}
+#p34 .history dl{position:relative;z-index:1;width:50%;padding:0 20px 0 140px}
+#p34 .history dl:before{display:block;content:"";position:absolute;left:0;top:13px;z-index:1;width:9px;height:9px;margin-left:-4px;border-radius:50%;background-color:#fff}
+#p34 .history dl.f_r{float:right}
+#p34 .history dl.f_l{float:left;margin-top:270px}
+#p34 .history dl.f_l:before{left:auto;right:0;margin:0 -5px 0 0}
+#p34 .history dl dt{position:absolute;left:40px;top:0;font-size:24px;font-weight:600;line-height:1.4;letter-spacing:0;color:#fff;font-family:'Poppins'}
+#p34 .history dl dd{position:relative;padding-left:35px;word-break:keep-all}
+#p34 .history dl dd+dd{margin-top:8px}
+#p34 .history dl dd b{position:absolute;left:0;font-weight:600;color:#fff;font-family:'Poppins'}
+#p34 .history dl dd.white{color:#fff}
+
+/* careers */
+#p47 .tit_area{margin-bottom:40px;text-align:center;color:#fff;font-family:'Poppins'}
+#p47 .tit_area span{display:inline-block;margin-bottom:25px;font-size:14px;font-weight:600;color:rgba(255,255,255,.4);letter-spacing:1px;text-transform:uppercase;font-family:'Poppins'}
+#p47 .tit_area p{font-size:36px;font-weight:700;line-height:1.2;font-family:'notokr-bold'}
+#p47 ul{display:flex;flex-wrap:wrap;justify-content:space-between;margin-bottom:50px}
+#p47 ul li{display:flex;flex-direction:column;justify-content:center;width:19%;height:150px;margin-top:18px;padding:0 10px 0 30px;border:1px solid rgba(255,255,255,.2)}
+#p47 ul li p{font-size:20px;line-height:1.4;color:#fff;word-break:keep-all;font-family:'notokr-bold'}
+#p47 ul li span{position:relative;margin-bottom:4px}
+#p47 ul li span:before{content:"";position:absolute;left:-30px;top:7px;width:6px;height:11px;background-color:#fff}
+#p47 dl dt{display:flex;align-items:center;margin-bottom:15px;font-size:22px;color:#fff;font-family:'notokr-bold'}
+#p47 dl dt span{width:45px;height:45px;margin-right:10px;border-radius:50%;font-size:15px;font-weight:600;color:#111;line-height:45px;text-align:center;background-color:#fff;font-family:'Poppins'}
+#p47 dl dt:not(:first-of-type){margin-top:45px;padding-top:45px;border-top:1px dotted rgba(255,255,255,.3)}
+#p47 dl dd{display:flex;align-items:flex-start}
+#p47 dl dd span{flex-shrink:0;display:inline-block;padding:2px 15px;margin-right:10px;border:1px solid rgba(255,255,255,.3);border-radius:20px;color:rgba(255,255,255,.7)}
+
+/* 반응형 [s] */
+@media (max-width:1200px){
+#p47{padding:0 20px}
+}
+@media (max-width:1024px){
+.pagecommon{padding:30px 0 0;font-size:14px}
+#p33{padding-bottom:30px}
+#p33 .cont .st{font-size:20px}
+#p34 .history dl{padding-left:20px}
+#p34 .history dl.f_r{padding-left:40px}
+#p34 .history dl dt{position:relative;left:0;margin-bottom:20px}
+#p47 ul li {width:32%}
+#p47{padding:0}
+}
+@media (max-width:768px){
+#p33 .cont{margin-top:35px}	
+#p33 .cont p{font-size:20px;line-height:1.6}
+#p33 .cont .pl{white-space:normal;word-break:keep-all}
+#p34{padding:0 20px}
+#p34 .tit {padding-left:20px;font-size:28px;text-align:left}
+#p34 .history_wrap{padding-top:20px}
+#p34 .history_wrap:before{left:20px}
+#p34 .history dl{float:none;width:100%;padding:0 0 0 60px;margin-top:50px}
+#p34 .history dl:before{left:16px;margin:0}
+#p34 .history dl.f_r{padding-left:60px}
+#p34 .history dl.f_l{margin-top:50px}
+#p34 .history dl.f_l:before{right:auto;left:15px;margin:0}
+#p47{padding:0 15px}
+#p47 .tit_area{margin-bottom:30px}
+#p47 ul li {width:49%}
+}
+@media (max-width:480px){
+#p33 .tit_area p{font-size:28px}
+#p33 .cont p{font-size:18px}
+#p34 {padding-top:30px}
+#p34 .tit{display:none}
+#p34 .history_wrap:before{left:0}
+#p34 .history dl{padding-left:20px!important}
+#p34 .history dl:before{left:-4px!important;top:10px}
+#p34 .history dl dt{font-size:20px}
+#p34 .history dl dd{padding-left:30px}
+#p34 .history dl dd+dd{margin-top:6px}
+#p47{padding:30px 15px 0}
+#p47 .tit_area{margin-bottom:20px}
+#p47 .tit_area p{font-size:28px}
+#p47 ul li{height:130px;padding-left:20px}
+#p47 ul li span:before{left:-20px}
+#p47 ul li p{font-size:18px}
+#p47 dl dt{font-size:20px}
+#p47 dl dt span{width:36px;height:36px;line-height:36px}
+}
+/* 반응형 [e] */
+

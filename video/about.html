@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="디앤씨컴퍼니" /> 
+        <title>디앤씨컴퍼니</title>
+        <!-- css -->
+        <link rel="stylesheet" href="../main/css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="../common/css/header.css">
+        <link rel="stylesheet" href="../common/css/footer.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../common/css/justifiedGallery.min.css">
+        <link rel="stylesheet" href="../common/css/swiper-bundle.min.css">
+        <link rel="shortcut icon" href="../common/img/logo.ico">
+        <!-- script -->
+        <script src='../common/js/jquery-3.7.0.min.js'></script>
+        <script src='../common/js/lenis.min.js'></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js" integrity="sha256-eTyxS0rkjpLEo16uXTS0uVCS4815lc40K2iVpWDvdSY=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+        <script src='../common/js/swiper-bundle.min.js'></script>
+        <script src='../common/js/jquery.justifiedGallery.min.js'></script>
+        <script src='./js/main.js' defer></script>
+        <script src='../main/js/main.js' defer></script>
+    </head>
+
+
+    <body>
+        <div id="wrap" class='about-page dark'>
+            <!-- header -->
+            <header class="" id='black-header'>
+                <div class="container">
+                    <!-- logo -->
+                    <div class="logo-box">
+                        <a href="/video/" >
+                            <img src="../common/img/logo-white.svg" alt="">
+                        </a>
+                    </div>
+                    <!-- menu -->
+                    <div class='menu-box'>
+                        <ul>
+                            <li>
+                                <a href="/video/about.php" >
+                                    디앤씨컴퍼니 영상소개
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/bbs/board.php?bo_table=1_porpol">
+                                    영상 포트폴리오
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/bbs/board.php?bo_table=1_qna" >
+                                    영상 견적문의
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    대표 홈페이지 바로가기
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- side icon box -->
+                    <div class="side-icon-box">
+                        <ul>
+                            <li class='burger-wrap'>
+                                <a href="#" class='menu-icon burger-box video'>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- nav.menu-wrap -->
+                    <nav class='nav-menu-wrap video'>
+                        <div class="container">
+                            <ul>
+                                <!-- menu01 -->
+                                <li>
+                                    <a href="/video/about.php">
+                                        <span class='hover-text'>
+                                            영상 소개
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- menu02 -->
+                                <li>
+                                    <a href="/bbs/board.php?bo_table=1_porpol">
+                                        <span class='hover-text'>
+                                            영상 포트폴리오
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- menu03 -->
+                                <li>
+                                    <a href="/bbs/board.php?bo_table=1_qna">
+                                        <span class='hover-text'>
+                                            영상 견적문의
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- menu04 -->
+                                <li>
+                                    <a href="/">
+                                        <span class='hover-text'>
+                                            대표 홈페이지 바로가기
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- floating-box -->
+                    <div class="floating-box">
+                        <a href='#' class="back-top-btn sub-scroll">
+                            <div class="img-box">
+                                <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                            </div>
+                            <span>
+                                go top
+                            </span>
+                        </a>
+                    </div>
+                    <!-- sns-floating-box -->
+                    <div class="sns-floating-box">
+                        <a href='https://blog.naver.com/dnc2034' target='_blank' class="blog">
+                            <div class="img-box">
+                                <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                            </div>
+                            <span>
+                                blog
+                            </span>
+                        </a>
+                        <a href='https://www.instagram.com/dnccompany/' target="_blank" class="insta">
+                            <div class="img-box">
+                                <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                            </div>
+                            <span>
+                                instagram
+                            </span>
+                        </a>
+                        <a href='https://www.youtube.com/@user-qk6yc5ei4g' target="_blank" class="youtube">
+                            <div class="img-box">
+                                <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                            </div>
+                            <span>
+                                youtube
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <!-- //header -->
+
+            <!-- title-section -->
+            <section class='section title-section'>
+                <div class="container">
+                    <!-- sub-title-box -->
+                    <div class="sub-title-box">
+                        <img src="../common/img/sub-title-arrow-white.svg" alt="" class='gsap-fadeup-01'>
+                        <span class='gsap-fadeup-02'>Video About</span>
+                    </div>
+
+
+                    <!-- title-box -->
+                    <div class="title-box gsap-opacity-01">
+                        <h2 class='title'>
+                            <span>D&C</span><br/>
+                            Studios
+                            <span class='circle'>.</span>
+                        </h2>
+                        <p>(주)디앤씨컴퍼니 영상실은 다양한 영상 장르의
+                            기획자·감동·CG디자이너는 물론 포스트 프로덕션과의
+                            파트너쉽을 통해 클라이언트에게 최적의 제작시스템을
+                            제공하고 있습니다
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- end: title-section -->
+
+            <!-- film-content-wrap -->
+            <section class='section film-content-wrap gsap-opacity-01'>
+                <div class="film-content-swiper-box">
+                    <div class="container">
+                        <div class="swiper mySwiper film-swiper" id='film-swiper01'>
+                            <div class="swiper-wrapper">
+                                <!-- slide01 -->
+                                <div class="swiper-slide">
+                                    <div class="caption-box word01">
+                                        <span class="line"></span>
+                                        <span class='text'>Planning & Director</span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <div class="img-box">
+                                        <img src="./img/about-img01.jpg" alt="">
+                                    </div>
+                                    <div class="caption-box word01 bottom">
+                                        <span class="line"></span>
+                                        <span class='text'>Planning & Director</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <!-- slide02 -->
+                                <div class="swiper-slide">
+                                    <div class="caption-box word02">
+                                        <span class='text'>Shooting·Computer Graphic·Editing</span>
+                                        <span class="line"></span>
+                                        <span class='text'>Post Production Partnership</span>
+                                    </div>
+                                    <div class="img-box">
+                                        <img src="./img/about-img02.jpg" alt="">
+                                    </div>
+                                    <div class="caption-box word02 bottom">
+                                        <span class='text'>Shooting·Computer Graphic·Editing</span>
+                                        <span class="line"></span>
+                                        <span class='text'>Post Production Partnership</span>
+                                    </div>
+                                </div>
+                                <!-- slide03 -->
+                                <div class="swiper-slide">
+                                    <div class="caption-box word01">
+                                        <span class="line"></span>
+                                        <span class='text'>Planning & Director</span>
+                                        <span class="line"></span>
+                                    </div>
+                                    <div class="img-box">
+                                        <img src="./img/about-img03.jpg" alt="">
+                                    </div>
+                                    <div class="caption-box word01 bottom">
+                                        <span class="line"></span>
+                                        <span class='text'>Planning & Director</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <!-- slide04 -->
+                                <div class="swiper-slide">
+                                    <div class="caption-box word02">
+                                        <span class='text'>Shooting·Computer Graphic·Editing</span>
+                                        <span class="line"></span>
+                                        <span class='text'>Post Production Partnership</span>
+                                    </div>
+                                    <div class="img-box">
+                                        <img src="./img/about-img01.jpg" alt="">
+                                    </div>
+                                    <div class="caption-box word02 bottom">
+                                        <span class='text'>Shooting·Computer Graphic·Editing</span>
+                                        <span class="line"></span>
+                                        <span class='text'>Post Production Partnership</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                        <div class="swiper mySwiper film-swiper" id='film-swiper02'>
+                            <div class="swiper-wrapper">
+                                <!-- slide01 -->
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="./img/about-img01.jpg" alt="">
+                                    </div>
+                                    <div class="caption-box word01 bottom">
+                                        <span class="line"></span>
+                                        <span class='text'>Planning & Director</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <!-- slide02 -->
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="./img/about-img02.jpg" alt="">
+                                    </div>
+                                    <div class="caption-box word02 bottom">
+                                        <span class='text'>Shooting·Computer Graphic·Editing</span>
+                                        <span class="line"></span>
+                                        <span class='text'>Post Production Partnership</span>
+                                    </div>
+                                </div>
+                                <!-- slide03 -->
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="./img/about-img03.jpg" alt="">
+                                    </div>
+                                    <div class="caption-box word01 bottom">
+                                        <span class="line"></span>
+                                        <span class='text'>Planning & Director</span>
+                                        <span class="line"></span>
+                                    </div>
+                                </div>
+                                <!-- slide04 -->
+                                <div class="swiper-slide">
+                                    <div class="img-box">
+                                        <img src="./img/about-img01.jpg" alt="">
+                                    </div>
+                                    <div class="caption-box word02 bottom">
+                                        <span class='text'>Shooting·Computer Graphic·Editing</span>
+                                        <span class="line"></span>
+                                        <span class='text'>Post Production Partnership</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-pagination"></div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end: film-content-wrap -->
+
+            <!--  -->
+            <section class='section content-wrap video-working-content-wrap'>
+                <div class="content-box">
+                    <div class="container">
+                        <!-- title-box -->
+                        <div class="title-box">
+                            <h2 class='title'>
+                                THE WAY OF<br/>
+                                WORKING<span class='circle'>.</span>
+                            </h2>
+                            <p>
+                                풍부한 경험과 노하우를 겸비한 뉴미디어 콘텐츠
+                                다양한 분야의 영상 콘텐츠 제작
+                            </p>
+                        </div>
+
+                        <!-- list-wrap -->
+                        <div class="list-wrap">
+                            <!-- list-box01 -->
+                            <div class="list-box">
+                                <div class="text-box">
+                                    <h3 class="title">
+                                        TV-CF·PR FILM
+                                    </h3>
+                                    <p class='desc'>
+                                        획일적인 홍보영상을 넘어 브랜드 인지도를
+                                        높여주는 영상을 제작합니다.
+                                    </p>
+                                    <ul class='award-list-wrap'>
+                                        <li>
+                                            <span>
+                                                서울시 전동킥보드 안전 캠페인 영상
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                한국수자원공사 디지털워터플랫폼 홍보영상
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                한국자산관리공사 유튜브 운영 및 제작
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                농촌진흥청 유튜브 운영 및 제작
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                국립항공박물관 유튜브 운영 및 제작
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                남북하나재단 유튜브 운영 및 제작
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrap">
+                                    <div class="img-box">
+                                        <a href="#">
+                                            <img src="./img/list-img01.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="img-box">
+                                        <a href="#">
+                                            <img src="./img/list-img02.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- list-box02 -->
+                            <div class="list-box">
+                                <div class="text-box">
+                                    <h3 class="title">
+                                        YOUTUBE
+                                    </h3>
+                                    <p class='desc'>
+                                        최신 트렌드부터 전문 분야까지, 유튜브에 특화된
+                                        감성으로 다채로운 콘텐츠를 제작합니다.
+                                    </p>
+                                    <ul class='award-list-wrap'>
+                                        <li>
+                                            <span>
+                                                대한민국 국회 유튜브 운영 및 제작
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                한국수력원자력 유튜브 운영 및 제작
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                한국자산관리공사 유튜브 운영 및 제작
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                농촌진흥청 유튜브 운영 및 제작
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                국립항공박물관 유튜브 운영 및 제작
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                남북하나재단 유튜브 운영 및 제작
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrap">
+                                    <div class="img-box">
+                                        <a href="#">
+                                            <img src="./img/list-img03.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="img-box">
+                                        <a href="#">
+                                            <img src="./img/list-img04.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- list-box03 -->
+                            <div class="list-box">
+                                <div class="text-box">
+                                    <h3 class="title">
+                                        INFLUENCER
+                                    </h3>
+                                    <p class='desc'>
+                                        오랜 섭외 노하우와 함께 더 큰 성과를 만들어냅니다.
+                                    </p>
+                                    <ul class='award-list-wrap'>
+                                        <li>
+                                            <span>
+                                                한수원 인플루언서 온/오프라인 홍보
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                한국사회복지협의회 인플루언서 홍보
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                보건복지부 인플루언서 온/오프라인 홍보
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                어촌어항공단 인플루언서 온/오프라인 홍보
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrap">
+                                    <div class="img-box">
+                                        <a href="#">
+                                            <img src="./img/list-img05.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="img-box">
+                                        <a href="#">
+                                            <img src="./img/list-img06.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- list-box04 -->
+                            <div class="list-box">
+                                <div class="text-box">
+                                    <h3 class="title">
+                                        MOTION GRAPHIC
+                                    </h3>
+                                    <p class='desc'>
+                                        탁월한 시각적 효과로 생동감 넘치게 표현합니다.
+                                    </p>
+                                    <ul class='award-list-wrap'>
+                                        <li>
+                                            <span>
+                                                한국수력원자력 연료전지 모션그래픽
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                국가기상위성센터 기상위성 모션그래픽
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                병무청 국외체류자의 병역의무 모션그래픽
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                보건복지부 클로버 부모교육 모션그래픽
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                KBS 티비는 사랑을 싣고 모션그래픽
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                국방부 금연홍보 애니메이션
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrap">
+                                    <div class="img-box">
+                                        <a href="#">
+                                            <img src="./img/list-img07.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="img-box">
+                                        <a href="#">
+                                            <img src="./img/list-img08.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- list-box05 -->
+                            <div class="list-box">
+                                <div class="text-box">
+                                    <h3 class="title">
+                                        SKETCH
+                                    </h3>
+                                    <p class='desc'>
+                                        순간을 빠짐없이 담아, 현장을 임팩트 있게 전달합니다.
+                                    </p>
+                                    <ul class='award-list-wrap'>
+                                        <li>
+                                            <span>
+                                                한국포장재재활용 사업공제조합 광고
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                한국환경산업기술원 그린카드 광고
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                보건복지부 나눔사업 광고
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                서울특별시 티머니복지재단 광고
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                식품의약품안전처_HACCP 캠페인 광고
+                                            </span>
+                                        </li>
+                                        <li>
+                                            <span>
+                                                질병관리청 해외 감염병예방 캠페인
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="img-wrap">
+                                    <div class="img-box">
+                                        <a href="#">
+                                            <img src="./img/list-img09.png" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="img-box">
+                                        <a href="#">
+                                            <img src="./img/list-img10.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  -->
+
+            <!-- footer -->
+            <section class="section footer-section" id=''>
+                <div class="container">
+                    <!-- back top -->
+                    <a href="#" class="back-top-btn sub-scroll">
+                        <div class="arrow-icon-box">
+                            <!-- <img src="/theme/new_dnc/img/main/arrow-img02.svg" alt=""> -->
+                        </div>
+                        <span>
+                            Back Top
+                        </span>
+                    </a>
+                    <!-- copyright -->
+                    <span class="copyrights">
+                        <span class='info'>
+                            디앤씨컴퍼니 | 대표: 김준성 | 사업자번호: 807-87-00116 | 주소: 대전광역시 동구 선화로 187, 3층 (삼성동) | 대표번호. 042-826-4370 | FAX. 042-826-4371
+                        </span>
+                        <span class='copy'>
+                            2024 &copy; The DNC Company.All rights reserved.
+                        </span>
+                    </span>
+                    <!-- privacy -->
+                    <a href="#" class="privacy">
+                        <span>
+                            개인정보취급방침
+                        </span>
+                    </a>
+                </div>
+            </section>
+            <!-- //footer -->
+        </div>
+    </body>
+</html>
