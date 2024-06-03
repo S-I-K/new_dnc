@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class='dd'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta property="og:title" content="디앤씨컴퍼니" /> 
+        <title>디앤씨컴퍼니</title>
+        <!-- css -->
+        <link rel="stylesheet" href="../common/css/header.css">
+        <link rel="stylesheet" href="../common/css/footer.css">
+        <link rel="stylesheet" href="../main/css/style.css">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../common/css/justifiedGallery.min.css">
+        <link rel="stylesheet" href="../common/css/swiper-bundle.min.css">
+        <link rel="shortcut icon" href="../common/img/logo.ico">
+
+        <!-- script -->
+        <script src='../common/js/jquery-3.7.0.min.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+        <script src='../common/js/swiper-bundle.min.js'></script>
+        <script src='../common/js/jquery.justifiedGallery.min.js'></script>
+        <script src='./js/main.js' defer></script>
+        <script src='../main/js/main.js' defer></script>
+    </head>
+    <body>
+        <div id="wrap" class='event-page'>
+            <!-- header -->
+            <header class="">
+                <div class="container">
+                    <!-- logo -->
+                    <div class="logo-box">
+                        <a href="/event/">
+                            <img src="../common/img/logo(2).svg" alt="">
+                        </a>
+                    </div>
+                    <!-- menu -->
+                    <div class='menu-box'>
+                        <ul>
+                            <li>
+                                <a href="/event/about.php">
+                                    디앤씨컴퍼니 행사소개
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/bbs/board.php?bo_table=2_porpol">
+                                    행사 포트폴리오
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/bbs/board.php?bo_table=2_qna">
+                                    행사 견적문의
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/">
+                                    대표 홈페이지 바로가기
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- side icon box -->
+                    <div class="side-icon-box">
+                        <ul>
+                            <li class='burger-wrap'>
+                                <a href="#" class='menu-icon burger-box'>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- nav.menu-wrap -->
+                    <nav class='nav-menu-wrap event'>
+                        <div class="container">
+                            <ul>
+                                <!-- menu01 -->
+                                <li>
+                                    <a href="/event/about.php">
+                                        <span class='hover-text'>
+                                            행사 소개
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- menu01 -->
+                                <li>
+                                    <a href="/bbs/board.php?bo_table=2_porpol">
+                                        <span class='hover-text'>
+                                            행사 포트폴리오
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- menu02 -->
+                                <li>
+                                    <a href="/bbs/board.php?bo_table=2_qna">
+                                        <span class='hover-text'>
+                                            행사 견적문의
+                                        </span>
+                                    </a>
+                                </li>
+                                <!-- menu03 -->
+                                <li>
+                                    <a href="/">
+                                        <span class='hover-text'>
+                                            대표 홈페이지 바로가기
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- floating-box -->
+                    <div class="floating-box black">
+                        <a href='#' class="back-top-btn main-scroll">
+                            <div class="img-box">
+                                <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                            </div>
+                            <span>
+                                go top
+                            </span>
+                        </a>
+                    </div>
+                    <!-- sns-floating-box -->
+                    <div class="sns-floating-box black">
+                        <a href='https://blog.naver.com/dnc2034' target='_blank' class="blog">
+                            <div class="img-box">
+                                <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                            </div>
+                            <span>
+                                blog
+                            </span>
+                        </a>
+                        <a href='https://www.instagram.com/dnccompany/' target="_blank" class="insta">
+                            <div class="img-box">
+                                <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                            </div>
+                            <span>
+                                instagram
+                            </span>
+                        </a>
+                        <a href='https://www.youtube.com/@user-qk6yc5ei4g' target="_blank" class="youtube">
+                            <div class="img-box">
+                                <!-- <img src="/theme/new_dnc/common/img/back-to-top-arrow.svg" alt=""> -->
+                            </div>
+                            <span>
+                                youtube
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+            <!-- //header -->
+            <section class='section event-main-swiper-wrap'>
+                <div class="swiper mySwiper" id='event-main-swiper'>
+                    <div class="swiper-wrapper">
+                        <!-- slide1 -->
+                        <div class="swiper-slide">
+                            <section class="section company-video-content-wrap">
+                                <div class="content-box">
+                                    <iframe width="" height="" src="https://www.youtube.com/embed/ERnNUDTSIg0?si=5e_Jv9r4hS8NQoYi&amp;controls=0&autoplay=1&mute=1&rel=0&start=2&loop=1&playlist=ERnNUDTSIg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <video src="../main/img/main-slide-bg01.mp4" autoplay muted loop playsinline data-object-fit="cover"></video>
+                                </div>
+                                <div class="title-box">
+                                    <span class='bold'>[</span>
+                                    <h2 class='title'>
+                                        <!-- We are <span class="bold">D&C</span> company -->
+                                        Our only <span class="bold">goal</span>
+                                    </h2>
+                                    <span class='bold'>]</span>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- slide02 -->
+                        <div class="swiper-slide">
+                            <section class="intro-content-wrap">
+                                <div class="container">
+                                    <div class="title-box">
+                                        <span class='bold'>[</span>
+                                        <h2 class='title'>
+                                            <!-- We are <span class="bold">D&C</span> company -->
+                                            a shortcut to <span class="bold">growth</span>
+                                        </h2>
+                                        <span class='bold'>]</span>
+                                    </div>
+                                    <p class='desc'>
+                                        누구보다 더 쉽고 빠르게 나아가는 힘, 이 모든 것이 기획으로부터 나옵니다
+                                    </p>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- slide03 -->
+                        <div class="swiper-slide">
+                            <section class='work-content-wrap'>
+                                <!-- left -->
+                                <div class="content-box left">
+                                    <!-- about-desc-box -->
+                                    <div class="about-desc-box">
+                                        <div class="company-map-box">
+                                            <!-- * 카카오맵 - 지도퍼가기 -->
+                                            <!-- 1. 지도 노드 -->
+                                            <div id="daumRoughmapContainer1710746303875" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+                                            <!--
+                                                2. 설치 스크립트
+                                                * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                                            -->
+                                            <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                                            <!-- 3. 실행 스크립트 -->
+                                            <script charset="UTF-8">
+                                                new daum.roughmap.Lander({
+                                                    "timestamp" : "1710746303875",
+                                                    "key" : "2ik6m",
+                                                    "mapWidth" : "",
+                                                    "mapHeight" : ""
+                                                }).render();
+                                            </script>
+                                        </div>
+                                    </div>
+                                    <!-- content-swiper-wrap -->
+                                    <div class="content-swiper-box">
+                                        <div class="swiper mySwiper event-content-small-swiper" id='event-content-small-swiper01'>
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img02.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img05.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img08.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img11.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img14.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper mySwiper event-content-small-swiper" id='event-content-small-swiper02'>
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img03.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img15.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img12.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img09.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img06.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- right -->
+                                <div class="content-box right">
+                                    <!-- content-swiper-wrap -->
+                                    <div class="content-swiper-box">
+                                        <div class="swiper mySwiper event-content-swiper" id='event-content-large-swiper'>
+                                            <div class="swiper-wrapper">
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img01.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img04.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img07.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img10.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="img-box">
+                                                        <img src="./img/slide-img13.png" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- content-swiper-pagination-box -->
+                                    <div class="content-swiper-pagination-box">
+                                        <div class="content-text-box">
+                                            <div class="swiper mySwiper" id='content-text-swiper'>
+                                                <div class="swiper-wrapper">
+                                                    <div class="swiper-slide">
+                                                        <div class="text-box">
+                                                            <h2 class='title'>
+                                                                <span class='sub-title'>이벤트</span>
+                                                                올림픽데이런
+                                                            </h2>
+                                                            <p class='desc'>
+                                                                #다시, RUN RUN RUN
+                                                                #LET'S MOVE
+                                                                우리 삶을 즐겁게 하는 운동을 함께하자는
+                                                                올림픽 운동의 일환으로서 행사 진행.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="text-box">
+                                                            <h2 class='title'>
+                                                                <span class='sub-title'>이벤트</span>
+                                                                세종로컬트럭
+                                                            </h2>
+                                                            <p class='desc'>
+                                                                처음 선보이는 로컬트럭은 야간경제의 일환으로
+                                                                트럭을 활용한 청년 예술가 공연,
+                                                                로컬크리에이터 반짝매장(팝업스토어) 등을
+                                                                통해 시민들이 거리로 나와 침체된 지역상권에
+                                                                활기를 불어넣기 위해 마련됐다.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="text-box">
+                                                            <h2 class='title'>
+                                                                <span class='sub-title'>이벤트</span>
+                                                                못난이김치페스티벌
+                                                            </h2>
+                                                            <p class='desc'>
+                                                                전국 각 지역을 대표하는 막걸리 40여개 품목과
+                                                                김치업체가 참여하여 막걸리와 잘어울리는
+                                                                안주부스와 푸드트럭을 만날 수 있다.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="text-box">
+                                                            <h2 class='title'>
+                                                                <span class='sub-title'>이벤트</span>
+                                                                초록우산어린이재단 맨발축제
+                                                            </h2>
+                                                            <p class='desc'>
+                                                                행사에 참여한 한 학부모는 “아이와 함께 촉촉한 계족산
+                                                                황톳길을 걸으며 가을의 자연이 주는 큰 선물을 받았다”며
+                                                                “아이가 좋아하는 모습을 보니 너무 행복하다”고 말했다.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="text-box">
+                                                            <h2 class='title'>
+                                                                <span class='sub-title'>이벤트</span>
+                                                                충북소년 팩트체크대회
+                                                            </h2>
+                                                            <p class='desc'>
+                                                                대회에서 스스로 사회 문제나 정보에 관심을 갖고
+                                                                스스로 확인해 가는 과정들이 비판적 시각을 키우는데
+                                                                좋은 밑거름이 된다.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="btn-box">
+                                            <div class="swiper-button-next"></div>
+                                            <div class="swiper-button-prev"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- footer -->
+                            <section class="section footer-section" id='white-footer'>
+                                <div class="container">
+                                    <!-- back top -->
+                                    <a href="#" class="back-top-btn main-scroll">
+                                        <div class="arrow-icon-box">
+                                            <!-- <img src="/theme/new_dnc/img/main/arrow-img02.svg" alt=""> -->
+                                        </div>
+                                        <span>
+                                            Back Top
+                                        </span>
+                                    </a>
+                                    <!-- copyright -->
+                                    <span class="copyrights">
+                                        <span class='info'>
+                                            디앤씨컴퍼니 | 대표: 김준성 | 사업자번호: 807-87-00116 | 주소: 대전광역시 동구 선화로 187, 3층 (삼성동) | 대표번호. 042-826-4370 | FAX. 042-826-4371
+                                        </span>
+                                        <span class='copy'>
+                                            2024 &copy; The DNC Company.All rights reserved.
+                                        </span>
+                                    </span>
+                                    <!-- privacy -->
+                                    <a href="#" class="privacy">
+                                        <span>
+                                            개인정보취급방침
+                                        </span>
+                                    </a>
+                                </div>
+                            </section>
+                            <!-- //footer -->
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
