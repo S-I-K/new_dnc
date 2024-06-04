@@ -4,10 +4,40 @@
   height: auto;
   padding-top: 240px;
 }
+#wrap.marketing-page .title-section .container .title-box p {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 #wrap.marketing-page .title-section .container .title-box p b {
   display: block;
   margin-bottom: 14px;
   font-weight: 800;
+}
+#wrap.marketing-page .title-section .container .title-box p a.qna-btn-box {
+  margin-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 30px;
+  border-radius: 30px;
+  background: #2a2a2a;
+  overflow: hidden;
+}
+#wrap.marketing-page .title-section .container .title-box p a.qna-btn-box span.button-effect {
+  color: #fff;
+  font-family: "SUIT Variable", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  transition: transform 0.2s;
+  transform-origin: 100% 0%;
 }
 #wrap.marketing-page .hash-content {
   background: #000;
@@ -520,7 +550,7 @@
   content: "";
   width: 24px;
   height: 24px;
-  background: url(../img/process-arrow-down-icon.svg) no-repeat center/contain;
+  background: url(../img/sub/process-arrow-down-icon.svg) no-repeat center/contain;
   position: absolute;
   left: -54px;
 }
@@ -542,7 +572,137 @@
   margin-bottom: 80px;
 }
 
+@media (max-width: 1024px) {
+  #wrap.marketing-page .hash-content {
+    height: auto;
+  }
+  #wrap.marketing-page .hash-content .container {
+    padding: 80px 48px;
+  }
+  #wrap.marketing-page .hash-content .container .hash-text-box span {
+    font-size: 46px;
+    font-weight: 700;
+  }
+  #wrap.marketing-page .hash-content .container .hash-text-box span:not(:last-child) {
+    margin-right: 28px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .title-box h2.title {
+    letter-spacing: -2px;
+    font-size: 52px;
+    margin-bottom: 14px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .title-box p {
+    font-size: 16px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box {
+    width: 49%;
+    height: auto;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box h3.list-title {
+    font-size: 24px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box p {
+    width: 100%;
+    font-size: 14px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap:last-child {
+    margin-bottom: 90px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box.process-box {
+    padding: 74px 0;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box.process-box .container p.en-para {
+    font-size: 3rem !important;
+    line-height: 1;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box.process-box .container p.kr-para {
+    font-size: 15px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .title-box h2.title {
+    letter-spacing: -2px;
+    font-size: 52px;
+    margin-bottom: 14px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .title-box p {
+    font-size: 16px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box {
+    width: 49%;
+    height: auto;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box h3.list-title {
+    font-size: 24px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box p {
+    width: 100%;
+    font-size: 14px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap .list-box:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box .container .service-list-wrap:last-child {
+    margin-bottom: 90px;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box.process-box {
+    padding: 74px 0;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box.process-box .container p.en-para {
+    font-size: 3rem !important;
+    line-height: 1;
+  }
+  #wrap.marketing-page .marketing-service-content.marketing-advantage-content .content-box.process-box .container p.kr-para {
+    font-size: 15px;
+  }
+  #wrap.marketing-page .marketing-list-content .container .content-sticky-box .text-box h2.title {
+    font-size: 52px;
+    font-weight: 500;
+  }
+  #wrap.marketing-page .marketing-list-content .container .content-sticky-box .text-box p.desc {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  #wrap.marketing-page .marketing-list-content .container .list-wrap .list-box span.list-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 14px;
+  }
+  #wrap.marketing-page .marketing-list-content .container .list-wrap .list-box span.list-desc {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  #wrap.marketing-page .marketing-list-content .container .list-wrap .list-box ul.list-menu li span {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
 @media (max-width: 450px) {
+  #wrap.marketing-page .title-section .container .title-box p {
+    align-items: flex-start;
+  }
+  #wrap.marketing-page .title-section .container .title-box p a.qna-btn-box {
+    margin-top: 42px;
+  }
+  #wrap.marketing-page .title-section .container .title-box p a.qna-btn-box span.button-effect {
+    font-size: 14px;
+  }
   #wrap.marketing-page .hash-content {
     height: auto;
   }
@@ -572,6 +732,9 @@
   }
   #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box p {
     width: 100%;
+    font-size: 14px;
+  }
+  #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box p.category {
     font-size: 14px;
   }
   #wrap.marketing-page .marketing-service-content .content-box .container .service-list-wrap .list-box:not(:last-child) {
@@ -683,6 +846,9 @@
   #wrap.marketing-page .process-content {
     padding-top: 100px;
     padding-bottom: 80px;
+  }
+  #wrap.marketing-page .process-content .content-box {
+    width: 100%;
   }
   #wrap.marketing-page .process-content .content-box .container {
     flex-direction: column;

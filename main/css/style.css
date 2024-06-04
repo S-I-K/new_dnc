@@ -728,7 +728,16 @@ height: calc(100vh + 140px) !important;
 }
 
 /* scss code */
-#wrap header .container .nav-menu-wrap .container ul li a span {
+#wrap header#main-header {
+  background: transparent;
+}
+#wrap header#main-header .container .menu-box ul li a {
+  color: #fff;
+}
+#wrap header#main-header .container .side-icon-box ul li a span.line {
+  background: #fff;
+}
+#wrap header#main-header .container .nav-menu-wrap .container ul li a span {
   font-family: "SUIT Variable", sans-serif;
 }
 #wrap #main-wrap-slider .swiper-wrapper section.company-video-content-wrap {

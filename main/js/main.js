@@ -49,7 +49,7 @@ $(()=>{
                     opacity: 1,
                     y: "0%",
                     duration: .8,
-                    delay: (index + 1) * .2,
+                    delay: (index + 1) * .1,
                 });
             })
         }else{
@@ -70,7 +70,7 @@ $(()=>{
                     opacity: 0,
                     y: "-100%",
                     duration: .8,
-                    delay: (index + 1) * .2,
+                    delay: (index + 1) * .1,
                 });
             })
         }

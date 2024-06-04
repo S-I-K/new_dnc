@@ -4,6 +4,8 @@ $font-en: "Poppins", sans-serif;
 $font-black: #2a2a2a;
 $color-main: #036EB8;
 $color-white: #fff;
+$page-main-color: #fff;
+$page-sub-color: #000;
 
 
 
@@ -23,11 +25,117 @@ $color-white: #fff;
     width: 100%;
     height: auto;
     padding-top: 240px;
-    background: #fff;
+    background: $page-main-color;
 
-    /* title-section */
-    .section.title-section {
+    header {
+        background: $page-main-color;
+        .container {
+            .logo-box {
+                a {
+                }
+                img {
+                }
+            }
+    
+            .menu-box {
+                ul {
+                    li {
+                        a {
+                        }
+                    }
+                    li:not(:last-child) {
+                    }
+                }
+            }
+            .menu-box.nav-white {
+                ul {
+                    li {
+                        a {
+                        }
+                    }
+                }
+            }
+    
+            .side-icon-box {
+                ul {
+                    li {
+                        a {
+                            img {
+                            }
+                            span.line {
+                            }
+                            span.line:nth-child(1) {
+                            }
+                            span.line:nth-child(2) {
+                            }
+                        }
+                    }
+                    li:not(:last-child) {
+                    }
+                }
+            }
+            .side-icon-box.nav-white {
+                ul {
+                    li {
+                        a {
+                            span.line {
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .floating-box {
+                a.back-top-btn {
+                    .img-box {
+                    }
+                    span {
+                    }
+                }
+                a.back-top-btn:hover {
+                    span {
+                    }
+                }
+            }
+            .floating-box.black {
+                a.back-top-btn {
+                    .img-box {
+                    }
+                    span {
+                    }
+                }
+                a.back-top-btn:hover {
+                    span {
+                    }
+                }
+            }
+        }
+    }
 
+    /* 큰 제목 */
+    .title-section {
+        .container {
+            /* sub-title-box */
+            .sub-title-box {
+                img {
+                }
+                span {
+                    color: $font-black;
+                }
+            }
+
+            /* title-box */
+            .title-box {
+                h2.title {
+                    color: $font-black;
+                    span.circle {
+                    }
+                }
+                p {
+                    color: $font-black;
+                }
+            }
+        }
     }
 
     /* gallery-content-wrap */
@@ -43,212 +151,221 @@ $color-white: #fff;
         .container {
             // border: 1px solid red;
             #ajax-a {
+                width: 100%;
                 .ajax-b {
+                    width: 100%;
                     .main-content {
-                        form {
-                            .gallery-content-box {
-                                .filter-wrap {
-                                    margin-bottom: 40px;
-                                    div {
-                                        .pr_tabs {
-                                            ul {
+                        width: 100%;
+                        .gallery-content-box {
+                            width: 100%;
+                            .filter-wrap {
+                                margin-bottom: 40px;
+                                div {
+                                    .pr_tabs {
+                                        ul {
+                                            display: flex;
+                                            align-content: center;
+                                            justify-content: flex-start;
+                                            border-collapse: unset;
+                                            li {
+                                                border: none;
                                                 display: flex;
-                                                align-content: center;
-                                                justify-content: flex-start;
-                                                border-collapse: unset;
-                                                li {
-                                                    background: transparent;
-                                                    border: none;
-                                                    display: flex;
-                                                    align-items: center;
-                                                    justify-content: center;
+                                                align-items: center;
+                                                justify-content: center;
+                                                line-height: 1;
+                                                a {
+                                                    font-family: $font-en;
+                                                    font-weight: 500;
+                                                    font-size: 16px;
                                                     line-height: 1;
-                                                    a {
-                                                        font-family: $font-en;
-                                                        font-weight: 500;
-                                                        font-size: 16px;
-                                                        line-height: 1;
-                                                        letter-spacing: -.8px;
-                                                        color: $font-black;
-                                                        border: 2px solid #aaa;
-                                                        border-radius: 300px;
-                                                        color: #aaa;
-                                                        padding: 16px 32px;
-                                                    }
-                                                    a#bo_cate_on {
-                                                        background: $font-black;
-                                                        border: 2px solid $font-black;
-                                                        color: #fff;
-                                                    }
-                                                    a:hover {
-                                                        background: #aaa;
-                                                        color: #fff;
-                                                    }
+                                                    letter-spacing: -.8px;
+                                                    color: $font-black;
+                                                    border: 2px solid #aaa;
+                                                    border-radius: 300px;
+                                                    color: #aaa;
+                                                    padding: 16px 32px;
                                                 }
-                                                li:not(:last-child) {
-                                                    margin-right: 10px;
+                                                a#bo_cate_on {
+                                                    background: $font-black;
+                                                    border: 2px solid $font-black;
+                                                    color: #fff;
                                                 }
+                                                a:hover {
+                                                    background: #aaa;
+                                                    color: #fff;
+                                                }
+                                            }
+                                            li:not(:last-child) {
+                                                margin-right: 10px;
                                             }
                                         }
                                     }
                                 }
+                            }
 
-                                .item-list-wrap {
-                                    .item {
+                            .item-list-wrap {
+                                width: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                justify-content: center;
+                                // border: 1px solid red;
+                                .item {
+                                    position: relative;
+                                    width: calc(100% / 3);
+                                    padding: 24px;
+                                    a.img-box {
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;
                                         position: relative;
-                                        a.img-box {
+                                        overflow: hidden;
+                                        .thumb-box {
+                                            width: 100%;
+                                            height: 100%;
                                             display: flex;
                                             align-items: center;
                                             justify-content: center;
                                             position: relative;
-                                            overflow: hidden;
-                                            .thumb-box {
-                                                width: 100%;
-                                                height: 100%;
+                                            img {
+                                                transform: scale(1.1);
+                                                transition: transform .4s ease;
+                                            }
+                                        }
+                                        /* .thumb-box::after {
+                                            content: '';
+                                            display: block;
+                                            width: 100%;
+                                            height: 100%;
+                                            background: rgba(0, 0, 0, .4);
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                        } */
+                                        .hover-text-box {
+                                            width: 100%;
+                                            height: 100%;
+                                            padding: 40px;
+                                            position: absolute;
+                                            /* 나중에 보여지게 함 */
+                                            // display: none;
+                                            display: flex;
+                                            flex-direction: column;
+                                            align-items: flex-start;
+                                            justify-content: flex-end;
+                                            .icon-box {
+                                                width: 20px;
+                                                height: 20px;
                                                 display: flex;
                                                 align-items: center;
                                                 justify-content: center;
-                                                position: relative;
+                                                margin-bottom: 34px;
+                                                overflow: hidden;
                                                 img {
-                                                    transform: scale(1.1);
-                                                    transition: transform .4s ease;
+                                                    width: 100%;
+                                                    opacity: 0;
+                                                    transition: all .4s ease;
+                                                    transform: translateY(60px);
                                                 }
                                             }
-                                            /* .thumb-box::after {
-                                                content: '';
+                                            span.category-text {
                                                 display: block;
-                                                width: 100%;
-                                                height: 100%;
-                                                background: rgba(0, 0, 0, .4);
-                                                position: absolute;
-                                                top: 0;
-                                                left: 0;
-                                            } */
-                                            .hover-text-box {
-                                                width: 100%;
-                                                height: 100%;
-                                                padding: 40px;
-                                                position: absolute;
-                                                /* 나중에 보여지게 함 */
-                                                // display: none;
-                                                display: flex;
-                                                flex-direction: column;
-                                                align-items: flex-start;
-                                                justify-content: flex-end;
-                                                .icon-box {
-                                                    width: 20px;
-                                                    height: 20px;
-                                                    display: flex;
-                                                    align-items: center;
-                                                    justify-content: center;
-                                                    margin-bottom: 34px;
-                                                    overflow: hidden;
-                                                    img {
-                                                        width: 100%;
-                                                        opacity: 0;
-                                                        transition: all .4s ease;
-                                                        transform: translateY(60px);
-                                                    }
-                                                }
-                                                span.category-text {
+                                                height: 24px;
+                                                font-family: $font-kr;
+                                                font-weight: 600;
+                                                font-size: 18px;
+                                                line-height: 1;
+                                                letter-spacing: -.8px;
+                                                text-align: left;
+                                                color: #fff;
+                                                overflow: hidden;
+                                                span {
                                                     display: block;
-                                                    height: 24px;
-                                                    font-family: $font-kr;
-                                                    font-weight: 600;
-                                                    font-size: 18px;
-                                                    line-height: 1;
-                                                    letter-spacing: -.8px;
-                                                    text-align: left;
-                                                    color: #fff;
-                                                    overflow: hidden;
-                                                    span {
-                                                        display: block;
-                                                        transform: translateY(60px);
-                                                        opacity: 0;
-                                                        transition: all .4s ease;
-                                                        transition-delay: .1s;
-                                                        word-break: keep-all;
-                                                    }
-                                                }
-                                                h4.heading-title {
-                                                    height: 74px;
-                                                    margin: 0;
-                                                    margin-top: 20px;
-                                                    font-family: $font-kr;
-                                                    font-weight: 700;
-                                                    font-size: 30px;
-                                                    line-height: 1.2;
-                                                    letter-spacing: -.8px;
-                                                    color: #fff;
-                                                    overflow: hidden;
-                                                    text-align: left;
-                                                    span {
-                                                        display: block;
-                                                        opacity: 0;
-                                                        transform: translateY(60px);
-                                                        transition: all .4s ease;
-                                                        transition-delay: .2s;
-                                                        word-break: keep-all;
-                                                    }
+                                                    transform: translateY(60px);
+                                                    opacity: 0;
+                                                    transition: all .4s ease;
+                                                    transition-delay: .1s;
+                                                    word-break: keep-all;
                                                 }
                                             }
-                                            .board-title-box {
-                                                display: flex;
-                                                align-items: center;
-                                                justify-content: flex-start;
-                                                position: absolute;
-                                                left: 0px;
-                                                bottom: 0px;
-                                                padding: 40px;
-                                                opacity: 1;
-                                                transition: all .8s ease;
-                                                span.board-title {
-                                                    font-family: $font-kr;
-                                                    font-weight: 700;
-                                                    font-size: 18px;
-                                                    line-height: 1.4;
-                                                    letter-spacing: -.8px;
-                                                    color: #fff;
+                                            h4.heading-title {
+                                                height: 74px;
+                                                margin: 0;
+                                                margin-top: 20px;
+                                                font-family: $font-kr;
+                                                font-weight: 700;
+                                                font-size: 30px;
+                                                line-height: 1.2;
+                                                letter-spacing: -.8px;
+                                                color: #fff;
+                                                overflow: hidden;
+                                                text-align: left;
+                                                span {
+                                                    display: block;
+                                                    opacity: 0;
+                                                    transform: translateY(60px);
+                                                    transition: all .4s ease;
+                                                    transition-delay: .2s;
+                                                    word-break: keep-all;
                                                 }
                                             }
                                         }
-                                        a.img-box:hover {
-                                            .thumb-box {
+                                        .board-title-box {
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: flex-start;
+                                            position: absolute;
+                                            left: 0px;
+                                            bottom: 0px;
+                                            padding: 40px;
+                                            opacity: 1;
+                                            transition: all .8s ease;
+                                            span.board-title {
+                                                font-family: $font-kr;
+                                                font-weight: 700;
+                                                font-size: 18px;
+                                                line-height: 1.4;
+                                                letter-spacing: -.8px;
+                                                color: #fff;
+                                            }
+                                        }
+                                    }
+                                    a.img-box:hover {
+                                        .thumb-box {
+                                            img {
+                                                transform: scale(1);
+                                            }
+                                        }
+                                        .hover-text-box {
+                                            display: flex;
+                                            .icon-box {
                                                 img {
-                                                    transform: scale(1);
+                                                    transform: translateY(0px);
+                                                    opacity: 1;
                                                 }
                                             }
-                                            .hover-text-box {
-                                                display: flex;
-                                                .icon-box {
-                                                    img {
-                                                        transform: translateY(0px);
-                                                        opacity: 1;
-                                                    }
-                                                }
-                                                span.category-text {
-                                                    span {
-                                                        transform: translateY(0px);
-                                                        opacity: 1;
-                                                    }
-                                                }
-                                                h4.heading-title {
-                                                    span {
-                                                        transform: translateY(0px);
-                                                        opacity: 1;
-                                                    }
+                                            span.category-text {
+                                                span {
+                                                    transform: translateY(0px);
+                                                    opacity: 1;
                                                 }
                                             }
-                                            .board-title-box {
-                                                transition: all .2s ease;
-                                                opacity: 0;
+                                            h4.heading-title {
+                                                span {
+                                                    transform: translateY(0px);
+                                                    opacity: 1;
+                                                }
                                             }
                                         }
+                                        .board-title-box {
+                                            transition: all .2s ease;
+                                            opacity: 0;
+                                        }
+                                    }
 
-                                        /* 나중에 다시 보여져야함 */
-                                        .check-box {
-                                            // display: none !important;
-                                        }
+                                    /* 나중에 다시 보여져야함 */
+                                    .check-box {
+                                        // display: none !important;
                                     }
                                 }
                             }
@@ -266,7 +383,7 @@ $color-white: #fff;
                                         justify-content: center;
                                         padding: 22px 44px;
                                         border-radius: 300px;
-                                        background: #2a2a2a;
+                                        background: $page-sub-color;
                                         position: relative;
                                         margin: 0;
                                         margin-right: 14px;
@@ -298,7 +415,7 @@ $color-white: #fff;
                                         justify-content: center;
                                         padding: 22px 44px;
                                         border-radius: 300px;
-                                        background: #2a2a2a;
+                                        background: $page-sub-color;
                                         position: relative;
                                         margin: 0;
                                         input {
@@ -343,12 +460,130 @@ $color-white: #fff;
             }
         }
     }
+
+    /* footer-section */
+    .footer-section.section {
+        .container {
+            span {
+            }
+            a.back-top-btn {
+                span {
+                }
+                span::before {
+                }
+                .arrow-icon-box {
+                    img {
+                    }
+                }
+            }
+            a.back-top-btn:hover {
+                span {
+                }
+            }
+            span.copyrights {
+                span {
+                }
+            }
+            a.privacy {
+                span {
+                }
+            }
+        }
+    }
 }
 
 
 #wrap.porpol-view-page {
     padding-top: 240px;
-    background: #fff;
+    background: $page-main-color;
+
+    header {
+        background: $page-main-color;
+        .container {
+            .logo-box {
+                a {
+                }
+                img {
+                }
+            }
+    
+            .menu-box {
+                ul {
+                    li {
+                        a {
+                        }
+                    }
+                    li:not(:last-child) {
+                    }
+                }
+            }
+            .menu-box.nav-white {
+                ul {
+                    li {
+                        a {
+                        }
+                    }
+                }
+            }
+    
+            .side-icon-box {
+                ul {
+                    li {
+                        a {
+                            color: #fff;
+                            img {
+                            }
+                            span.line {
+                                background: #fff;
+                            }
+                            span.line:nth-child(1) {
+                            }
+                            span.line:nth-child(2) {
+                            }
+                        }
+                    }
+                    li:not(:last-child) {
+                    }
+                }
+            }
+            .side-icon-box.nav-white {
+                ul {
+                    li {
+                        a {
+                            span.line {
+                            }
+                        }
+                    }
+                }
+            }
+    
+            .floating-box {
+                a.back-top-btn {
+                    .img-box {
+                    }
+                    span {
+                    }
+                }
+                a.back-top-btn:hover {
+                    span {
+                    }
+                }
+            }
+            .floating-box.black {
+                a.back-top-btn {
+                    .img-box {
+                    }
+                    span {
+                    }
+                }
+                a.back-top-btn:hover {
+                    span {
+                    }
+                }
+            }
+        }
+    }
+
     section.title-section {
         padding: 0;
         display: flex;
@@ -369,7 +604,8 @@ $color-white: #fff;
                     line-height: 1.4;
                     letter-spacing: -4px;
                     word-break: keep-all;
-                    color: $font-black;
+                    // color: $font-black;
+                    color: #fff;
                     margin: 0;
                     display: block;
                     // max-width: 1000px;
@@ -380,7 +616,8 @@ $color-white: #fff;
                     font-size: 16px;
                     line-height: 1;
                     letter-spacing: -.8px;
-                    color: $font-black;
+                    // color: $font-black;
+                    color: #fff;
                     display: inline-block;
                     margin-bottom: 24px;
                     margin-right: 10px;
@@ -391,7 +628,8 @@ $color-white: #fff;
                     font-size: 16px;
                     line-height: 1;
                     letter-spacing: -.8px;
-                    color: $font-black;
+                    // color: $font-black;
+                    color: #fff;
                     display: inline-block;
                     margin-bottom: 24px;
                     padding-left: 10px;
@@ -458,7 +696,8 @@ $color-white: #fff;
                         font-weight: 500;
                         font-size: 18px;
                         line-height: 1.4;
-                        color: $font-black;
+                        // color: $font-black;
+                        color: #fff;
                         letter-spacing: -.8px;
                     }
                 }
@@ -466,32 +705,48 @@ $color-white: #fff;
 
             /* 관련링크 */
             #bo_v_link {
+                h2 {
+                    display: none;
+                }
                 ul {
                     li {
+                        opacity: .6;
+                        transition: opacity .4s ease;
+                        padding: 14px 0;
                         a {
                             float: none;
                             display: flex;
                             align-items: center;
-                            justify-content: center;
-                            margin-bottom: 14px;
+                            justify-content: flex-start;
                             i {
                                 float: none;
                                 font-size: 16px;
                                 margin-right: 14px;
+                                color: #fff;
                             }
                             strong {
-                                font-family: $font-kr;
-                                font-weight: 800;
+                                font-family: $font-en;
+                                font-weight: 500;
                                 line-height: 1;
                                 letter-spacing: -.8px;
                                 font-size: 13px;
-                                color: $font-black;
+                                // color: $font-black;
+                                color: #fff;
                             }
                         }
                         span {
                             display: block;
                             text-align: right;
                         }
+                        span.bo_v_link_cnt {
+                            display: none;
+                        }
+                    }
+                    li:hover {
+                        opacity: 1;
+                    }
+                    li:not(:last-child) {
+                        border-bottom: 1px solid #fff;
                     }
                 }
             }
@@ -503,8 +758,8 @@ $color-white: #fff;
         align-items: center;
         justify-content: center;
         width: 100%;
-        border-top: 1px solid rgba(0, 0, 0, .1);
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
+        border-top: 1px solid rgba(255, 255, 255, .1);
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
         clip-path: inset(0 80px 0 80px);
         padding: 80px 0;
         margin: 80px 0 40px 0;
@@ -536,7 +791,8 @@ $color-white: #fff;
                         justify-content: center;
                         span {
                             font-family: $font-kr;
-                            color: $font-black;
+                            // color: $font-black;
+                            color: #fff;
                             padding: 0;
                         }
                         span.nb_tit {
@@ -551,7 +807,8 @@ $color-white: #fff;
                             font-weight: 500;
                             letter-spacing: -.8px;
                             line-height: 1;
-                            color: $font-black;
+                            // color: $font-black;
+                            color: #fff;
                             position: relative;
                         }
                         span.board-title-btn::after {
@@ -562,7 +819,8 @@ $color-white: #fff;
                             bottom: -6px;
                             width: 0%;
                             height: 2px;
-                            background: $font-black;
+                            // background: $font-black;
+                            background: #fff;
                             transition: all .4s ease;
                         }
                     }
@@ -604,7 +862,7 @@ $color-white: #fff;
                 justify-content: center;
                 padding: 22px 44px;
                 border-radius: 300px;
-                background: $font-black;
+                background: $page-sub-color;
                 position: relative;
                 margin: 0;
                 span {
@@ -653,8 +911,42 @@ $color-white: #fff;
         }
     }
 
-
+    /* footer-section */
+    .footer-section.section {
+        background: $page-main-color;
+        .container {
+            span {
+            }
+            a.back-top-btn {
+                span {
+                    color: #fff;
+                }
+                span::before {
+                }
+                .arrow-icon-box {
+                    background: url("/theme/new_dnc/img/main/arrow-img03-white.svg") no-repeat center top / 100% auto;
+                    img {
+                    }
+                }
+            }
+            a.back-top-btn:hover {
+                span {
+                }
+            }
+            span.copyrights {
+                span {
+                    color: #fff;
+                }
+            }
+            a.privacy {
+                span {
+                    color: #fff;
+                }
+            }
+        }
+    }
 }
+
 
 /* responsive css */
 @media ( max-width: 1024px ) {
@@ -721,107 +1013,105 @@ $color-white: #fff;
                     width: 100%;
                     .ajax-b {
                         .main-content {
-                            form {
-                                input {
+                            input {
 
-                                }
+                            }
 
-                                .gallery-content-box {
-                                    .filter-wrap {
-                                        div {
-                                            width: 100%;
-                                            .pr_tabs {
+                            .gallery-content-box {
+                                .filter-wrap {
+                                    div {
+                                        width: 100%;
+                                        .pr_tabs {
+                                            padding: 0;
+                                            margin: 0;
+                                            ul {
+                                                position: unset;
+                                                overflow: scroll;
                                                 padding: 0;
-                                                margin: 0;
-                                                ul {
-                                                    position: unset;
-                                                    overflow: scroll;
-                                                    padding: 0;
-                                                    padding-bottom: 8px;
-                                                    justify-content: flex-start;
-                                                    li {
-                                                        a {
-                                                            padding: 18px 32px;
-                                                            font-size: 14px;
-                                                            white-space: nowrap;
-                                                        }
-                                                        a#bo_cate_on {
-                                                        }
-                                                        a:hover {
-                                                        }
+                                                padding-bottom: 8px;
+                                                justify-content: flex-start;
+                                                li {
+                                                    a {
+                                                        padding: 18px 32px;
+                                                        font-size: 14px;
+                                                        white-space: nowrap;
                                                     }
-                                                    li:not(:last-child) {
-                                                        margin-right: 14px;
+                                                    a#bo_cate_on {
+                                                    }
+                                                    a:hover {
                                                     }
                                                 }
-                                                ul::-webkit-scrollbar {
-                                                    background-color: transparent;
+                                                li:not(:last-child) {
+                                                    margin-right: 14px;
                                                 }
+                                            }
+                                            ul::-webkit-scrollbar {
+                                                background-color: transparent;
                                             }
                                         }
                                     }
-    
-                                    .item-list-wrap {
-                                        .item {
-                                            a.img-box {
-                                                .thumb-box {
+                                }
+
+                                .item-list-wrap {
+                                    .item {
+                                        a.img-box {
+                                            .thumb-box {
+                                                img {
+                                                }
+                                            }
+                                            /* .thumb-box::after {
+                                                content: '';
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                background: rgba(0, 0, 0, .4);
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                            } */
+                                            .hover-text-box {
+                                                .icon-box {
                                                     img {
                                                     }
                                                 }
-                                                /* .thumb-box::after {
-                                                    content: '';
-                                                    display: block;
-                                                    width: 100%;
-                                                    height: 100%;
-                                                    background: rgba(0, 0, 0, .4);
-                                                    position: absolute;
-                                                    top: 0;
-                                                    left: 0;
-                                                } */
-                                                .hover-text-box {
-                                                    .icon-box {
-                                                        img {
-                                                        }
-                                                    }
-                                                    span.category-text {
-                                                        span {
-                                                        }
-                                                    }
-                                                    h4.heading-title {
-                                                        span {
-                                                        }
+                                                span.category-text {
+                                                    span {
                                                     }
                                                 }
-                                                .board-title-box {
-                                                    span.board-title {
+                                                h4.heading-title {
+                                                    span {
                                                     }
                                                 }
                                             }
-                                            a.img-box:hover {
-                                                .thumb-box {
+                                            .board-title-box {
+                                                span.board-title {
+                                                }
+                                            }
+                                        }
+                                        a.img-box:hover {
+                                            .thumb-box {
+                                                img {
+                                                }
+                                            }
+                                            .hover-text-box {
+                                                .icon-box {
                                                     img {
                                                     }
                                                 }
-                                                .hover-text-box {
-                                                    .icon-box {
-                                                        img {
-                                                        }
-                                                    }
-                                                    span.category-text {
-                                                        span {
-                                                        }
-                                                    }
-                                                    h4.heading-title {
-                                                        span {
-                                                        }
+                                                span.category-text {
+                                                    span {
                                                     }
                                                 }
-                                                .board-title-box {
+                                                h4.heading-title {
+                                                    span {
+                                                    }
                                                 }
                                             }
-    
-                                            .check-box {
+                                            .board-title-box {
                                             }
+                                        }
+
+                                        .check-box {
                                         }
                                     }
                                 }
@@ -1084,107 +1374,107 @@ $color-white: #fff;
                     width: 100%;
                     .ajax-b {
                         .main-content {
-                            form {
-                                input {
+                            input {
 
-                                }
+                            }
 
-                                .gallery-content-box {
-                                    .filter-wrap {
-                                        div {
-                                            width: 100%;
-                                            .pr_tabs {
+                            .gallery-content-box {
+                                .filter-wrap {
+                                    div {
+                                        width: 100%;
+                                        .pr_tabs {
+                                            padding: 0;
+                                            margin: 0;
+                                            ul {
+                                                position: unset;
+                                                overflow: scroll;
                                                 padding: 0;
-                                                margin: 0;
-                                                ul {
-                                                    position: unset;
-                                                    overflow: scroll;
-                                                    padding: 0;
-                                                    padding-bottom: 8px;
-                                                    justify-content: flex-start;
-                                                    li {
-                                                        a {
-                                                            padding: 18px 32px;
-                                                            font-size: 14px;
-                                                            white-space: nowrap;
-                                                        }
-                                                        a#bo_cate_on {
-                                                        }
-                                                        a:hover {
-                                                        }
+                                                padding-bottom: 8px;
+                                                justify-content: flex-start;
+                                                li {
+                                                    a {
+                                                        padding: 18px 32px;
+                                                        font-size: 14px;
+                                                        white-space: nowrap;
                                                     }
-                                                    li:not(:last-child) {
-                                                        margin-right: 14px;
+                                                    a#bo_cate_on {
+                                                    }
+                                                    a:hover {
                                                     }
                                                 }
-                                                ul::-webkit-scrollbar {
-                                                    background-color: transparent;
+                                                li:not(:last-child) {
+                                                    margin-right: 14px;
                                                 }
+                                            }
+                                            ul::-webkit-scrollbar {
+                                                background-color: transparent;
                                             }
                                         }
                                     }
-    
-                                    .item-list-wrap {
-                                        .item {
-                                            a.img-box {
-                                                .thumb-box {
+                                }
+
+                                .item-list-wrap {
+                                    flex-direction: column;
+                                    .item {
+                                        width: 100%;
+                                        a.img-box {
+                                            .thumb-box {
+                                                img {
+                                                }
+                                            }
+                                            /* .thumb-box::after {
+                                                content: '';
+                                                display: block;
+                                                width: 100%;
+                                                height: 100%;
+                                                background: rgba(0, 0, 0, .4);
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                            } */
+                                            .hover-text-box {
+                                                .icon-box {
                                                     img {
                                                     }
                                                 }
-                                                /* .thumb-box::after {
-                                                    content: '';
-                                                    display: block;
-                                                    width: 100%;
-                                                    height: 100%;
-                                                    background: rgba(0, 0, 0, .4);
-                                                    position: absolute;
-                                                    top: 0;
-                                                    left: 0;
-                                                } */
-                                                .hover-text-box {
-                                                    .icon-box {
-                                                        img {
-                                                        }
-                                                    }
-                                                    span.category-text {
-                                                        span {
-                                                        }
-                                                    }
-                                                    h4.heading-title {
-                                                        span {
-                                                        }
+                                                span.category-text {
+                                                    span {
                                                     }
                                                 }
-                                                .board-title-box {
-                                                    span.board-title {
+                                                h4.heading-title {
+                                                    span {
                                                     }
                                                 }
                                             }
-                                            a.img-box:hover {
-                                                .thumb-box {
+                                            .board-title-box {
+                                                span.board-title {
+                                                }
+                                            }
+                                        }
+                                        a.img-box:hover {
+                                            .thumb-box {
+                                                img {
+                                                }
+                                            }
+                                            .hover-text-box {
+                                                .icon-box {
                                                     img {
                                                     }
                                                 }
-                                                .hover-text-box {
-                                                    .icon-box {
-                                                        img {
-                                                        }
-                                                    }
-                                                    span.category-text {
-                                                        span {
-                                                        }
-                                                    }
-                                                    h4.heading-title {
-                                                        span {
-                                                        }
+                                                span.category-text {
+                                                    span {
                                                     }
                                                 }
-                                                .board-title-box {
+                                                h4.heading-title {
+                                                    span {
+                                                    }
                                                 }
                                             }
-    
-                                            .check-box {
+                                            .board-title-box {
                                             }
+                                        }
+
+                                        .check-box {
                                         }
                                     }
                                 }
@@ -1269,6 +1559,7 @@ $color-white: #fff;
                         p {
                             font-size: 1rem;
                             font-weight: 400;
+                            margin: 0 !important;
                         }
                     }
                 }
@@ -1290,7 +1581,6 @@ $color-white: #fff;
                                 }
                             }
                             span.bo_v_link_cnt {
-
                             }
                         }
                     }
@@ -1352,6 +1642,7 @@ $color-white: #fff;
         }
 
         section.list-btn-section {
+            padding: 0 16px;
             .container {
                 overflow: scroll;
                 padding-bottom: 8px;
