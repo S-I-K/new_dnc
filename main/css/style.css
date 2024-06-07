@@ -183,6 +183,8 @@ li {
 }
 .title-section .container .title-box h2.title span.circle {
   color: #2D99D7;
+  display: inline-block;
+  margin-left: -24px;
 }
 .title-section .container .title-box p {
   width: 33%;

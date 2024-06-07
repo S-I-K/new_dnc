@@ -184,6 +184,8 @@ animation: bg-ani cubic-bezier(0.165, 0.84, 0.44, 1) 6s both;
                 text-align: left;
                 span.circle {
                     color: #2D99D7;
+                    display: inline-block;
+                    margin-left: -24px;
                 }
             }
             p {
